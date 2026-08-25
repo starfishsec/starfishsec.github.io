@@ -11,6 +11,6 @@ export interface Stat {
  */
 export const stats: Stat[] = [
   { value: "200+", label: "CVEs published" },
-  { value: "3", label: "Offensive researchers" },
+  { value: "3", label: "Expert researchers behind the platform" },
   { value: "Millions", label: "of websites affected by our disclosures" },
 ];

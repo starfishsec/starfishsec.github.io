@@ -53,9 +53,9 @@ export const site = {
   wordmark: "STARFISH SEC",
   url: "https://starfishsec.com",
   email: "info@starfishsec.com",
-  title: "Starfish Security — Offensive Security & Pentesting",
+  title: "Starfish Security — AI-Powered Penetration Testing",
   description:
-    "A boutique offensive-security team behind 200+ published CVEs. Manual pentesting, red teaming, and vulnerability research that delivers working proof, not theoretical risk.",
+    "AI-powered penetration testing backed by offensive-security researchers behind 200+ published CVEs. Every finding expert-validated and delivered with working proof, not theoretical risk.",
   ogImage: "/og.png",
   status: "Available for engagements",
   legal: "© 2026 Starfish Security. All rights reserved.",

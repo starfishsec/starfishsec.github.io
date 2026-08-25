@@ -6,18 +6,20 @@ export interface ProcessStep {
 export const processHeading = {
   eyebrow: "Process",
   title: "How we work",
-  subtitle: "From scope to working exploit — a process built on real research.",
+  subtitle: "From scope to working exploit — AI-driven testing, expert-verified.",
 } as const;
 
 export const processSteps: ProcessStep[] = [
   { title: "Scope", description: "We map your attack surface and agree on rules of engagement." },
   {
     title: "Attack",
-    description: "We test manually, chaining real vulnerabilities the way an attacker would.",
+    description:
+      "Our AI-powered platform tests your systems continuously, chaining real vulnerabilities the way an attacker would.",
   },
   {
     title: "Prove",
-    description: "Every finding ships with a working proof-of-concept. No theoretical risk.",
+    description:
+      "Our researchers validate every finding and ship a working proof-of-concept. No noise, no theoretical risk.",
   },
   {
     title: "Report & retest",

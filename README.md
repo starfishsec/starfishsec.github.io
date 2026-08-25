@@ -1,8 +1,8 @@
 # Starfish Security — Landing Page
 
-Marketing site for **Starfish Security**, a boutique offensive-security team of 3 industry-certified researchers (OSWE, CPTS, Synack Red Team) who have published **200+ CVEs** across many platforms (Apache, WordPress, and more).
+Marketing site for **Starfish Security** — an **AI-powered penetration-testing service** built and operated by 3 industry-certified offensive-security researchers (OSWE, CPTS, Synack Red Team) who have published **200+ CVEs** across many platforms (WordPress, Apache, and more). The platform runs the testing; the experts validate every finding.
 
-Aesthetic / structural reference: [pwn.ai](https://pwn.ai) — dark, technical, "proof over promises" — but repositioned for a **human services firm**, not an autonomous AI product.
+Aesthetic / structural reference: [pwn.ai](https://pwn.ai) — dark, technical, "proof over promises".
 
 ## Tech stack
 

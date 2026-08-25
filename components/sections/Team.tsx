@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 import { certGlossary, initials, team, teamHeading } from "@/content/team";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
@@ -50,6 +50,7 @@ export function Team() {
                       </a>
                     ) : null}
                   </div>
+
                   <div>
                     <h3 className="text-h3">{member.name}</h3>
                     <p className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-small text-fg-muted">
@@ -59,6 +60,11 @@ export function Team() {
                       ) : null}
                     </p>
                   </div>
+
+                  <p className="text-small text-fg-muted">
+                    {member.bio ?? <TodoNote>TODO(owner): one-line bio</TodoNote>}
+                  </p>
+
                   <ul className="flex flex-wrap gap-2" aria-label="Certifications">
                     {member.certs.map((cert) => (
                       <li key={cert.short}>
@@ -68,9 +74,35 @@ export function Team() {
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-auto text-small text-fg-muted">
-                    {member.bio ?? <TodoNote>TODO(owner): one-line bio</TodoNote>}
-                  </p>
+
+                  {member.achievements.length > 0 ? (
+                    <div className="mt-auto border-t border-border pt-4">
+                      <h4 className="eyebrow text-fg-muted">Highlights</h4>
+                      <ul className="mt-3 flex flex-col gap-2">
+                        {member.achievements.map((a) => (
+                          <li key={a.text} className="flex gap-2 text-small text-fg">
+                            <Check className="mt-1 size-3.5 shrink-0 text-accent" aria-hidden="true" />
+                            {a.href ? (
+                              <a
+                                href={a.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="underline-offset-4 hover:text-accent hover:underline"
+                              >
+                                {a.text}
+                              </a>
+                            ) : (
+                              <span>{a.text}</span>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : (
+                    <div className="mt-auto border-t border-border pt-4">
+                      <TodoNote>TODO(owner): public highlights</TodoNote>
+                    </div>
+                  )}
                 </Card>
               </Reveal>
             </li>

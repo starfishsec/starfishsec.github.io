@@ -8,6 +8,7 @@ import {
   severityLabel,
   severityOrder,
   type Cve,
+  type Severity,
 } from "@/content/cves";
 import { Badge } from "@/components/ui/Badge";
 import { cn } from "@/lib/cn";
@@ -41,6 +42,19 @@ export function CveTable({ cves }: CveTableProps) {
   const [limit, setLimit] = useState(PAGE_SIZE);
   const pendingHash = useRef<string | null>(null);
   const [highlightId, setHighlightId] = useState<string | null>(null);
+
+  // Query-string presets (`/research?severity=critical&vendor=…&year=…&sort=newest`).
+  // Read after mount so the statically prerendered HTML stays identical for every visitor.
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search);
+    const sev = q.get("severity");
+    if (sev && severityOrder.includes(sev as Severity)) setSeverity(sev);
+    const v = q.get("vendor");
+    if (v && cves.some((c) => c.platform === v)) setVendor(v);
+    const y = q.get("year");
+    if (y && cves.some((c) => String(cveYear(c)) === y)) setYear(y);
+    if (q.get("sort") === "newest") setSort("newest");
+  }, [cves]);
 
   // Deep links (`/research#CVE-…`): make sure the row is rendered, then scroll to it.
   useEffect(() => {

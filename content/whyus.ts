@@ -13,23 +13,25 @@ export const whyHeading = {
 
 export const whyPoints: WhyPoint[] = [
   {
-    title: "Manual, not just automated.",
-    description: "Scanners flag maybes. We deliver confirmed, exploitable findings with a PoC.",
+    title: "AI speed, expert judgment.",
+    description:
+      "Our platform covers more ground, faster. Researchers behind 200+ CVEs decide what's real and what matters.",
     icon: "fingerprint",
   },
   {
     title: "Track record in the open.",
-    description: "200+ CVEs is public, verifiable proof of depth.",
+    description: "200+ CVEs is public, verifiable proof of the depth behind the platform.",
     icon: "book-open-check",
   },
   {
-    title: "Certified and battle-tested.",
-    description: "OSWE-certified, Synack Red Team researchers who find bugs for a living.",
+    title: "Built by people who find bugs for a living.",
+    description:
+      "OSWE- and CPTS-certified, Synack Red Team researchers designed the methodology and review every result.",
     icon: "award",
   },
   {
     title: "Proof over paperwork.",
-    description: "Every finding comes with a working exploit and clear remediation.",
+    description: "Every finding comes with a working exploit and clear remediation — not a scanner export.",
     icon: "file-check",
   },
 ];

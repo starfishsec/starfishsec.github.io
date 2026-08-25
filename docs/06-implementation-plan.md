@@ -133,6 +133,12 @@ Mostly resolved as of 2026-08-25. Remaining `TODO(owner)` — surface them, don'
 - Research: full Wordfence export for `ancorn_` (246 CVEs) generated into `content/cves.data.ts`; sorted highest CVSS first; landing shows top 6 + severity count chips; `/research` gains a Sort toggle and per-row advisory links. Raw data in `data/wordfence/`, scripts in `scripts/`.
 - Team: Tai → Co-Founder; LinkedIn link per member (`linkedin` field in `content/team.ts`).
 
+### Repositioning round (2026-08-25, owner feedback)
+
+- Brand: **AI-powered penetration-testing service, experts behind it** (was: manual services team). Updated `CLAUDE.md` rule 3, `docs/01` §1/§2/§5, `docs/02` §3/§5/§6/§9/SEO, README, and `content/{hero,process,services,whyus,site,stats}.ts`.
+- Copy discipline: only "AI-powered" / "expert-validated" statements. No platform specifics (coverage %, autonomy level, benchmarks, model names) until the owner confirms them.
+- Team cards now show **Highlights** (public, sourced achievements with links) and a short bio drafted from those public facts. LinkedIn is auth-walled (HTTP 999) so nothing was pulled from it; headshots still `TODO(owner)` (send files → `public/team/*.jpg`).
+
 ### Remaining `TODO(owner)` (all visible in the UI)
 
 Team bios & headshots · company social (X, GitHub) · CVEs credited to Phuoc / taidh and non-WordPress advisories · announcement link target · logo SVG · disclosure window / PGP · privacy legal review · founding year / location.

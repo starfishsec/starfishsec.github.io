@@ -3,10 +3,16 @@
 ## 1. Summary
 
 Build a single-page marketing site (plus a few utility routes) for **Starfish Security**,
-a boutique offensive-security firm. The page must establish immediate credibility through
-**hard proof** (200+ CVEs, OffSec certifications) and convert visitors into engagement
-requests. Visual/structural reference: <https://pwn.ai/> — dark, technical, confident,
-"proof over promises".
+an **AI-powered penetration-testing service** built and operated by a team of offensive-security
+researchers. Positioning (owner, 2026-08-25): the platform runs the testing; the experts behind it
+— 200+ published CVEs, OSWE / CPTS / Synack Red Team — validate every finding and deliver working
+proof. The page must establish immediate credibility through **hard proof** and convert visitors
+into engagement requests. Visual/structural reference: <https://pwn.ai/> — dark, technical,
+confident, "proof over promises".
+
+> Positioning history: v1 docs described a purely manual services team. Superseded 2026-08-25.
+> Claims about the AI platform itself (coverage, autonomy level, benchmarks) are **not confirmed** —
+> keep copy to "AI-powered" + "expert-validated" until the owner supplies specifics (`TODO(owner)`).
 
 ## 2. Business context
 
@@ -20,7 +26,7 @@ requests. Visual/structural reference: <https://pwn.ai/> — dark, technical, co
 - **Track record**: 200+ CVEs researched and published, across WordPress plugins, Apache, and
   other widely deployed software. Public sample credited to `ancorn_` on Wordfence
   (Rank Math SEO, SEOPress, Blocksy, SiteOrigin, Element Pack, …). Full export: `TODO(owner)`.
-- **Offer**: services, not software. See §5.
+- **Offer**: AI-powered pentesting as a service, plus research / red team / consulting / exploit support. See §5.
 - **Geography / language**: site in **English** (international clients). Vietnamese i18n is
   out of scope for v1 but the architecture must not block it (all copy in content files).
 
@@ -45,7 +51,7 @@ requests. Visual/structural reference: <https://pwn.ai/> — dark, technical, co
 
 Confirmed by owner (2026-08-25): Red Team, Consulting, Exploit Support — plus Pentest & Research as core. Full copy in `docs/02` §6.
 
-1. **Penetration Testing** — manual, exploit-driven; web, API, infrastructure.
+1. **AI-Powered Penetration Testing** — AI-driven, exploit-focused; web, API, infrastructure; every finding validated by senior researchers.
 2. **Vulnerability Research** — 0-day research + responsible disclosure (the thing we're known for — 200+ CVEs).
 3. **Red Team / Adversary Simulation** — objective-based, stealth, full kill chain.
 4. **Security Consulting** — secure-design review, threat modeling, on-call expertise.

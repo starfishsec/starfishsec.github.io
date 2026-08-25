@@ -34,35 +34,34 @@ Section order (top → bottom), adapted for a services team:
 
 ## 3. Hero
 
-- **Eyebrow (mono):** `OFFENSIVE SECURITY · 200+ CVEs PUBLISHED`
-- **Headline (H1, pick one):**
-  - Primary: **"We break what others assume is safe."**
-  - Alt A: "Real exploits. Not theoretical risk."
-  - Alt B: "The team that finds what scanners miss."
+- **Eyebrow (mono):** `AI-POWERED PENTESTING · BACKED BY 200+ PUBLISHED CVEs`
+- **Headline (H1):** **"We break what others assume is safe."**
 - **Subheadline:**
-  > Starfish Security is a three-person offensive team behind 200+ published CVEs across WordPress, Apache, and other widely deployed software. We test your systems the way a real attacker would — and hand you working proof.
+  > Starfish Security is an AI-powered penetration-testing service built by offensive-security researchers behind 200+ published CVEs. Our platform tests your systems the way a real attacker would; our experts validate every finding and hand you working proof.
 - **Primary CTA:** `Request a Pentest`
 - **Secondary CTA:** `View our Research`
-- **Supporting line:** `Trusted by teams who need proof, not checklists.`
+- **Supporting line:** `AI speed. Expert judgment. Proof, not checklists.`
 - Optional decorative mono line: `$ starfish scope --target you`
+
+> Repositioned 2026-08-25 (owner): AI-powered service, experts behind it. Previous copy ("three-person offensive team … we test manually") is superseded.
 
 ## 4. Trust bar / stats (3 cards)
 
 | Value | Label |
 |-------|-------|
 | `200+` | CVEs published |
-| `3` | Offensive researchers |
+| `3` | Expert researchers behind the platform |
 | `Millions` | of websites affected by our disclosures |
 
 > Owner decisions (2026-08-25): the former `2×` OSWE card was **removed**; card 3 was reworded from "plugin installs" to **websites affected** (impact framing). All three values confirmed.
 
 ## 5. How we work (4 steps)
 
-**Heading:** `How we work` — **Sub:** `From scope to working exploit — a process built on real research.`
+**Heading:** `How we work` — **Sub:** `From scope to working exploit — AI-driven testing, expert-verified.`
 
 1. **Scope** — We map your attack surface and agree on rules of engagement.
-2. **Attack** — We test manually, chaining real vulnerabilities the way an attacker would.
-3. **Prove** — Every finding ships with a working proof-of-concept. No theoretical risk.
+2. **Attack** — Our AI-powered platform tests your systems continuously, chaining real vulnerabilities the way an attacker would.
+3. **Prove** — Our researchers validate every finding and ship a working proof-of-concept. No noise, no theoretical risk.
 4. **Report & retest** — Clear, prioritized remediation guidance, then we verify the fixes.
 
 ## 6. Services
@@ -71,7 +70,7 @@ Section order (top → bottom), adapted for a services team:
 
 Confirmed core + the three services the owner named:
 
-- **Penetration Testing** — Manual, exploit-driven testing of web apps, APIs, and infrastructure — beyond automated scanning.
+- **AI-Powered Penetration Testing** — AI-driven, exploit-focused testing of web apps, APIs, and infrastructure — every finding validated by senior researchers and delivered with a working exploit.
 - **Vulnerability Research** — Zero-day research and responsible disclosure on the platforms you depend on. 200+ CVEs and counting.
 - **Red Team / Adversary Simulation** — Objective-based, stealth engagements that emulate a real attacker's full kill chain.
 - **Security Consulting** — Secure-design review, threat modeling, and on-call expertise for your team.
@@ -102,7 +101,7 @@ Confirmed core + the three services the owner named:
 
 ## 8. Team
 
-**Heading:** `The team` — **Sub:** `Three researchers. One standard: prove it.`
+**Heading:** `The experts behind the platform` — **Sub:** `Three researchers who find bugs for a living. One standard: prove it.`
 
 Data in `content/team.ts`:
 
@@ -114,16 +113,38 @@ Data in `content/team.ts`:
 
 - Roles + LinkedIn confirmed by owner 2026-08-25 (Tai is a **Co-Founder**).
 - Cert glossary (show as tooltip/footnote): **OSWE** = OffSec Web Expert · **CPTS** = Certified Penetration Testing Specialist (Hack The Box) · **SRT Hero** = Synack Red Team, Hero tier.
-- Avatar: initials/monogram placeholder (no fake photos). Real headshots `TODO(owner)`.
-- One-line bios `TODO(owner)`. Per-person LinkedIn is live (above); company-level social (X, GitHub) still `TODO(owner)`.
+
+### Bios (DRAFT 2026-08-25 — owner to review)
+
+LinkedIn is auth-walled (HTTP 999), so bios were drafted **only** from public records: cert list, Wordfence / Patchstack / Synack Acropolis pages, the researcher's own site, and indexed public posts.
+
+- **Phuoc Pham** — Founder. OSWE-certified web-application security researcher who leads Starfish's offensive methodology and the expert review behind every engagement. *(No public research record found under this name — `TODO(owner)`: CVEs / talks / programs.)*
+- **An Ngo** — Co-Founder. OSWE-certified penetration tester and one of the most prolific WordPress-ecosystem researchers on record — 246 CVEs credited on Wordfence, including critical unauthenticated privilege-escalation and object-injection findings. Synack Acropolis inductee and Apple Hall of Fame honoree.
+- **Dau Hoang Tai** — Co-Founder. Penetration tester and CTF player with a browser- and enterprise-software research streak — dozens of Firefox security bugs reported to Mozilla in a single research sprint. CPTS-certified Synack Red Team Hero.
+
+### Highlights (public, sourced — shown on the cards)
+
+| Person | Highlight | Source |
+|--------|-----------|--------|
+| An Ngo | 246 CVEs on Wordfence Intelligence — all-time rank #34 | wordfence.com/…/researchers/ngo-thien-an-ancorn |
+| An Ngo | Synack Acropolis inductee (Class of 2025) — Hero 2025 & 2026 | acropolis.synack.com/inductees/ancorn_ |
+| An Ngo | Patchstack Alliance verified researcher — 154 reports, top-40 all-time | patchstack.com/database/researcher/090515a6-… |
+| An Ngo | 3 critical CVEs (CVSS 9.1–9.8) | `/research?severity=critical` |
+| An Ngo | Apple Hall of Fame honoree | ngothienan.github.io/about (self-reported) |
+| Dau Hoang Tai | 28 Firefox security bugs in two months, 4 CVEs | indexed LinkedIn/HackMD snippets — `TODO(owner)`: confirm + link MFSA |
+| Dau Hoang Tai | SQLi → privilege escalation in ManageEngine PAM360 (CVE-2026-12371) | public post — `TODO(owner)`: confirm ID + advisory link |
+| Phuoc Pham | OSWE certified | owner |
+
+- Avatar: initials/monogram placeholder (no fake photos). Real headshots `TODO(owner)` → drop files in `public/team/` and set `photo` in `content/team.ts`.
+- Company-level social (X, GitHub) still `TODO(owner)`.
 
 ## 9. Why us (differentiator)
 
 **Heading:** `Why Starfish`
-- **Manual, not just automated.** Scanners flag maybes. We deliver confirmed, exploitable findings with a PoC.
-- **Track record in the open.** 200+ CVEs is public, verifiable proof of depth.
-- **Certified and battle-tested.** OSWE-certified, Synack Red Team researchers who find bugs for a living.
-- **Proof over paperwork.** Every finding comes with a working exploit and clear remediation.
+- **AI speed, expert judgment.** Our platform covers more ground, faster. Researchers behind 200+ CVEs decide what's real and what matters.
+- **Track record in the open.** 200+ CVEs is public, verifiable proof of the depth behind the platform.
+- **Built by people who find bugs for a living.** OSWE- and CPTS-certified, Synack Red Team researchers designed the methodology and review every result.
+- **Proof over paperwork.** Every finding comes with a working exploit and clear remediation — not a scanner export.
 
 ## 10. Final CTA
 
@@ -150,6 +171,6 @@ Data in `content/team.ts`:
 
 - **Site name:** `Starfish Security`
 - **Domain:** `https://starfishsec.com`
-- **Title:** `Starfish Security — Offensive Security & Pentesting`
-- **Meta description:** `A boutique offensive-security team behind 200+ published CVEs. Manual pentesting, red teaming, and vulnerability research that delivers working proof, not theoretical risk.`
+- **Title:** `Starfish Security — AI-Powered Penetration Testing`
+- **Meta description:** `AI-powered penetration testing backed by offensive-security researchers behind 200+ published CVEs. Every finding expert-validated and delivered with working proof, not theoretical risk.`
 - **OG image:** `TODO` (dark, starfish mark + tagline).
