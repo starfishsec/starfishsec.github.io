@@ -1,16 +1,24 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { cves, cveTotalClaim, researchHeading, severityLabel } from "@/content/cves";
+import {
+  cves,
+  cveTotalClaim,
+  researchHeading,
+  severityCounts,
+  severityLabel,
+  severityOrder,
+} from "@/content/cves";
 import { Badge } from "@/components/ui/Badge";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TodoNote } from "@/components/ui/TodoNote";
 import { Reveal } from "@/components/motion/Reveal";
 
 const LANDING_CAP = 6;
 
 export function Research() {
+  // `cves` is already sorted highest-severity-first → the landing shows the most severe findings.
   const featured = cves.slice(0, LANDING_CAP);
+  const counts = severityCounts(cves);
 
   return (
     <section
@@ -36,7 +44,21 @@ export function Research() {
           />
         </Reveal>
 
-        <Reveal delay={0.1} className="mt-14">
+        <Reveal delay={0.05}>
+          <ul className="mt-8 flex flex-wrap gap-2" aria-label="Published CVEs by severity">
+            {severityOrder
+              .filter((s) => counts[s] > 0)
+              .map((s) => (
+                <li key={s}>
+                  <Badge tone={s}>
+                    {counts[s]} {severityLabel[s]}
+                  </Badge>
+                </li>
+              ))}
+          </ul>
+        </Reveal>
+
+        <Reveal delay={0.1} className="mt-10">
           <div className="overflow-x-auto rounded-card border border-border bg-bg-elev">
             <table className="w-full min-w-[640px] text-left text-small">
               <thead className="eyebrow text-fg-muted">
@@ -62,8 +84,12 @@ export function Research() {
                     className="border-b border-border transition-colors last:border-b-0 hover:bg-bg-elev-2"
                   >
                     <td className="px-5 py-4 font-mono text-fg">{cve.id}</td>
-                    <td className="px-5 py-4 text-fg">{cve.platform}</td>
-                    <td className="px-5 py-4 text-fg-muted">{cve.title}</td>
+                    <td className="max-w-[16rem] truncate px-5 py-4 text-fg" title={cve.platform}>
+                      {cve.platform}
+                    </td>
+                    <td className="max-w-[20rem] truncate px-5 py-4 text-fg-muted" title={cve.title}>
+                      {cve.title}
+                    </td>
                     <td className="px-5 py-4 text-right">
                       <Badge tone={cve.severity}>
                         {severityLabel[cve.severity]}
@@ -80,8 +106,7 @@ export function Research() {
         <Reveal delay={0.15}>
           <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-small text-fg-muted">
-              Showing {featured.length} of {cveTotalClaim} published CVEs.{" "}
-              <TodoNote>TODO(owner): full CVE export</TodoNote>
+              Showing the {featured.length} most severe of {cves.length} published CVEs on record.
             </p>
             <Link
               href="/research"

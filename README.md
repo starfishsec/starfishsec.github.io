@@ -54,6 +54,7 @@ Without `RESEND_API_KEY` the contact form still works: it hands the visitor a pr
 - `app/` routes, `globals.css` (all design tokens in `@theme`), `actions/contact.ts` (server action)
 - `components/sections|ui|forms|research|motion`
 - `content/*.ts` — every piece of copy/data; edit here, never in components
+- `content/cves.data.ts` — GENERATED from `data/wordfence/*.json` by `node scripts/import-wordfence.mjs` (refresh raw data with `scripts/fetch-wordfence.mjs`)
 - `docs/` — specs (see table above); `docs/06` has the build status and implementation decisions
 - `public/` — generated white logo assets, icons, `og.png`; `logo/` — original owner assets
 

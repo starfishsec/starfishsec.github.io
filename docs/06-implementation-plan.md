@@ -109,7 +109,7 @@ Mostly resolved as of 2026-08-25. Remaining `TODO(owner)` — surface them, don'
 | 0 Scaffold | ✅ | Next 15.5, TS strict, Tailwind 4.3, ESLint flat config, Prettier |
 | 1 Tokens | ✅ | All `docs/03` tokens in `app/globals.css` `@theme`; Inter + JetBrains Mono via `next/font` |
 | 2 Primitives + motion | ✅ | + `Logo`, `StatusDot`, `TodoNote`, `icons` map |
-| 3 Content | ✅ | All copy from `docs/02`; unknowns render a visible `TODO(owner)` badge |
+| 3 Content | ✅ | All copy from `docs/02`; unknowns render a visible `TODO(owner)` badge. CVE data = 246 public records imported via `scripts/import-wordfence.mjs` |
 | 4 Sections | ✅ | 11 sections, responsive 375/768/1440, reduced-motion verified |
 | 5 SEO | ✅ | metadata, OG/Twitter, `robots.ts`, `sitemap.ts`, favicon/apple-icon/`og.png` generated from `/logo` |
 | 6 Routes + contact | ✅ | `/research` (filters), `/contact` (+ server action, mailto fallback), `/thanks`, `/disclosure`, `/privacy`, 404 |
@@ -127,6 +127,12 @@ Mostly resolved as of 2026-08-25. Remaining `TODO(owner)` — surface them, don'
 - **Logo assets** were derived from the owner's PNGs by thresholding the black ink to white-on-transparent. A clean SVG export is still `TODO(owner)`.
 - **Env vars:** `RESEND_API_KEY`, `CONTACT_TO_EMAIL` (default `info@starfishsec.com`), `CONTACT_FROM_EMAIL` (must be on a Resend-verified domain). See `.env.example`.
 
+### Polish round (2026-08-25, owner feedback)
+
+- Stats: removed `2× OSWE`; card 3 → "Millions of websites affected by our disclosures" (3 cards).
+- Research: full Wordfence export for `ancorn_` (246 CVEs) generated into `content/cves.data.ts`; sorted highest CVSS first; landing shows top 6 + severity count chips; `/research` gains a Sort toggle and per-row advisory links. Raw data in `data/wordfence/`, scripts in `scripts/`.
+- Team: Tai → Co-Founder; LinkedIn link per member (`linkedin` field in `content/team.ts`).
+
 ### Remaining `TODO(owner)` (all visible in the UI)
 
-Dau Hoang Tai's title · team bios & headshots · social handles · full 200+ CVE export · announcement link target · stat #4 wording · logo SVG · disclosure window / PGP · privacy legal review · founding year / location.
+Team bios & headshots · company social (X, GitHub) · CVEs credited to Phuoc / taidh and non-WordPress advisories · announcement link target · logo SVG · disclosure window / PGP · privacy legal review · founding year / location.

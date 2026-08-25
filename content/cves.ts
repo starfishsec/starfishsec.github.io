@@ -1,20 +1,32 @@
 /**
- * Featured CVEs — real, credited to An Ngo / `ancorn_` on public Wordfence records.
- * A sample of the team's 200+. Source: docs/02-CONTENT.md §7.
+ * CVE / advisory data.
  *
- * TODO(owner): export the authoritative full CVE list (all 3 researchers, incl. Apache
- * and other databases) for the /research page.
- * Reference: https://www.wordfence.com/threat-intel/vulnerabilities/researchers/ngo-thien-an-ancorn
+ * The rows live in `content/cves.data.ts` (GENERATED from public Wordfence Intelligence records
+ * credited to the team — see `scripts/import-wordfence.mjs`). Nothing is invented: platform, type,
+ * CVSS and publish date are parsed verbatim from the public record.
+ *
+ * TODO(owner): CVEs published outside Wordfence (Apache, other databases) and CVEs credited to
+ * Phuoc Pham / Dau Hoang Tai are not in this export yet — add another JSON under `data/wordfence/`
+ * (or another importer) to include them.
  */
+import { cveData } from "./cves.data";
+
 export type Severity = "critical" | "high" | "medium" | "low";
 
 export interface Cve {
   id: string;
   platform: string;
+  /** Vulnerability type / short title, e.g. "Unauthenticated Privilege Escalation". */
   title: string;
   severity: Severity;
   /** CVSS base score when known. */
   cvss?: number;
+  /** ISO date (YYYY-MM-DD) the advisory was published. */
+  publishedAt?: string;
+  /** Public record URL (advisory page). */
+  source?: string;
+  /** Team handle credited on the record. */
+  researcher?: string;
 }
 
 export const researchHeading = {
@@ -25,39 +37,8 @@ export const researchHeading = {
 
 export const cveTotalClaim = "200+";
 
-export const cves: Cve[] = [
-  {
-    id: "CVE-2024-2536",
-    platform: "Rank Math SEO",
-    title: "Stored XSS (Contributor+)",
-    severity: "medium",
-    cvss: 6.4,
-  },
-  { id: "CVE-2024-2165", platform: "SEOPress", title: "Stored XSS", severity: "medium", cvss: 6.4 },
-  { id: "CVE-2024-4943", platform: "Blocksy", title: "Stored XSS", severity: "medium", cvss: 6.4 },
-  {
-    id: "CVE-2024-5901",
-    platform: "SiteOrigin Widgets Bundle",
-    title: "Stored XSS",
-    severity: "medium",
-    cvss: 6.4,
-  },
-  {
-    id: "CVE-2024-4360",
-    platform: "Element Pack (Elementor Addons)",
-    title: "Stored XSS",
-    severity: "medium",
-    cvss: 6.4,
-  },
-  { id: "CVE-2024-47363", platform: "Blockspare", title: "Stored XSS", severity: "medium" },
-  {
-    id: "CVE-2023-47851",
-    platform: "Bootstrap Shortcodes Ultimate",
-    title: "Stored XSS",
-    severity: "medium",
-    cvss: 6.4,
-  },
-];
+/** All CVEs, highest severity first (then newest). */
+export const cves: Cve[] = cveData;
 
 export const severityLabel: Record<Severity, string> = {
   critical: "Critical",
@@ -66,11 +47,20 @@ export const severityLabel: Record<Severity, string> = {
   low: "Low",
 };
 
+export const severityOrder: Severity[] = ["critical", "high", "medium", "low"];
+
 export function cveYear(cve: Cve): number {
   return Number.parseInt(cve.id.split("-")[1] ?? "0", 10);
 }
 
-/** Deterministic public record URL for a CVE ID (NVD). */
+/** Public record URL: the advisory page when we have one, otherwise the NVD entry. */
 export function cveUrl(cve: Cve): string {
-  return `https://nvd.nist.gov/vuln/detail/${cve.id}`;
+  return cve.source ?? `https://nvd.nist.gov/vuln/detail/${cve.id}`;
+}
+
+/** Count per severity, for summary chips. */
+export function severityCounts(list: Cve[]): Record<Severity, number> {
+  const counts: Record<Severity, number> = { critical: 0, high: 0, medium: 0, low: 0 };
+  for (const c of list) counts[c.severity] += 1;
+  return counts;
 }

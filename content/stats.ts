@@ -5,13 +5,12 @@ export interface Stat {
   todo?: string;
 }
 
+/**
+ * Owner decisions (2026-08-25): the "2× OSWE" card was removed; the fourth card now speaks to
+ * impact ("websites affected") rather than plugin installs.
+ */
 export const stats: Stat[] = [
   { value: "200+", label: "CVEs published" },
   { value: "3", label: "Offensive researchers" },
-  { value: "2×", label: "OSWE — OffSec Web Expert" },
-  {
-    value: "Millions",
-    label: "plugin installs affected by our disclosures",
-    todo: "TODO(owner): confirm exact wording",
-  },
+  { value: "Millions", label: "of websites affected by our disclosures" },
 ];

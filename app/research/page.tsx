@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { cves, cveTotalClaim, researchHeading } from "@/content/cves";
+import { cves, researchHeading, severityCounts, severityLabel, severityOrder } from "@/content/cves";
 import { CveTable } from "@/components/research/CveTable";
+import { Badge } from "@/components/ui/Badge";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TodoNote } from "@/components/ui/TodoNote";
@@ -13,9 +14,12 @@ export const metadata: Metadata = {
 };
 
 export default function ResearchPage() {
+  const counts = severityCounts(cves);
+  const researchers = Array.from(new Set(cves.map((c) => c.researcher).filter(Boolean)));
+
   return (
     <section className="py-20 md:py-28" aria-labelledby="research-page-title">
-      <Container className="flex flex-col gap-12">
+      <Container className="flex flex-col gap-10">
         <SectionHeading
           as="h1"
           id="research-page-title"
@@ -24,17 +28,30 @@ export default function ResearchPage() {
           subtitle={researchHeading.subtitle}
         />
 
-        <div className="flex flex-col gap-3 rounded-card border border-dashed border-warn/30 bg-warn/5 p-4 text-small text-fg-muted">
-          <p>
-            <TodoNote className="mr-2">TODO(owner)</TodoNote>
-            This page currently lists {cves.length} featured advisories credited on public records — a
-            sample of the team&apos;s {cveTotalClaim} CVEs. The full export (all three researchers,
-            including Apache and other databases) is pending and will populate{" "}
-            <code className="font-mono text-fg">content/cves.ts</code>.
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <ul className="flex flex-wrap gap-2" aria-label="Published CVEs by severity">
+            {severityOrder
+              .filter((s) => counts[s] > 0)
+              .map((s) => (
+                <li key={s}>
+                  <Badge tone={s}>
+                    {counts[s]} {severityLabel[s]}
+                  </Badge>
+                </li>
+              ))}
+          </ul>
+          <p className="font-mono text-small text-fg-muted">
+            {cves.length} CVEs · public record · credited to{" "}
+            {researchers.map((r) => `@${r}`).join(", ")}
           </p>
         </div>
 
         <CveTable cves={cves} />
+
+        <p className="text-small text-fg-muted">
+          Source: Wordfence Intelligence researcher records (public). Each row links to its advisory.{" "}
+          <TodoNote>TODO(owner): add CVEs credited to Phuoc Pham / taidh and non-WordPress advisories</TodoNote>
+        </p>
       </Container>
     </section>
   );

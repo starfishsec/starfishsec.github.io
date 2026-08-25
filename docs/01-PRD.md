@@ -14,7 +14,8 @@ requests. Visual/structural reference: <https://pwn.ai/> — dark, technical, co
 - **Team**: 3 offensive-security researchers (see `docs/02` §8):
   - Phuoc Pham — Founder — **OSWE**
   - An Ngo (`ancorn_`) — Co-Founder — **OSWE**, **Synack Red Team (SRT Hero)**
-  - Dau Hoang Tai (`taidh`) — Security Researcher — **CPTS** (Hack The Box), **Synack Red Team (SRT Hero)**
+  - Dau Hoang Tai (`taidh`) — Co-Founder — **CPTS** (Hack The Box), **Synack Red Team (SRT Hero)**
+  - LinkedIn: phamphuoc · ngothienan · taidh (confirmed 2026-08-25)
   - Note: certs are mixed (OffSec OSWE + HTB CPTS + Synack) — do NOT claim "all OffSec". Say "industry-certified" / list per person.
 - **Track record**: 200+ CVEs researched and published, across WordPress plugins, Apache, and
   other widely deployed software. Public sample credited to `ancorn_` on Wordfence
@@ -27,7 +28,7 @@ requests. Visual/structural reference: <https://pwn.ai/> — dark, technical, co
 
 | Goal | Metric (post-launch) |
 |------|----------------------|
-| Establish credibility in < 5 seconds | Hero shows CVE count + OffSec badge above the fold on mobile |
+| Establish credibility in < 5 seconds | Hero shows CVE count above the fold on mobile; certifications listed per person in Team |
 | Generate qualified leads | Contact form / "Request a Pentest" CTA submission rate ≥ 2% of visitors |
 | Look like a top-tier security firm | Lighthouse ≥ 95 (all), zero layout shift, polished motion |
 | Be maintainable by a 3-person team | Add a CVE or team member by editing one TS file, no component changes |
@@ -86,12 +87,12 @@ Confirmed by owner (2026-08-25): Red Team, Consulting, Exploit Support — plus 
 
 | # | Question | Status / value |
 |---|----------|----------------|
-| 1 | Team names, titles, certs | ✅ Names + certs confirmed (§2). Titles: Founder / Co-Founder confirmed; Tai's title `TODO(owner)`. Headshots `TODO(owner)` → initials avatar. |
-| 2 | Full exportable CVE list (ID, vendor, CVSS, date, link) | 7 real featured CVEs confirmed (`docs/02` §7). Full 200+ export `TODO(owner)` for `/research`. |
+| 1 | Team names, titles, certs | ✅ Names, certs, titles (Founder / Co-Founder / Co-Founder) and LinkedIn confirmed (§2). Headshots `TODO(owner)` → initials avatar. |
+| 2 | Full exportable CVE list (ID, vendor, CVSS, date, link) | ✅ 246 CVEs credited to `ancorn_` imported from Wordfence public records (`docs/02` §7). Other researchers / non-WordPress CVEs `TODO(owner)`. |
 | 3 | Domain | ✅ `starfishsec.com` |
 | 4 | Contact email / PGP / Signal | ✅ `info@starfishsec.com` (PGP/Signal `TODO(owner)`, optional) |
 | 5 | Logo / wordmark file | ✅ `/logo/logo.png` (mark), `/logo/logo2.png` (mark + "STARFISH SEC"). Need white/dark-mode + SVG versions — `TODO`. |
-| 6 | Vendor list for trust strip | WordPress plugins + Apache confirmed; broader list `TODO(owner)`. |
+| 6 | Vendor list for trust strip | WordPress plugins + Apache confirmed; the stat card now reads "Millions of websites affected" (owner, 2026-08-25). |
 | 7 | Founding year, location | `TODO(owner)` |
 | 8 | Publish pricing signals? | `TODO(owner)` — default: not shown |
-| 9 | Social handles (X, LinkedIn, GitHub, HackerOne) | `TODO(owner)` — owner said "social để sau" (later) |
+| 9 | Social handles (X, LinkedIn, GitHub, HackerOne) | ✅ Personal LinkedIn per team member (§2). Company X / GitHub / HackerOne `TODO(owner)` |

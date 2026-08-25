@@ -46,16 +46,15 @@ Section order (top → bottom), adapted for a services team:
 - **Supporting line:** `Trusted by teams who need proof, not checklists.`
 - Optional decorative mono line: `$ starfish scope --target you`
 
-## 4. Trust bar / stats (4 cards)
+## 4. Trust bar / stats (3 cards)
 
 | Value | Label |
 |-------|-------|
 | `200+` | CVEs published |
 | `3` | Offensive researchers |
-| `2×` | OSWE — OffSec Web Expert |
-| `Millions` | plugin installs affected by our disclosures |
+| `Millions` | of websites affected by our disclosures |
 
-> `200+`, `3`, `2×` confirmed. "Millions" is defensible (Rank Math 2M+, SiteOrigin/Blocksy 1M+ installs) — `TODO(owner)`: confirm exact wording. Could swap card 4 for `Synack Red Team` badge.
+> Owner decisions (2026-08-25): the former `2×` OSWE card was **removed**; card 3 was reworded from "plugin installs" to **websites affected** (impact framing). All three values confirmed.
 
 ## 5. How we work (4 steps)
 
@@ -84,21 +83,22 @@ Confirmed core + the three services the owner named:
 
 **Heading:** `Proof, published.` — **Sub:** `We don't just claim skill — it's in the public record. 200+ CVEs and counting.`
 
-Featured CVEs (real, credited to An Ngo / `ancorn_` on public Wordfence records — a sample of the team's 200+):
+**Data source (2026-08-25):** the full public record of CVEs credited to `ancorn_` on Wordfence Intelligence — **246 CVEs** (3 Critical · 12 High · 231 Medium) — is imported into `content/cves.data.ts` via `scripts/import-wordfence.mjs` from `data/wordfence/ngo-thien-an-ancorn.json`. Nothing is hand-written; platform / type / CVSS / date are parsed from the record, and each row links to its advisory.
 
-| CVE ID | Platform | Type | Severity |
-|--------|----------|------|----------|
-| CVE-2024-2536 | Rank Math SEO | Stored XSS (Contributor+) | Medium (6.4) |
-| CVE-2024-2165 | SEOPress | Stored XSS | Medium (6.4) |
-| CVE-2024-4943 | Blocksy | Stored XSS | Medium (6.4) |
-| CVE-2024-5901 | SiteOrigin Widgets Bundle | Stored XSS | Medium (6.4) |
-| CVE-2024-4360 | Element Pack (Elementor Addons) | Stored XSS | Medium (6.4) |
-| CVE-2024-47363 | Blockspare | Stored XSS | Medium |
-| CVE-2023-47851 | Bootstrap Shortcodes Ultimate | Stored XSS | Medium (6.4) |
+**Ordering rule (owner, 2026-08-25):** highest severity first (9.8 → down), then newest. The landing shows the 6 most severe; `/research` lists all with vendor / year / severity filters and a sort toggle. Current top of the list:
 
-- Data lives in `content/cves.ts`. Each row: mono `CVE-ID` · platform · title · severity `Badge`.
-- **CTA:** `See all advisories →` → `/research` (full, filterable list).
-- `TODO(owner)`: export the authoritative full CVE list (all 3 researchers, incl. Apache + other databases) for the `/research` page. Source: https://www.wordfence.com/threat-intel/vulnerabilities/researchers/ngo-thien-an-ancorn
+| CVE ID | Platform | Type | CVSS |
+|--------|----------|------|------|
+| CVE-2024-32511 | Simple Registration for WooCommerce | Unauthenticated Privilege Escalation | 9.8 Critical |
+| CVE-2024-24842 | Knowledge Base for Documentation, FAQs with AI Assistance | Unauthenticated PHP Object Injection | 9.8 Critical |
+| CVE-2024-31237 | s2Member | Limited Privilege Escalation | 9.1 Critical |
+| CVE-2025-32160 | EventON | Authenticated (Contributor+) Local File Inclusion | 8.8 High |
+| CVE-2024-53824 | All Bootstrap Blocks | Authenticated (Contributor+) Local File Inclusion | 8.8 High |
+| CVE-2024-37455 | Ultimate Addons for Elementor | Authenticated (Contributor+) Privilege Escalation | 8.8 High |
+
+- Severity buckets: CVSS ≥ 9.0 Critical · 7.0–8.9 High · 4.0–6.9 Medium · < 4.0 Low. Always paired with a text label (`Badge`).
+- **CTA:** `See all advisories →` → `/research`.
+- `TODO(owner)`: CVEs credited to Phuoc Pham / `taidh`, and non-WordPress advisories (Apache, other databases) are not in the export yet — add a JSON under `data/wordfence/` or another importer. Wordfence has no researcher profile under those names.
 
 ## 8. Team
 
@@ -106,15 +106,16 @@ Featured CVEs (real, credited to An Ngo / `ancorn_` on public Wordfence records 
 
 Data in `content/team.ts`:
 
-| Name | Handle | Role | Certifications |
-|------|--------|------|----------------|
-| Phuoc Pham | — | Founder | OSWE |
-| An Ngo | `ancorn_` | Co-Founder | OSWE · Synack Red Team (SRT Hero) |
-| Dau Hoang Tai | `taidh` | Security Researcher `TODO(owner): confirm title` | CPTS · Synack Red Team (SRT Hero) |
+| Name | Handle | Role | Certifications | LinkedIn |
+|------|--------|------|----------------|----------|
+| Phuoc Pham | — | Founder | OSWE | https://www.linkedin.com/in/phamphuoc/ |
+| An Ngo | `ancorn_` | Co-Founder | OSWE · Synack Red Team (SRT Hero) | https://www.linkedin.com/in/ngothienan/ |
+| Dau Hoang Tai | `taidh` | Co-Founder | CPTS · Synack Red Team (SRT Hero) | https://www.linkedin.com/in/taidh/ |
 
+- Roles + LinkedIn confirmed by owner 2026-08-25 (Tai is a **Co-Founder**).
 - Cert glossary (show as tooltip/footnote): **OSWE** = OffSec Web Expert · **CPTS** = Certified Penetration Testing Specialist (Hack The Box) · **SRT Hero** = Synack Red Team, Hero tier.
 - Avatar: initials/monogram placeholder (no fake photos). Real headshots `TODO(owner)`.
-- One-line bios `TODO(owner)`. Social links `TODO(owner)` (owner said "social để sau").
+- One-line bios `TODO(owner)`. Per-person LinkedIn is live (above); company-level social (X, GitHub) still `TODO(owner)`.
 
 ## 9. Why us (differentiator)
 

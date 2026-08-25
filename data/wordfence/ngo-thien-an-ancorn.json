@@ -1,0 +1,1970 @@
+[
+ {
+  "title": "EventON <= 2.4.1 - Authenticated (Contributor+) Local File Inclusion",
+  "cve": "CVE-2025-32160",
+  "cvss": "8.8",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "date": "April 4, 2025",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/eventon-lite/eventon-232-authenticated-contributor-local-file-inclusion"
+ },
+ {
+  "title": "Ecwid Shopping Cart <= 7.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2025-32195",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 4, 2025",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ecwid-shopping-cart/ecwid-shopping-cart-70-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "All Bootstrap Blocks <= 1.3.19 - Authenticated (Contributor+) Local File Inclusion",
+  "cve": "CVE-2024-53824",
+  "cvss": "8.8",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "date": "December 2, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/all-bootstrap-blocks/all-bootstrap-blocks-1319-authenticated-contributor-local-file-inclusion"
+ },
+ {
+  "title": "Blockspare <= 3.2.4 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-47363",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "September 30, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/blockspare/blockspare-324-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Collapsing Archives <= 3.0.5 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-43934",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "August 26, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/collapsing-archives/collapsing-archives-305-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Delicious Recipes – WordPress Recipe Plugin <= 1.6.7 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-43935",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "August 26, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/delicious-recipes/delicious-recipes-wordpress-recipe-plugin-167-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "DSGVO All in one for WP <= 4.5 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-43964",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "August 26, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/dsgvo-all-in-one-for-wp/dsgvo-all-in-one-for-wp-45-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "The Plus Addons for Elementor – Elementor Addons, Page Templates, Widgets, Mega Menu, WooCommerce <= 5.6.2 - Authenticated (Contributor+) Stored Cross-Site Scripting via Testimonials Widget Settings",
+  "cve": "CVE-2024-5583",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "August 21, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/the-plus-addons-for-elementor-page-builder/the-plus-addons-for-elementor-elementor-addons-page-templates-widgets-mega-menu-woocommerce-562-authenticated-contributor-stored-cross-site-scripting-via-testimonials-widget-settings"
+ },
+ {
+  "title": "All Bootstrap Blocks <= 1.3.19 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-43349",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "August 16, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/all-bootstrap-blocks/all-bootstrap-blocks-1319-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Custom Layouts – Post + Product grids made easy <= 1.4.11 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-43305",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "August 16, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/custom-layouts/custom-layouts-post-product-grids-made-easy-1411-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Meta Field Block <= 1.2.13 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-43278",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "August 16, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/display-a-meta-field-as-block/meta-field-block-1213-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Element Pack Elementor Addons (Header Footer, Template Library, Dynamic Grid & Carousel, Remote Arrows) <= 5.7.6 - Authenticated (Contributor+) Stored Cross-Site Scripting via title_tag",
+  "cve": "CVE-2024-4360",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "August 8, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bdthemes-element-pack-lite/element-pack-elementor-addons-header-footer-template-library-dynamic-grid-carousel-remote-arrows-572-authenticated-contributor-stored-cross-site-scripting-via-title-tag"
+ },
+ {
+  "title": "Blockspare <= 3.2.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-43164",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "August 7, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/blockspare/blockspare-320-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Spectra Pro <= 1.1.4 - Authenticated (Contributor+) Stored Cross-Site Scripting via Block IDs",
+  "cve": "CVE-2024-3827",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "August 1, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/spectra-pro/spectra-pro-114-authenticated-contributor-stored-cross-site-scripting-via-block-ids"
+ },
+ {
+  "title": "SiteOrigin Widgets Bundle <= 1.62.2 - Authenticated (Contributor+) Stored Cross-Site Scripting in Image Grid widget",
+  "cve": "CVE-2024-5901",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "July 30, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/so-widgets-bundle/siteorigin-widgets-bundle-1622-authenticated-contributor-stored-cross-site-scripting-in-image-grid-widget"
+ },
+ {
+  "title": "vCita Online Booking & Scheduling Calendar <= 4.4.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-35761",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "July 17, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/meeting-scheduler-by-vcita/vcita-online-booking-scheduling-calendar-440-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Arkhe Blocks <= 2.22.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-38675",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "July 10, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/arkhe-blocks/arkhe-blocks-2221-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Caxton – Create Pro page layouts in Gutenberg <= 1.30.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-37948",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "July 10, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/caxton/caxton-create-pro-page-layouts-in-gutenberg-1301-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Genesis Blocks <= 3.1.3 - Authenticated (Contributor+) Stored Cross-Site Scripting via Sharing Block Attributes",
+  "cve": "CVE-2024-3563",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "July 8, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/genesis-blocks/genesis-blocks-313-authenticated-contributor-stored-cross-site-scripting-via-sharing-block-attributes"
+ },
+ {
+  "title": "Elementor Addons by Livemesh <= 8.3.7 - Authenticated (Contributor+) Stored Cross-Site Scripting via Posts Grid",
+  "cve": "CVE-2024-3639",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "July 3, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/addons-for-elementor/elementor-addons-by-livemesh-837-authenticated-contributor-stored-cross-site-scripting-via-posts-grid"
+ },
+ {
+  "title": "Ultimate Addons for Elementor <= 1.36.31 - Authenticated (Contributor+) Privilege Escalation",
+  "cve": "CVE-2024-37455",
+  "cvss": "8.8",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "date": "July 1, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ultimate-elementor/ultimate-addons-for-elementor-13631-authenticated-contributor-privilege-escalation"
+ },
+ {
+  "title": "Church Admin <= 4.4.4 - Missing Authorization",
+  "cve": "CVE-2024-37440",
+  "cvss": "5.3",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "date": "June 28, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/church-admin/church-admin-444-missing-authorization"
+ },
+ {
+  "title": "The Plus Addons for Elementor – Elementor Addons, Page Templates, Widgets, Mega Menu, WooCommerce <= 5.6.0- Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-4983",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 26, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/the-plus-addons-for-elementor-page-builder/the-plus-addons-for-elementor-elementor-addons-page-templates-widgets-mega-menu-woocommerce-560-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Elementor Addon Elements <= 1.13.5 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-4569",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 26, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/addon-elements-for-elementor-page-builder/elementor-addon-elements-1135-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Elegant Themes Icons <= 1.3 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-37100",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 20, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/elegant-themes-icons/elegant-themes-icons-13-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "DImage 360 <= 2.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-35774",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 18, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/dimage-360/dimage-360-20-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Divi <= 4.25.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-5533",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 17, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-themes/Divi/divi-4251-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Church Admin <= 4.4.4 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-35764",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 17, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/church-admin/church-admin-444-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Shariff Wrapper <= 4.6.13 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2024-2695",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 14, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/shariff/shariff-wrapper-4613-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "ElementsKit PRO <= 3.6.1 - Authenticated (Contributor+) Server-Side Request Forgery",
+  "cve": "CVE-2024-4404",
+  "cvss": "8.5",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N",
+  "date": "June 13, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/elementskit/elementskit-pro-361-authenticated-contributor-server-side-request-forgery"
+ },
+ {
+  "title": "Element Pack Elementor Addons (Header Footer, Template Library, Dynamic Grid & Carousel, Remote Arrows) <= 5.6.11 - Authenticated (Contributor+) Stored Cross-Site Scripting via onclick events",
+  "cve": "CVE-2024-3925",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 11, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bdthemes-element-pack-lite/element-pack-elementor-addons-header-footer-template-library-dynamic-grid-carousel-remote-arrows-567-authenticated-contributor-stored-cross-site-scripting-via-onclick-events"
+ },
+ {
+  "title": "SiteOrigin Widgets Bundle <= 1.61.1 - Authenticated (Contributor+) Stored Cross-Site Scripting via SiteOrigin Blog Widget",
+  "cve": "CVE-2024-5090",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 10, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/so-widgets-bundle/siteorigin-widgets-bundle-1611-authenticated-contributor-stored-cross-site-scripting-via-siteorigin-blog-widget"
+ },
+ {
+  "title": "BlockArt Blocks – Gutenberg Blocks, Page Builder Blocks ,WordPress Block Plugin, Sections & Template Library <= 2.1.5 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-35704",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 6, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/blockart-blocks/blockart-blocks-gutenberg-blocks-page-builder-blocks-wordpress-block-plugin-sections-template-library-215-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Block for Font Awesome <= 1.4.4 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-35705",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 6, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/block-for-font-awesome/block-for-font-awesome-144-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Easy Forms for Mailchimp <= 6.9.0 - Missing Authorization",
+  "cve": "CVE-2024-35742",
+  "cvss": "5.3",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "date": "June 6, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/yikes-inc-easy-mailchimp-extender/easy-forms-for-mailchimp-690-missing-authorization"
+ },
+ {
+  "title": "Royal Elementor Addons and Templates <= 1.3.976 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-4488",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 6, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/royal-elementor-addons/royal-elementor-addons-and-templates-13976-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Colibri Page Builder <= 1.0.276 - Authenticated (Contributor+) Stored Cross-Site Scripting via colibri_video_player Shortcode",
+  "cve": "CVE-2024-4451",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 6, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/colibri-page-builder/colibri-page-builder-10276-authenticated-contributor-stored-cross-site-scripting-via-colibri-video-player-shortcode"
+ },
+ {
+  "title": "Post Grid, Form Maker, Popup Maker, WooCommerce Blocks, Post Blocks, Post Carousel – Combo Blocks <= 2.2.80 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-1988",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 6, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/post-grid/post-grid-form-maker-popup-maker-woocommerce-blocks-post-blocks-post-carousel-combo-blocks-2280-authenticated-contributor-stored-cross-site-scripting-1"
+ },
+ {
+  "title": "Clever Fox <= 25.2.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-1768",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 6, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/clever-fox/clever-fox-2520-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "The Plus Addons for Elementor Page Builder Lite <= 5.5.4 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-35709",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 6, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/the-plus-addons-for-elementor-page-builder/the-plus-addons-for-elementor-page-builder-lite-554-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Essential Addons for Elementor – Best Elementor Templates, Widgets, Kits & WooCommerce Builders <= 5.9.22 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-5188",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 5, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/essential-addons-for-elementor-lite/essential-addons-for-elementor-best-elementor-templates-widgets-kits-woocommerce-builders-5922-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Colibri Page Builder <= 1.0.276 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2024-5038",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 5, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/colibri-page-builder/colibri-page-builder-10276-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Blocksy <= 2.0.50 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-5439",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "June 4, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-themes/blocksy/blocksy-2050-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Supreme Modules Lite – Divi Theme, Extra Theme and Divi Builder <= 2.5.51 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-5501",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 31, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/supreme-modules-for-divi/supreme-modules-lite-divi-theme-extra-theme-and-divi-builder-2551-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Spectra – WordPress Gutenberg Blocks <= 2.13.0 - Authenticated (Author+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-4366",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 23, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ultimate-addons-for-gutenberg/spectra-wordpress-gutenberg-blocks-2130-authenticated-author-stored-cross-site-scripting"
+ },
+ {
+  "title": "The Plus Addons for Elementor – Elementor Addons, Page Templates, Widgets, Mega Menu, WooCommerce <= 5.5.2 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-4485",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 23, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/the-plus-addons-for-elementor-page-builder/the-plus-addons-for-elementor-elementor-addons-page-templates-widgets-mega-menu-woocommerce-552-authenticated-contributor-stored-cross-site-scripting-1"
+ },
+ {
+  "title": "The Plus Addons for Elementor – Elementor Addons, Page Templates, Widgets, Mega Menu, WooCommerce <= 5.5.2 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-4484",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 23, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/the-plus-addons-for-elementor-page-builder/the-plus-addons-for-elementor-elementor-addons-page-templates-widgets-mega-menu-woocommerce-552-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "EmbedPress – Embed PDF, Google Docs, Vimeo, Wistia, Embed YouTube Videos, Audios, Maps & Embed Any Documents in Gutenberg & Elementor <= 3.9.12 - Insufficient Authorization Checks to Block Usual",
+  "cve": "CVE-2024-1803",
+  "cvss": "4.3",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+  "date": "May 22, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/embedpress/embedpress-embed-pdf-google-docs-vimeo-wistia-embed-youtube-videos-audios-maps-embed-any-documents-in-gutenberg-elementor-3912-insufficient-authorization-checks-to-block-usual"
+ },
+ {
+  "title": "Prime Slider – Addons For Elementor (Revolution of a slider, Hero Slider, Ecommerce Slider) <= 3.14.1 - Authenticated (Contributor+) Stored Cross-Site Scripting via Pagepiling Widget",
+  "cve": "CVE-2024-3997",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 22, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bdthemes-prime-slider-lite/prime-slider-addons-for-elementor-revolution-of-a-slider-hero-slider-ecommerce-slider-3141-authenticated-contributor-stored-cross-site-scripting-via-pagepiling-widget"
+ },
+ {
+  "title": "Element Pack Elementor Addons (Header Footer, Template Library, Dynamic Grid & Carousel, Remote Arrows) <= 5.6.3 - Form Submission Admin Email Bypass",
+  "cve": "CVE-2024-3927",
+  "cvss": "5.3",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "date": "May 21, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bdthemes-element-pack-lite/element-pack-elementor-addons-header-footer-template-library-dynamic-grid-carousel-remote-arrows-563-form-submission-admin-email-bypass"
+ },
+ {
+  "title": "Blocksy <= 2.0.46 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-4943",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 20, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-themes/blocksy/blocksy-2046-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "GiveWP – Donation Plugin and Fundraising Platform <= 3.10.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-3714",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 17, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/give/givewp-donation-plugin-and-fundraising-platform-3100-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "ShopLentor <= 2.8.7 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-34767",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 17, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/woolentor-addons/shoplentor-287-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Essential Addons for Elementor <= 5.9.15 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-34764",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 17, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/essential-addons-for-elementor-lite/essential-addons-for-elementor-5915-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Rank Math SEO with AI Best SEO Tools <= 1.0.218 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-4617",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 15, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/seo-by-rank-math/rank-math-seo-with-ai-best-seo-tools-10218-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Royal Elementor Addons and Templates <= 1.3.974 - Authenticated (Contributor+) Stored Cross-Site Scripting via Form Builder Widget",
+  "cve": "CVE-2024-3887",
+  "cvss": "5.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+  "date": "May 15, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/royal-elementor-addons/royal-elementor-addons-and-templates-13974-authenticated-contributor-stored-cross-site-scripting-via-form-builder-widget"
+ },
+ {
+  "title": "Sina Extension for Elementor (Slider, Gallery, Form, Modal, Data Table, Tab, Particle, Free Elementor Widgets & Elementor Templates) <= 3.5.3 - Authenticated (Contributor+) Stored Cross-site Scriping via 'Sina Particle Layer'",
+  "cve": "CVE-2024-4373",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 14, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/sina-extension-for-elementor/sina-extension-for-elementor-slider-gallery-form-modal-data-table-tab-particle-free-elementor-widgets-elementor-templates-353-authenticated-contributor-stored-cross-site-scriping-via-sina-particle-layer"
+ },
+ {
+  "title": "All-in-One Video Gallery <= 3.6.5 - Authenticated (Contributor+) Local File Inclusion via aiovg_search_form Shortcode",
+  "cve": "CVE-2024-4670",
+  "cvss": "8.8",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "date": "May 14, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/all-in-one-video-gallery/all-in-one-video-gallery-365-authenticated-contributor-local-file-inclusion-via-aiovg-search-form-shortcode"
+ },
+ {
+  "title": "Sydney Toolbox <= 1.31 - Authenticated (Contributor+) Stored Cross-Site Scripting via aThemes: Portfolio Widget",
+  "cve": "CVE-2024-4473",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 13, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/sydney-toolbox/sydney-toolbox-131-authenticated-contributor-stored-cross-site-scripting-via-athemes-portfolio-widget"
+ },
+ {
+  "title": "Essential Addons for Elementor – Best Elementor Templates, Widgets, Kits & WooCommerce Builders <= 5.9.19 - Authenticated (Contributor+) Stored Cross-Site Scripting via 'Interactive Circles'",
+  "cve": "CVE-2024-4275",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 9, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/essential-addons-for-elementor-lite/essential-addons-for-elementor-best-elementor-templates-widgets-kits-woocommerce-builders-5919-authenticated-contributor-stored-cross-site-scripting-via-interactive-circles"
+ },
+ {
+  "title": "Gutenberg Blocks with AI by Kadence WP <= 3.2.36 - Authenticated (Contributor+) Stored Cross-Site Scripting via Block Link",
+  "cve": "CVE-2024-4481",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 9, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/kadence-blocks/gutenberg-blocks-with-ai-by-kadence-wp-3236-authenticated-contributor-stored-cross-site-scripting-via-block-link"
+ },
+ {
+  "title": "Spectra Pro <= 1.1.5 - Authenticated (Author+) Privilege Escalation",
+  "cve": "CVE-2024-3828",
+  "cvss": "8.8",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "date": "May 9, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/spectra-pro/spectra-pro-115-authenticated-author-privilege-escalation"
+ },
+ {
+  "title": "Content Blocks (Custom Post Widget) <= 3.3.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-34566",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 7, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/custom-post-widget/content-blocks-custom-post-widget-330-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "HT Mega – Absolute Addons For Elementor <= 2.5.0 - Authenticated (Contributor+) Stored Cross-Site Scripting via Gallery Justify",
+  "cve": "CVE-2024-3989",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 7, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ht-mega-for-elementor/ht-mega-absolute-addons-for-elementor-250-authenticated-contributor-stored-cross-site-scripting-via-gallery-justify"
+ },
+ {
+  "title": "Prime Slider – Addons For Elementor (Revolution of a slider, Hero Slider, Ecommerce Slider) <= 3.14.3 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-4339",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 7, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bdthemes-prime-slider-lite/prime-slider-addons-for-elementor-revolution-of-a-slider-hero-slider-ecommerce-slider-3143-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Blocksy <= 2.0.42 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-4158",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "May 3, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-themes/blocksy/blocksy-2042-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "GWP-Histats <= 1.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-33926",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/gwp-histats/gwp-histats-10-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Premium Addons for Elementor <= 4.10.30 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-4203",
+  "cvss": "5.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+  "date": "April 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/premium-addons-for-elementor/premium-addons-for-elementor-41030-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Print-O-Matic <= 2.1.10 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-33936",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/print-o-matic/print-o-matic-2110-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "PB MailCrypt <= 3.1.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-33935",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/pb-mailcrypt-antispam-email-encryption/pb-mailcrypt-310-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Mini Loops <= 1.4.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-33934",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/mini-loops/mini-loops-141-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Login Logout Register Menu <= 2.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-33932",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/login-logout-register-menu/login-logout-register-menu-20-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Giphypress <= 1.6.2 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-33927",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/giphypress/giphypress-162-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "CPO Companion <= 1.1.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-33916",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/cpo-companion/cpo-companion-110-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "AJAX Login and Registration modal popup + inline form <= 2.23 - Authenticated (Author+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-33918",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ajax-login-and-registration-modal-popup/ajax-login-and-registration-modal-popup-inline-form-223-authenticated-author-stored-cross-site-scripting"
+ },
+ {
+  "title": "ProfileGrid <= 5.7.1 - Authenticated (Contributor+) SQL Injection",
+  "cve": "CVE-2024-30241",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 26, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/profilegrid-user-profiles-groups-and-communities/profilegrid-571-authenticated-contributor-sql-injection"
+ },
+ {
+  "title": "Spectra – WordPress Gutenberg Blocks <= 2.12.6 - Authenticated (Contributor+) Path Traversal",
+  "cve": "CVE-2024-3107",
+  "cvss": "4.3",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "date": "April 26, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ultimate-addons-for-gutenberg/spectra-wordpress-gutenberg-blocks-2126-authenticated-contributor-path-traversal"
+ },
+ {
+  "title": "Recencio Book Reviews <= 1.66.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-33648",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/recencio-book-reviews/recencio-book-reviews-1660-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Advanced Most Recent Posts Mod <= 1.6.5.2 - Authenticated (Author+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-33643",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/advanced-most-recent-posts-mod/advanced-most-recent-posts-mod-1652-authenticated-author-stored-cross-site-scripting"
+ },
+ {
+  "title": "Happy Addons for Elementor <= 3.10.6 - Authenticated (Contributor+) Stored Cross-Site Scripting via Calendly Widget",
+  "cve": "CVE-2024-3890",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/happy-elementor-addons/happy-addons-for-elementor-3106-authenticated-contributor-stored-cross-site-scripting-via-calendly-widget"
+ },
+ {
+  "title": "Blocksy <= 2.0.39 - Authenticated (Contributor+) Stored Cross-Site Scripting via About Me block",
+  "cve": "CVE-2024-3747",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 24, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-themes/blocksy/blocksy-2039-authenticated-contributor-stored-cross-site-scripting-via-about-me-block"
+ },
+ {
+  "title": "Essential Addons for Elementor – Best Elementor Templates, Widgets, Kits & WooCommerce Builders <= 5.9.15 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-4003",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 24, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/essential-addons-for-elementor-lite/essential-addons-for-elementor-best-elementor-templates-widgets-kits-woocommerce-builders-5915-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Premium Addons for Elementor <= 4.10.28 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-3885",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 23, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/premium-addons-for-elementor/premium-addons-for-elementor-41028-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "YITH WooCommerce Compare <= 2.37.0 - Cross-Site Request Forgery",
+  "cve": "CVE-2024-32699",
+  "cvss": "4.3",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+  "date": "April 22, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/yith-woocommerce-compare/yith-woocommerce-compare-2370-cross-site-request-forgery"
+ },
+ {
+  "title": "wpDiscuz <= 7.6.15 - Authenticated (Author+) Stored Cross-Site Scripting via Uploaded Image Alternative Text",
+  "cve": "CVE-2024-2477",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 22, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpdiscuz/wpdiscuz-7615-authenticated-author-stored-cross-site-scripting-via-uploaded-image-alternative-text"
+ },
+ {
+  "title": "Royal Elementor Addons and Templates <= 1.3.971 - Authenticated (Contributor+) Stored Cross-Site Scripting via Advanced Accordion Title Tags",
+  "cve": "CVE-2024-3889",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 22, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/royal-elementor-addons/royal-elementor-addons-and-templates-13971-authenticated-contributor-stored-cross-site-scripting-via-advanced-accordion-title-tags"
+ },
+ {
+  "title": "Royal Elementor Addons and Templates <= 1.3.971 - Authenticated (Contributor+) Stored Cross-Site Scripting via HTML Tags",
+  "cve": "CVE-2024-2799",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 22, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/royal-elementor-addons/royal-elementor-addons-and-templates-13971-authenticated-contributor-stored-cross-site-scripting-via-html-tags"
+ },
+ {
+  "title": "Colibri Page Builder <= 1.0.272 - Authenticated (Contributor+) Stored Cross-Site Scripting via 'colibri-gallery-slideshow' Shortcode",
+  "cve": "CVE-2024-3340",
+  "cvss": "5.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+  "date": "April 22, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/colibri-page-builder/colibri-page-builder-10272-authenticated-contributor-stored-cross-site-scripting-via-colibri-gallery-slideshow-shortcode"
+ },
+ {
+  "title": "ShopLentor – WooCommerce Builder for Elementor & Gutenberg +10 Modules – All in One Solution (formerly WooLentor) <= 2.8.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-1057",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 19, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/woolentor-addons/shoplentor-woocommerce-builder-for-elementor-gutenberg-10-modules-all-in-one-solution-formerly-woolentor-281-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Essential Addons for Elementor Pro <= 5.8.11 - Authenticated (Contributor+) Stored Cross-Site Scripting via 'title_html_tag'",
+  "cve": "CVE-2024-3645",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 19, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/essential-addons-elementor/essential-addons-for-elementor-pro-5811-authenticated-contributor-stored-cross-site-scripting-via-title-html-tag"
+ },
+ {
+  "title": "ElementsKit Pro <= 3.6.0 - Authenticated (Contributor+) Stored Cross-Site Scripting via 'ekit_btn_id'",
+  "cve": "CVE-2024-3598",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 18, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/elementskit/elementskit-pro-360-authenticated-contributor-stored-cross-site-scripting-via-ekit-btn-id"
+ },
+ {
+  "title": "Mortgage Calculators WP <= 1.56 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-32581",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 16, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/mortgage-calculators-wp/mortgage-calculators-wp-156-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Essential Addons for Elementor <= 5.9.14 - Authenticated (Contributor+) Store Cross-Site Scripting via Widget URL Attribute",
+  "cve": "CVE-2024-3333",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 16, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/essential-addons-for-elementor-lite/essential-addons-for-elementor-5914-authenticated-contributor-store-cross-site-scripting-via-widget-url-attribute"
+ },
+ {
+  "title": "Otter Blocks – Gutenberg Blocks, Page Builder for Gutenberg Editor & FSE <= 2.6.9 - Authenticated (Contributor+) Stored Cross-Site Scripting via 'titleTag'",
+  "cve": "CVE-2024-3725",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 16, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/otter-blocks/otter-blocks-gutenberg-blocks-page-builder-for-gutenberg-editor-fse-269-authenticated-contributor-stored-cross-site-scripting-via-titletag"
+ },
+ {
+  "title": "HT Mega – Absolute Addons For Elementor <= 2.4.8 - Authenticated (Contributor+) Stored Cross-Site Scripting via Accordion/FAQ",
+  "cve": "CVE-2024-2790",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 16, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ht-mega-for-elementor/ht-mega-absolute-addons-for-elementor-248-authenticated-contributor-stored-cross-site-scripting-via-accordionfaq"
+ },
+ {
+  "title": "Easy Textillate <= 2.02 - Authenticated(Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-32526",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 15, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/easy-textillate/easy-textillate-202-authenticatedcontributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Simple Registration for WooCommerce <= 1.5.6 - Unauthenticated Privilege Escalation",
+  "cve": "CVE-2024-32511",
+  "cvss": "9.8",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "date": "April 15, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/woocommerce-simple-registration/simple-registration-for-woocommerce-156-unauthenticated-privilege-escalation"
+ },
+ {
+  "title": "Shortcodes and extra features for Phlox theme <= 2.15.7 - Authenticated (Contributor+) Stored Cross-Site Scripting via 'aux_timeline' Shortcode",
+  "cve": "CVE-2024-1357",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 15, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/auxin-elements/shortcodes-and-extra-features-for-phlox-theme-2155-authenticated-contributor-stored-cross-site-scripting-via-aux-timeline-shortcode"
+ },
+ {
+  "title": "Shortcodes and extra features for Phlox theme <= 2.15.7 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-1533",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 15, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/auxin-elements/shortcodes-and-extra-features-for-phlox-theme-2155-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "ElementsKit Elementor addons Lite <= 3.0.6 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-32505",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 15, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/elementskit-lite/elementskit-elementor-addons-lite-306-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "GiveWP – Donation Plugin and Fundraising Platform <= 3.6.1 -- Authenticated(Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2024-1957",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 12, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/give/givewp-donation-plugin-and-fundraising-platform-361-authenticatedcontributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content – ProfilePress <= 4.15.4 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-2867",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 11, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wp-user-avatar/paid-membership-plugin-ecommerce-user-registration-form-login-form-user-profile-restrict-content-profilepress-4154-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Otter Blocks – Gutenberg Blocks, Page Builder for Gutenberg Editor & FSE <= 2.6.8 - Authenticated (Contributor+) Stored Cross-Site Scripting via Block Attributes",
+  "cve": "CVE-2024-3343",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 10, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/otter-blocks/otter-blocks-gutenberg-blocks-page-builder-for-gutenberg-editor-fse-268-authenticated-contributor-stored-cross-site-scripting-via-block-attributes"
+ },
+ {
+  "title": "Elementor Addons by Livemesh <= 8.3.6 - Authenticated(Contributor+) Stored Cross-Site Scripting via widget _id attribute",
+  "cve": "CVE-2024-2539",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 9, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/addons-for-elementor/elementor-addons-by-livemesh-836-authenticatedcontributor-stored-cross-site-scripting-via-widget-id-attribute"
+ },
+ {
+  "title": "Carousel, Slider, Gallery by WP Carousel – Image Carousel & Photo Gallery, Post Carousel & Post Grid, Product Carousel & Product Grid for WooCommerce <= 2.6.3 - Authenticated (Contributor+) Stored Cross-Site Scripting via 'sp_wp_carousel_shortcode'",
+  "cve": "CVE-2024-2949",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 5, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wp-carousel-free/carousel-slider-gallery-by-wp-carousel-image-carousel-photo-gallery-post-carousel-post-grid-product-carousel-product-grid-for-woocommerce-263-authenticated-contributor-stored-cross-site-scripting-via-sp-wp-carousel-shortcode"
+ },
+ {
+  "title": "Essential Blocks for Gutenberg <= 4.5.3 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-31306",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 5, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/essential-blocks/essential-blocks-for-gutenberg-453-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Form to Chat App <= 1.1.6 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-31258",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 5, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/form-to-chat/form-to-chat-app-116-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Formsite | Embed online forms to collect orders, registrations, leads, and surveys <= 1.6 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-31257",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 5, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/formsite/formsite-embed-online-forms-to-collect-orders-registrations-leads-and-surveys-16-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "s2Member <= 240315 - Limited Privilege Escalation",
+  "cve": "CVE-2024-31237",
+  "cvss": "9.1",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "date": "April 5, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/s2member/s2member-240315-limited-privilege-escalation"
+ },
+ {
+  "title": "ShopLentor – WooCommerce Builder for Elementor & Gutenberg +12 Modules – All in One Solution (formerly WooLentor) <= 2.8.4 - Authenticated (Contributor+) Stored Cross-site Scripting via QR Code Widget",
+  "cve": "CVE-2024-2946",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 4, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/woolentor-addons/shoplentor-woocommerce-builder-for-elementor-gutenberg-12-modules-all-in-one-solution-formerly-woolentor-284-authenticated-contributor-stored-cross-site-scripting-via-qr-code-widget"
+ },
+ {
+  "title": "Colibri Page Builder <= 1.0.263 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-2839",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 1, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/colibri-page-builder/colibri-page-builder-10263-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Genesis Blocks <= 3.1.2 - Authenticated (Contributor+) Stored Cross-Site Scripting via Block Content",
+  "cve": "CVE-2024-1946",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "April 1, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/genesis-blocks/genesis-blocks-312-authenticatedcontributor-stored-cross-site-scripting-via-block-content"
+ },
+ {
+  "title": "WP Chat App <= 3.6.2 - Authenticated(Contributor+) Stored Cross-Site Scripting via Block Image Attribute",
+  "cve": "CVE-2024-2513",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wp-whatsapp/wp-chat-app-362-authenticatedcontributor-stored-cross-site-scripting-via-block-image-attribute"
+ },
+ {
+  "title": "List category posts <= 0.89.6 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-1051",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/list-category-posts/list-category-posts-0896-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Essential Addons for Elementor <= 5.9.13 - Authenticated (Author+) PHP Object Injection via error_resetpassword",
+  "cve": "CVE-2024-3018",
+  "cvss": "8.8",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "date": "March 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/essential-addons-for-elementor-lite/essential-addons-for-elementor-5913-authenticated-author-php-object-injection-via-error-resetpassword"
+ },
+ {
+  "title": "AI Twitter Feeds (Twitter widget & shortcode) <= 2.4 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-31101",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ai-twitter-feeds/ai-twitter-feeds-twitter-widget-shortcode-24-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "GetResponse for WordPress <= 5.5.35 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-31104",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 29, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/getresponse-integration/getresponse-for-wordpress-5533-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Stackable – Page Builder Gutenberg Blocks <= 3.12.11 - Authenticated(Contributor+) Stored Cross-Site Scripting via Posts Block",
+  "cve": "CVE-2024-2039",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 28, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/stackable-ultimate-gutenberg-blocks/stackable-page-builder-gutenberg-blocks-31211-authenticatedcontributor-stored-cross-site-scripting-via-posts-block"
+ },
+ {
+  "title": "Otter Blocks – Gutenberg Blocks, Page Builder for Gutenberg Editor & FSE <= 2.6.5 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-2841",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 28, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/otter-blocks/otter-blocks-gutenberg-blocks-page-builder-for-gutenberg-editor-fse-265-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Sydney Toolbox <= 1.26 - Authenticated (Contributor+) Stored Cross-Site Scripting via _id",
+  "cve": "CVE-2024-2936",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 28, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/sydney-toolbox/sydney-toolbox-126-authenticated-contributor-stored-cross-site-scripting-via-id"
+ },
+ {
+  "title": "VK All in One Expansion Unit <= 9.96.0.1 - Authenticated (Contributor+) Stored Cross-Site Scripting via className",
+  "cve": "CVE-2024-2170",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/vk-all-in-one-expansion-unit/vk-all-in-one-expansion-unit-99601-authenticated-contributor-stored-cross-site-scripting-via-classname"
+ },
+ {
+  "title": "Real Media Library: Media Library Folder & File Manager <= 4.22.7 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-2027",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/real-media-library-lite/real-media-library-media-library-folder-file-manager-4227-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Essential Addons for Elementor – Best Elementor Templates, Widgets, Kits & WooCommerce Builders <= 5.9.11 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-2650",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/essential-addons-for-elementor-lite/essential-addons-for-elementor-best-elementor-templates-widgets-kits-woocommerce-builders-5911-authenticated-contributor-stored-cross-site-scripting-1"
+ },
+ {
+  "title": "affiliate-toolkit <= 3.4.5 - Authenticated (Author+) Stored Cross-Site Scripting via ratings",
+  "cve": "CVE-2024-29817",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/affiliate-toolkit-starter/affiliate-toolkit-345-authenticated-author-stored-cross-site-scripting-via-ratings"
+ },
+ {
+  "title": "Exchange Rates Widget <= 1.4.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-29814",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/exchange-rates-widget/exchange-rates-widget-140-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Fancy Comments WordPress <= 1.2.14 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2024-29804",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/fancy-facebook-comments/fancy-comments-wordpress-1214-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "FlatPM < 3.1.05 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-29803",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/flatpm-wp/flatpm-3105-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Fullscreen Galleria <= 1.6.11 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-29801",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/fullscreen-galleria/fullscreen-galleria-1611-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "WP Fast Total Search <= 1.59.211 - Authenticated (Contributor+) Stored Cross-Site Scripting via WPFTS Live Search Widget",
+  "cve": "CVE-2024-29799",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/fulltext-search/wp-fast-total-search-159211-authenticated-contributor-stored-cross-site-scripting-via-wpfts-live-search-widget"
+ },
+ {
+  "title": "Gratisfaction <= 4.3.4 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-29798",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/gratisfaction-all-in-one-loyalty-contests-referral-program-for-woocommerce/gratisfaction-434-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Grid Shortcodes <= 1.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-29797",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/grid-shortcodes/grid-shortcodes-11-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Hot Random Image <= 1.8.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-29796",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/hot-random-image/hot-random-image-181-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Media Cloud for Amazon S3, Imgix, Google Cloud Storage, DigitalOcean Spaces and more <= 4.5.24 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2024-29795",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ilab-media-tools/media-cloud-for-amazon-s3-imgix-google-cloud-storage-digitalocean-spaces-and-more-4524-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "MailChimp Forms by MailMunch <= 3.2.2 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2024-29793",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/mailchimp-forms-by-mailmunch/mailchimp-forms-by-mailmunch-322-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "OneClick Chat to Order <= 1.0.5 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-29789",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/oneclick-whatsapp-order/oneclick-chat-to-order-105-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Podlove Web Player <= 5.7.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-29788",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 25, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/podlove-web-player/podlove-web-player-571-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "EmbedPress – Embed PDF, Google Docs, Vimeo, Wistia, Embed YouTube Videos, Audios, Maps & Embed Any Documents in Gutenberg & Elementor <= 3.9.12 - Authenticated (Contributor+) Stored Cross-site Scripting via 'embedpress_doc_custom_color'",
+  "cve": "CVE-2024-2688",
+  "cvss": "5.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+  "date": "March 22, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/embedpress/embedpress-embed-pdf-google-docs-vimeo-wistia-embed-youtube-videos-audios-maps-embed-any-documents-in-gutenberg-elementor-3912-authenticated-contributor-stored-cross-site-scripting-via-embedpress-doc-custom-color"
+ },
+ {
+  "title": "SEOPress – On-site SEO <= 7.5.2.1 - Authenticated (Author+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-2165",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 22, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wp-seopress/seopress-on-site-seo-7521-authenticated-author-stored-cross-site-scripting"
+ },
+ {
+  "title": "Blocksy Companion <= 2.0.31 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-2392",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 21, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/blocksy-companion/blocksy-companion-2031-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Getwid – Gutenberg Blocks <= 2.0.5 - Authenticated(Contributor+) Stored Cross-Site Scripting via Block Content",
+  "cve": "CVE-2024-1948",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 21, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/getwid/getwid-gutenberg-blocks-205-authenticatedcontributor-stored-cross-site-scripting-via-block-content"
+ },
+ {
+  "title": "Rank Math SEO with AI SEO Tools <= 1.0.214 - Authenticated(Contributor+) Stored Cross-Site Scripting via HowTo block attributes",
+  "cve": "CVE-2024-2536",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 21, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/seo-by-rank-math/rank-math-seo-with-ai-seo-tools-10214-authenticatedcontributor-stored-cross-site-scripting-via-howto-block-attributes"
+ },
+ {
+  "title": "Translate WordPress and go Multilingual – Weglot <= 4.2.5 - Authenticated (Contributor+) Stored Cross-Site Scripting via Block Attributes",
+  "cve": "CVE-2024-2124",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 19, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/weglot/translate-wordpress-and-go-multilingual-weglot-425-authenticated-contributor-stored-cross-site-scripting-via-block-attributes"
+ },
+ {
+  "title": "Smart Online Order for Clover <= 1.5.5 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-29115",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 16, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/clover-online-orders/smart-online-order-for-clover-155-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Otter Blocks – Gutenberg Blocks, Page Builder for Gutenberg Editor & FSE <= 2.6.4 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-2226",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 13, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/otter-blocks/otter-blocks-gutenberg-blocks-page-builder-for-gutenberg-editor-fse-264-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Easy Accordion – Best Accordion FAQ Plugin for WordPress <= 2.3.4 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-1363",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 8, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/easy-accordion-free/easy-accordion-best-accordion-faq-plugin-for-wordpress-234-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Blocksy <= 2.0.26 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-1767",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 8, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-themes/blocksy/blocksy-2026-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "EmbedPress – Embed PDF, Google Docs, Vimeo, Wistia, Embed YouTube Videos, Audios, Maps & Embed Any Documents in Gutenberg & Elementor <= 3.9.10 - Authenticated (Contributor+) Stored Cross-Site Scripting via Wistia Block",
+  "cve": "CVE-2024-1802",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 7, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/embedpress/embedpress-embed-pdf-google-docs-vimeo-wistia-embed-youtube-videos-audios-maps-embed-any-documents-in-gutenberg-elementor-3910-authenticated-contributor-stored-cross-site-scripting-via-wistia-block"
+ },
+ {
+  "title": "WP Chat App <= 3.6.1 - Authenticated (Contributor+) Stored Cross-Site Scripting via Block Attributes",
+  "cve": "CVE-2024-1761",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 6, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wp-whatsapp/wp-chat-app-361-authenticated-contributor-stored-cross-site-scripting-via-block-attributes"
+ },
+ {
+  "title": "Booster for WooCommerce <= 7.1.7 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortocde",
+  "cve": "CVE-2024-1534",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "March 6, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/woocommerce-jetpack/booster-for-woocommerce-717-authenticated-contributor-stored-cross-site-scripting-via-shortocde"
+ },
+ {
+  "title": "Essential Blocks – Page Builder Gutenberg Blocks, Patterns & Templates <= 4.5.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-1854",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 28, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/essential-blocks/essential-blocks-page-builder-gutenberg-blocks-patterns-templates-451-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content – ProfilePress <= 4.15.0 - Authenticated (Contributor+) Stored Cross-Site Scripting via [reg-select-role] Shortcode",
+  "cve": "CVE-2024-1409",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 22, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wp-user-avatar/paid-membership-plugin-ecommerce-user-registration-form-login-form-user-profile-restrict-content-profilepress-4150-authenticated-contributor-stored-cross-site-scripting-via-reg-select-role-shortcode"
+ },
+ {
+  "title": "FormFacade <= 1.0.0 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2024-25934",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 20, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/formfacade/formfacade-100-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Schema & Structured Data for WP & AMP <= 1.26 - Missing Authorization to reCaptcha Key Modification",
+  "cve": "CVE-2024-1288",
+  "cvss": "4.3",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+  "date": "February 19, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/schema-and-structured-data-for-wp/schema-structured-data-for-wp-amp-126-missing-authorization-to-recaptcha-key-modification"
+ },
+ {
+  "title": "Booster for WooCommerce <= 7.1.6 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-1054",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 12, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/woocommerce-jetpack/booster-for-woocommerce-716-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "MyWaze <= 1.6 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2024-25594",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 12, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/my-waze/mywaze-16-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "NEX-Forms – Ultimate Form Builder <= 8.5.5 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2024-25593",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 12, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/nex-forms-express-wp-form-builder/nex-forms-ultimate-form-builder-855-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Paytium: Mollie payment forms & donations <= 4.4.2 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2024-25099",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 12, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/paytium/paytium-mollie-payment-forms-donations-442-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "PB oEmbed HTML5 Audio <= 2.6 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2024-25098",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 12, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/pb-oembed-html5-audio-with-cache-support/pb-oembed-html5-audio-26-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "TNC PDF viewer <= 2.8.0 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2024-25097",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 12, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/pdf-viewer-by-themencode/tnc-pdf-viewer-280-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "PJ News Ticker <= 1.9.5 - Authenticated(Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2024-25094",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 12, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/pj-news-ticker/pj-news-ticker-6810-authenticatedcontributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Before After Image Slider WP <= 2.2 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2024-24931",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 9, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/before-after-image-slider/before-after-image-slider-wp-22-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Buttons Shortcode and Widget <= 1.16 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2024-24930",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 9, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/buttons-shortcode-and-widget/buttons-shortcode-and-widget-116-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Content Cards <= 0.9.7 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2024-24928",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 9, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/content-cards/content-cards-097-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Knowledge Base for Documentation, FAQs with AI Assistance <= 11.30.2 - Unauthenticated PHP Object Injection in is_article_recently_viewed",
+  "cve": "CVE-2024-24842",
+  "cvss": "9.8",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "date": "February 2, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/echo-knowledge-base/knowledge-base-for-documentation-faqs-with-ai-assistance-11302-unauthenticated-php-object-injection-in-is-article-recently-viewed"
+ },
+ {
+  "title": "GDPR Data Request Form <= 1.6 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-24836",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 2, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/gdpr-data-request-form/gdpr-data-request-form-16-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content – ProfilePress <= 4.14.3 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-1046",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "February 1, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wp-user-avatar/paid-membership-plugin-ecommerce-user-registration-form-login-form-user-profile-restrict-content-profilepress-4143-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Heateor Social Login <= 1.1.30 - Authenticated(Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2024-24712",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 31, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/heateor-social-login/heateor-social-login-1130-authenticatedcontributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Event Manager and Tickets Selling Plugin for WooCommerce – WpEvently <= 4.1.1 - Authenticated (Contributor+) PHP Object Injection in mep_event_meta_save",
+  "cve": "CVE-2024-24796",
+  "cvss": "8.8",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "date": "January 31, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/mage-eventpress/event-manager-and-tickets-selling-plugin-for-woocommerce-wpevently-411-authenticated-contributor-php-object-injection-in-mep-event-meta-save"
+ },
+ {
+  "title": "Scheduling Plugin – Online Booking for WordPress <= 3.5.10 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-23517",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 30, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/calendar-booking/scheduling-plugin-online-booking-for-wordpress-3510-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "CC BMI Calculator <= 2.0.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-23516",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 30, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/cc-bmi-calculator/cc-bmi-calculator-201-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Click To Tweet <= 2.0.14 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-23514",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 30, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/click-to-tweet/click-to-tweet-2014-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "PDF Viewer & 3D PDF Flipbook – DearPDF <= 2.0.38 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-23505",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 19, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/dearpdf-lite/pdf-viewer-3d-pdf-flipbook-dearpdf-2038-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Formzu WP <= 1.6.7 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-22310",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 19, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/formzu-wp/formzu-wp-167-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Posts List Designer by Category – List Category Posts Or Recent Posts <= 3.3.2 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-23502",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 19, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/post-list-designer/posts-list-designer-by-category-list-category-posts-or-recent-posts-332-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Booking for Appointments and Events Calendar – Amelia <= 1.0.93 - Authenticated(Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2023-6808",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 18, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ameliabooking/booking-for-appointments-and-events-calendar-amelia-1093-authenticatedcontributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Albo Pretorio Online <= 4.6.6 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-22302",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 17, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/albo-pretorio-on-line/albo-pretorio-online-466-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "CBX Map for Google Map & OpenStreetMap <= 1.1.11 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-22297",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 17, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/cbxgooglemap/cbx-map-for-google-map-openstreetmap-1111-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Post Grid, Image Gallery & Portfolio for Elementor | PowerFolio <= 3.1 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2024-22150",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 16, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/portfolio-elementor/post-grid-image-gallery-portfolio-for-elementor-powerfolio-31-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "List category posts <= 0.89.3 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-6994",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 9, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/list-category-posts/list-category-posts-0893-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Beds24 Online Booking <= 2.0.24 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-52228",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 8, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/beds24-online-booking/beds24-online-booking-2023-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Football pool <= 2.11.3 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2024-29802",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 8, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/football-pool/football-pool-2113-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Ideal Interactive Map <= 1.2.4 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-52189",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 3, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ideal-interactive-map/ideal-interactive-map-124-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Infogram <= 1.6.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-52191",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 3, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/infogram/infogram-161-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Keap Official Opt-in Forms <= 2.0.3 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-52192",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 3, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/infusionsoft-official-opt-in-forms/keap-official-opt-in-forms-1011-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "oEmbed Gist <= 4.9.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-52194",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 3, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/oembed-gist/oembed-gist-491-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Posts to Page <= 1.7 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-52195",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 3, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/posts-to-page/posts-to-page-17-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Private Google Calendars <= 20231125 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-52198",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 3, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/private-google-calendars/private-google-calendars-20231125-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Page Builder: Live Composer <= 1.5.23 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-52193",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 3, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/live-composer-page-builder/page-builder-live-composer-1523-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Randomize <= 1.4.3 - Authenticated (Contributor+) SQL Injection",
+  "cve": "CVE-2023-52204",
+  "cvss": "8.8",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "date": "January 3, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/randomize/randomize-143-authenticated-contributor-sql-injection"
+ },
+ {
+  "title": "Footer Putter <= 1.17 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-52188",
+  "cvss": "6.5",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L",
+  "date": "January 3, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/footer-putter/footer-putter-117-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "EmbedPress – Embed PDF, YouTube, Google Docs, Vimeo, Wistia Videos, Audios, Maps & Any Documents in Gutenberg & Elementor <= 3.9.5 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-6986",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "January 2, 2024",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/embedpress/embedpress-embed-pdf-youtube-google-docs-vimeo-wistia-videos-audios-maps-any-documents-in-gutenberg-elementor-395-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "CBX Bookmark & Favorite <= 1.7.13 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-51514",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 27, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/cbxwpbookmark/cbx-bookmark-favorite-1713-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "WPCS – WordPress Currency Switcher Professional <= 1.2.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-51506",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 27, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/currency-switcher/wpcs-wordpress-currency-switcher-professional-120-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "CRM Perks Forms <= 1.1.2 - Authenticated (Administrator+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-51536",
+  "cvss": "4.4",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 27, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/crm-perks-forms/crm-perks-forms-112-authenticated-administrator-stored-cross-site-scripting"
+ },
+ {
+  "title": "Custom Post Carousels with Owl <= 1.4.6 - Authenticated (Editor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-51493",
+  "cvss": "4.4",
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 27, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/dd-post-carousel/custom-post-carousels-with-owl-146-authenticated-editor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Dan's Embedder for Google Calendar <= 1.2 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-51504",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 27, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/dans-gcal/dans-embedder-for-google-calendar-12-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Easy Video Player <= 1.2.2.10 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-51689",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 27, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/easy-video-player/easy-video-player-12210-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Calculated Fields Form <= 1.2.28 - Authenticated (Contributor+) Open Redirect via Shortcode",
+  "cve": "CVE-2023-51517",
+  "cvss": "4.3",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+  "date": "December 27, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/calculated-fields-form/calculated-fields-form-1228-authenticated-contributor-open-redirect-via-shortcode"
+ },
+ {
+  "title": "Back Button Widget <= 1.6.3 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-51399",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 26, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/back-button-widget/back-button-widget-163-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Advanced Access Manager <= 6.9.15 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-50881",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 26, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/advanced-access-manager/advanced-access-manager-6915-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "WordPress Infinite Scroll – Ajax Load More <= 6.1.0.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-50874",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 22, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ajax-load-more/wordpress-infinite-scroll-ajax-load-more-6101-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Booking for Appointments and Events Calendar – Amelia <= 1.0.85 - Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-50860",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 22, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ameliabooking/booking-for-appointments-and-events-calendar-amelia-1085-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "BookingPress <= 1.0.72 - Authenticated (Contributor+) SQL Injection",
+  "cve": "CVE-2023-50841",
+  "cvss": "8.8",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "date": "December 21, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bookingpress-appointment-booking/bookingpress-1072-authenticated-contributor-sql-injection"
+ },
+ {
+  "title": "Booking Manager <= 2.1.5 - Authenticated(Contributor+) SQL Injection via Shortcode",
+  "cve": "CVE-2023-50840",
+  "cvss": "8.8",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "date": "December 21, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/booking-manager/booking-manager-215-authenticatedcontributor-sql-injection-via-shortcode"
+ },
+ {
+  "title": "Currency Converter Widget <= 3.0.2 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2023-50822",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 19, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/currency-converter-widget/currency-converter-widget-302-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "CSS & JavaScript Toolbox <= 11.8 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2023-50823",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 19, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/css-javascript-toolbox/css-javascript-toolbox-117-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "AMP for WP – Accelerated Mobile Pages <= 1.0.92 - Authenticated (Contributor+) Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-6782",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 18, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/accelerated-mobile-pages/amp-for-wp-accelerated-mobile-pages-1092-authenticated-contributor-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Alma – Pay in installments or later for WooCommerce <= 5.2.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-50369",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 7, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/alma-gateway-for-woocommerce/alma-pay-in-installments-or-later-for-woocommerce-513-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Shortcodes and extra features for Phlox theme <= 2.15.4 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2023-50368",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 6, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/auxin-elements/shortcodes-and-extra-features-for-phlox-theme-2152-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Annual Archive <= 1.6.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-49847",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 6, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/anual-archive/annual-archive-160-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Author Avatars List/Block <= 2.1.17 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-49846",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 6, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/author-avatars/author-avatars-listblock-2116-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Bold Page Builder <= 4.6.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-49823",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "December 5, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bold-page-builder/bold-page-builder-461-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "10to8 Online Appointment Booking System <= 1.0.9 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2023-49173",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 29, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/10to8-online-booking/10to8-online-appointment-booking-system-109-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Ads by datafeedr.com <= 1.2.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-49169",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 29, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ads-by-datafeedrcom/ads-by-datafeedrcom-120-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Accelerated Mobile Pages <= 1.0.88.1 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2023-48321",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 28, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/accelerated-mobile-pages/accelerated-mobile-pages-10881-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Credit Tracker <= 1.1.17 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-49152",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 28, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/credit-tracker/credit-tracker-1117-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Currency Converter Calculator <= 1.3.1 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2023-49149",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 28, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/currency-converter-calculator/currency-converter-calculator-131-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Crypto Converter Widget <= 1.8.3 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-49150",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 28, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/crypto-converter-widget/crypto-converter-widget-181-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Easy Social Icons <= 3.2.4 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2023-48336",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 23, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/easy-social-icons/easy-social-icons-324-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Bootstrap Shortcodes Ultimate <= 4.3.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-47851",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 20, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bs-shortcode-ultimate/bootstrap-shortcodes-ultimate-431-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Accordion <= 2.6 - Authenticated (Editor+) Stored Cross-Site Scripting via accordion settings",
+  "cve": "CVE-2023-47809",
+  "cvss": "5.5",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 15, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/accordions-wp/accordion-26-authenticated-editor-stored-cross-site-scripting-via-accordion-settings"
+ },
+ {
+  "title": "Add Widgets to Page <= 1.3.2 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-47808",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 15, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/add-widgets-to-page/add-widgets-to-page-132-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Ajax Domain Checker <= 1.3.0 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-47810",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 15, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ajax-domain-checker/ajax-domain-checker-130-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Anywhere Flash Embed <= 1.0.5 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-47811",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 15, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/anywhere-flash-embed/anywhere-flash-embed-105-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Bamboo Columns <= 1.6.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-47812",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 15, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bamboo-columns/bamboo-columns-161-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Better RSS Widget <= 2.8.1 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-47813",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 15, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/better-rss-widget/better-rss-widget-281-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "BMI Calculator Plugin <= 1.0.3 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-47814",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 15, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bmi-calculator-shortcode/bmi-calculator-plugin-103-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "BP Profile Shortcodes Extra <= 2.5.2 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-47815",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 15, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bp-profile-shortcodes-extra/bp-profile-shortcodes-extra-252-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Daily Prayer Time <= 2023.10.13 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2023-47817",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 15, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/daily-prayer-time-for-mosques/daily-prayer-time-20231013-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Email Encoder Bundle <= 2.1.8 - Authenticated (Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2023-47821",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 15, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/email-encoder-bundle/email-encoder-bundle-218-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Apollo13 Framework Extensions <= 1.9.0 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-47190",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 3, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/apollo13-framework-extensions/apollo13-framework-extensions-190-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Easy PayPal Shopping Cart <= 1.1.10 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-47239",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "November 3, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/easy-paypal-shopping-cart/easy-paypal-shopping-cart-1110-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "MomentoPress for Momento360 <= 1.0.1 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-46782",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "October 23, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/cmyee-momentopress/momentopress-for-momento360-101-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Ajax Archive Calendar <= 2.6.7 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-46069",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "October 16, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ajax-archive-calendar/ajax-archive-calendar-267-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Charitable <= 1.7.0.13 - Authenticated(Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-47816",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "October 11, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/charitable/charitable-17013-authenticatedcontributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Add to Calendar Button <= 1.5.0 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-46613",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "October 10, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/add-to-calendar-button/add-to-calendar-button-150-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Geo Controller <= 8.5.2 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-51513",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "October 4, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/cf-geoplugin/geo-controller-852-authenticated-administrator-stored-cross-site-scripting"
+ },
+ {
+  "title": "Slideshow, Image Slider by 2J <= 1.3.54 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-44242",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "September 29, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/2j-slideshow/slideshow-image-slider-by-2j-1354-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "bbp style pack <= 5.6.7 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-44984",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "September 28, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bbp-style-pack/bbp-style-pack-567-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "BuddyMeet <= 2.2.0 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-44985",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "September 28, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/buddymeet/buddymeet-220-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Booking Calendar <= 9.7.3.3 - Authenticated(Contributor+) Stored Cross-Site Scripting via shortcode",
+  "cve": "CVE-2023-51520",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "September 25, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/booking/booking-calendar-9733-authenticatedcontributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "Anchor Episodes Index (Spotify for Podcasters) <= 2.1.7 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-44145",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "September 20, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/anchor-episodes-index/anchor-episodes-index-spotify-for-podcasters-217-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "Simple Download Counter <= 1.6 - Authenticated (Contributor+) Stored Cross-Site Scripting",
+  "cve": "CVE-2023-4838",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "September 8, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/simple-download-counter/simple-download-counter-16-authenticated-contributor-stored-cross-site-scripting"
+ },
+ {
+  "title": "User Submitted Posts <= 20230901 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-7251",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "September 6, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/user-submitted-posts/user-submitted-posts-20230901-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "User Submitted Posts – Enable Users to Submit Posts from the Front End <= 20230811 - Authenticated (Contributor+) Stored Cross-Site Scripting via Shortcode",
+  "cve": "CVE-2023-4779",
+  "cvss": "6.4",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+  "date": "September 5, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/user-submitted-posts/user-submitted-posts-enable-users-to-submit-posts-from-the-front-end-20230811-authenticated-contributor-stored-cross-site-scripting-via-shortcode"
+ },
+ {
+  "title": "User Submitted Posts <= 20230809 - Unauthenticated Stored Cross-Site Scripting via 'user-submitted-content'",
+  "cve": "CVE-2023-4308",
+  "cvss": "7.2",
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+  "date": "August 14, 2023",
+  "href": "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/user-submitted-posts/user-submitted-posts-20230809-unauthenticated-stored-cross-site-scripting-via-user-submitted-content"
+ }
+]

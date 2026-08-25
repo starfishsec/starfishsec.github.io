@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import { certGlossary, initials, team, teamHeading } from "@/content/team";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
@@ -28,12 +29,26 @@ export function Team() {
             <li key={member.name} className="h-full">
               <Reveal delay={i * 0.08} className="h-full">
                 <Card className="flex h-full flex-col gap-5">
-                  {/* Monogram avatar — no fake photos. TODO(owner): real headshots. */}
-                  <div
-                    aria-hidden="true"
-                    className="flex size-14 items-center justify-center rounded-full border border-accent/30 bg-accent-dim font-mono text-lg text-accent"
-                  >
-                    {initials(member.name)}
+                  <div className="flex items-start justify-between gap-4">
+                    {/* Monogram avatar — no fake photos. TODO(owner): real headshots. */}
+                    <div
+                      aria-hidden="true"
+                      className="flex size-14 items-center justify-center rounded-full border border-accent/30 bg-accent-dim font-mono text-lg text-accent"
+                    >
+                      {initials(member.name)}
+                    </div>
+                    {member.linkedin ? (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer me"
+                        aria-label={`${member.name} on LinkedIn (opens in a new tab)`}
+                        className="inline-flex items-center gap-1 rounded-btn border border-border px-2.5 py-1 font-mono text-[0.75rem] text-fg-muted transition-colors hover:border-accent hover:text-fg"
+                      >
+                        LinkedIn
+                        <ArrowUpRight className="size-3.5" aria-hidden="true" />
+                      </a>
+                    ) : null}
                   </div>
                   <div>
                     <h3 className="text-h3">{member.name}</h3>
@@ -43,9 +58,6 @@ export function Team() {
                         <span className="font-mono text-fg-muted">@{member.handle}</span>
                       ) : null}
                     </p>
-                    {member.roleTodo ? (
-                      <TodoNote className="mt-2">{member.roleTodo}</TodoNote>
-                    ) : null}
                   </div>
                   <ul className="flex flex-wrap gap-2" aria-label="Certifications">
                     {member.certs.map((cert) => (

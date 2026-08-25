@@ -7,12 +7,9 @@ export function StatsBar() {
   return (
     <section aria-label="Key figures" className="border-y border-border bg-bg-elev/40">
       <Container className="px-0 md:px-8">
-        <ul className="grid grid-cols-2 lg:grid-cols-4">
+        <ul className="grid divide-border max-sm:divide-y sm:grid-cols-3 sm:divide-x">
           {stats.map((stat, i) => (
-            <li
-              key={stat.label}
-              className="border-border border-l first:border-l-0 max-lg:nth-3:border-l-0 max-lg:nth-[n+3]:border-t"
-            >
+            <li key={stat.label}>
               <Reveal delay={i * 0.08} className="h-full">
                 <StatCard {...stat} />
               </Reveal>

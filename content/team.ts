@@ -7,9 +7,9 @@ export interface TeamMember {
   name: string;
   handle?: string;
   role: string;
-  /** Set when the role still needs owner confirmation. */
-  roleTodo?: string;
   certs: Certification[];
+  /** Public profile links. */
+  linkedin?: string;
   /** TODO(owner): one-line bios. `undefined` renders a visible placeholder. */
   bio?: string;
 }
@@ -29,15 +29,27 @@ const SRT: Certification = { short: "SRT Hero", long: "Synack Red Team, Hero tie
 
 export const certGlossary: Certification[] = [OSWE, CPTS, SRT];
 
+// Roles + LinkedIn confirmed by owner 2026-08-25 (docs/02 §8).
 export const team: TeamMember[] = [
-  { name: "Phuoc Pham", role: "Founder", certs: [OSWE] },
-  { name: "An Ngo", handle: "ancorn_", role: "Co-Founder", certs: [OSWE, SRT] },
+  {
+    name: "Phuoc Pham",
+    role: "Founder",
+    certs: [OSWE],
+    linkedin: "https://www.linkedin.com/in/phamphuoc/",
+  },
+  {
+    name: "An Ngo",
+    handle: "ancorn_",
+    role: "Co-Founder",
+    certs: [OSWE, SRT],
+    linkedin: "https://www.linkedin.com/in/ngothienan/",
+  },
   {
     name: "Dau Hoang Tai",
     handle: "taidh",
-    role: "Security Researcher",
-    roleTodo: "TODO(owner): confirm title",
+    role: "Co-Founder",
     certs: [CPTS, SRT],
+    linkedin: "https://www.linkedin.com/in/taidh/",
   },
 ];
 
