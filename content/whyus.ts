@@ -1,4 +1,4 @@
-export type WhyIcon = "fingerprint" | "book-open-check" | "award" | "file-check";
+export type WhyIcon = "fingerprint" | "book-open-check" | "award" | "file-check" | "zap" | "coins";
 
 export interface WhyPoint {
   title: string;
@@ -13,25 +13,27 @@ export const whyHeading = {
 
 export const whyPoints: WhyPoint[] = [
   {
-    title: "AI speed, expert judgment.",
+    title: "AI-powered, expert-validated.",
     description:
-      "Our platform covers more ground, faster. Researchers behind 200+ CVEs decide what's real and what matters.",
+      "Our platform covers more ground, faster. Researchers behind 200+ CVEs decide what's real and what matters — every finding is human-confirmed.",
     icon: "fingerprint",
   },
   {
-    title: "Track record in the open.",
-    description: "200+ CVEs is public, verifiable proof of the depth behind the platform.",
-    icon: "book-open-check",
+    title: "Fast turnaround.",
+    description:
+      "AI does the heavy lifting, so validated findings and working exploits reach you fast — no waiting weeks for a final report.",
+    icon: "zap",
   },
   {
-    title: "Built by people who find bugs for a living.",
+    title: "Pricing that makes sense.",
     description:
-      "OSWE- and CPTS-certified, Synack Red Team researchers designed the methodology and review every result.",
-    icon: "award",
+      "AI efficiency means senior-researcher quality without the boutique-consultancy invoice. Clear, scoped pricing — no surprises.",
+    icon: "coins",
   },
   {
     title: "Proof over paperwork.",
-    description: "Every finding comes with a working exploit and clear remediation — not a scanner export.",
+    description:
+      "Every finding comes with a working exploit and clear remediation — not a scanner export. 200+ CVEs in the public record back it up.",
     icon: "file-check",
   },
 ];

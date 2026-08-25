@@ -8,6 +8,8 @@ import {
   ShieldCheck,
   Swords,
   Terminal,
+  Zap,
+  Coins,
   type LucideIcon,
 } from "lucide-react";
 import type { ServiceIcon } from "@/content/services";
@@ -24,4 +26,6 @@ export const iconMap: Record<ServiceIcon | WhyIcon, LucideIcon> = {
   "book-open-check": BookOpenCheck,
   award: Award,
   "file-check": FileCheck2,
+  zap: Zap,
+  coins: Coins,
 };

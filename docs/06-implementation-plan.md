@@ -139,6 +139,11 @@ Mostly resolved as of 2026-08-25. Remaining `TODO(owner)` — surface them, don'
 - Copy discipline: only "AI-powered" / "expert-validated" statements. No platform specifics (coverage %, autonomy level, benchmarks, model names) until the owner confirms them.
 - Team cards now show **Highlights** (public, sourced achievements with links) and a short bio drafted from those public facts. LinkedIn is auth-walled (HTTP 999) so nothing was pulled from it; headshots still `TODO(owner)` (send files → `public/team/*.jpg`).
 
+### USP round (2026-08-25, owner feedback)
+
+- USPs stressed everywhere: **AI-powered · expert-validated · fast delivery · convenient pricing** — hero eyebrow/sub/supporting line, new `UspStrip` section under the hero (`content/hero.ts` → `usps`), Why-Us rewritten around the four, services/process/CTA/SEO touched. No SLA numbers, no prices (owner: "no specifics").
+- Team facts verified from public records: Phuoc Pham = `p3tl0v3r` (Wordfence: 4 CVEs, VNPT Cyber Immunity); his JSON added to `data/wordfence/` → dataset now 247 unique CVEs. Tai: HackerOne profile exists (1 IBB report) but his personal site (`blog.taidh.xyz`) no longer resolves and HackMD/X are unreachable from this network; Firefox/PAM360 highlights remain flagged `TODO(owner): confirm`. LinkedIn is auth-walled and Chrome's cookie DB is locked while Chrome runs.
+
 ### Remaining `TODO(owner)` (all visible in the UI)
 
 Team bios & headshots · company social (X, GitHub) · CVEs credited to Phuoc / taidh and non-WordPress advisories · announcement link target · logo SVG · disclosure window / PGP · privacy legal review · founding year / location.

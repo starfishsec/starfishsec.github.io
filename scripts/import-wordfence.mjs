@@ -18,6 +18,7 @@ const OUT = join(process.cwd(), "content", "cves.data.ts");
 /** slug → handle shown on the site */
 const RESEARCHERS = {
   "ngo-thien-an-ancorn": "ancorn_",
+  "phuoc-pham-p3tl0v3r": "p3tl0v3r",
 };
 
 const MONTHS = {

@@ -46,12 +46,19 @@ export const certGlossary: Certification[] = [OSWE, CPTS, SRT];
 export const team: TeamMember[] = [
   {
     name: "Phuoc Pham",
+    handle: "p3tl0v3r",
     role: "Founder",
     certs: [OSWE],
     linkedin: "https://www.linkedin.com/in/phamphuoc/",
-    bio: "Founder. OSWE-certified web-application security researcher who leads Starfish's offensive methodology and the expert review behind every engagement.",
-    // TODO(owner): no public research record found under this name — add CVEs / talks / programs.
-    achievements: [{ text: "OffSec Web Expert (OSWE) certified" }],
+    bio: "Founder. OSWE-certified web-application security researcher with published WordPress CVEs to his name, who leads Starfish's offensive methodology and the expert review behind every engagement.",
+    // TODO(owner): add non-public-record achievements (programs, talks, bounties) if desired.
+    achievements: [
+      {
+        text: "4 CVEs credited on Wordfence Intelligence (stored XSS in widely used WordPress plugins)",
+        href: "https://www.wordfence.com/threat-intel/vulnerabilities/researchers/phuoc-pham-p3tl0v3r",
+      },
+      { text: "OffSec Web Expert (OSWE) certified" },
+    ],
   },
   {
     name: "An Ngo",
@@ -86,12 +93,16 @@ export const team: TeamMember[] = [
     role: "Co-Founder",
     certs: [CPTS, SRT],
     linkedin: "https://www.linkedin.com/in/taidh/",
-    bio: "Co-Founder. Penetration tester and CTF player with a browser- and enterprise-software research streak — dozens of Firefox security bugs reported to Mozilla in a single research sprint. CPTS-certified Synack Red Team Hero.",
-    // TODO(owner): confirm counts/IDs below from Mozilla advisories & the PAM360 advisory (sourced from public posts, not primary records).
+    bio: "Co-Founder. Penetration tester, red-team operator and CTF player who hunts on live enterprise targets through the Synack Red Team, with a research focus on browsers and enterprise software. CPTS-certified Synack Red Team Hero.",
+    // Verified 2026-08-25: CPTS + SRT Hero (owner), HackerOne profile (1 resolved IBB report — too minor to list).
+    // NOT yet verifiable in primary records, so intentionally NOT shown:
+    //   - "28 Firefox security bugs in two months, 4 CVEs" (MFSA 2026-25/46/68/74 credit only collaborator "Khanh Nguyen")
+    //   - "ManageEngine PAM360 SQLi, CVE-2026-12371" (ID not found in NVD)
+    // TODO(owner): send Bugzilla/MFSA links or the vendor advisory and they go straight back on the card.
     achievements: [
-      { text: "28 Firefox security bugs reported to Mozilla in two months, 4 assigned CVEs" },
-      { text: "SQL injection → privilege escalation in ManageEngine PAM360 (CVE-2026-12371)" },
-      { text: "Synack Red Team — Hero tier" },
+      { text: "Synack Red Team — Hero tier", href: "https://www.synack.com/red-team/" },
+      { text: "Hack The Box Certified Penetration Testing Specialist (CPTS)" },
+      { text: "Bug bounty hunter — HackerOne / Internet Bug Bounty", href: "https://hackerone.com/taidh" },
     ],
   },
 ];

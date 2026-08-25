@@ -1,7 +1,7 @@
 // GENERATED FILE — do not edit by hand.
 // Source: Wordfence Intelligence researcher pages (public record), see data/wordfence/*.json.
 // Regenerate with: node scripts/import-wordfence.mjs
-// Rows: 246 · generated 2026-08-25
+// Rows: 247 · generated 2026-08-25
 import type { Cve } from "./cves";
 
 // prettier-ignore
@@ -76,6 +76,7 @@ export const cveData: Cve[] = [
   { id: "CVE-2024-34566", platform: "Content Blocks (Custom Post Widget)", title: "Authenticated (Contributor+) Stored Cross-Site Scripting", severity: "medium", cvss: 6.4, publishedAt: "2024-05-07", source: "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/custom-post-widget/content-blocks-custom-post-widget-330-authenticated-contributor-stored-cross-site-scripting", researcher: "ancorn_" },
   { id: "CVE-2024-3989", platform: "HT Mega – Absolute Addons For Elementor", title: "Authenticated (Contributor+) Stored Cross-Site Scripting via Gallery Justify", severity: "medium", cvss: 6.4, publishedAt: "2024-05-07", source: "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/ht-mega-for-elementor/ht-mega-absolute-addons-for-elementor-250-authenticated-contributor-stored-cross-site-scripting-via-gallery-justify", researcher: "ancorn_" },
   { id: "CVE-2024-4339", platform: "Prime Slider – Addons For Elementor (Revolution of a slider, Hero Slider, Ecommerce Slider)", title: "Authenticated (Contributor+) Stored Cross-Site Scripting", severity: "medium", cvss: 6.4, publishedAt: "2024-05-07", source: "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/bdthemes-prime-slider-lite/prime-slider-addons-for-elementor-revolution-of-a-slider-hero-slider-ecommerce-slider-3143-authenticated-contributor-stored-cross-site-scripting", researcher: "ancorn_" },
+  { id: "CVE-2024-2785", platform: "The Plus Addons for Elementor", title: "Authenticated (Contributor+) Stored Cross-Site Scripting via Age Gate", severity: "medium", cvss: 6.4, publishedAt: "2024-05-06", source: "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/the-plus-addons-for-elementor-page-builder/the-plus-addons-for-elementor-542-authenticated-contributor-stored-cross-site-scripting-via-age-gate", researcher: "p3tl0v3r" },
   { id: "CVE-2024-4158", platform: "Blocksy", title: "Authenticated (Contributor+) Stored Cross-Site Scripting", severity: "medium", cvss: 6.4, publishedAt: "2024-05-03", source: "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-themes/blocksy/blocksy-2042-authenticated-contributor-stored-cross-site-scripting", researcher: "ancorn_" },
   { id: "CVE-2024-33926", platform: "GWP-Histats", title: "Authenticated (Contributor+) Stored Cross-Site Scripting", severity: "medium", cvss: 6.4, publishedAt: "2024-04-29", source: "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/gwp-histats/gwp-histats-10-authenticated-contributor-stored-cross-site-scripting", researcher: "ancorn_" },
   { id: "CVE-2024-33936", platform: "Print-O-Matic", title: "Authenticated (Contributor+) Stored Cross-Site Scripting", severity: "medium", cvss: 6.4, publishedAt: "2024-04-29", source: "https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/print-o-matic/print-o-matic-2110-authenticated-contributor-stored-cross-site-scripting", researcher: "ancorn_" },

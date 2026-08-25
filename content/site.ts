@@ -55,7 +55,7 @@ export const site = {
   email: "info@starfishsec.com",
   title: "Starfish Security — AI-Powered Penetration Testing",
   description:
-    "AI-powered penetration testing backed by offensive-security researchers behind 200+ published CVEs. Every finding expert-validated and delivered with working proof, not theoretical risk.",
+    "AI-powered penetration testing, validated by researchers behind 200+ published CVEs. Working proof delivered fast, at a price that makes sense — not theoretical risk.",
   ogImage: "/og.png",
   status: "Available for engagements",
   legal: "© 2026 Starfish Security. All rights reserved.",

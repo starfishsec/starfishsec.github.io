@@ -23,6 +23,7 @@ export const processSteps: ProcessStep[] = [
   },
   {
     title: "Report & retest",
-    description: "Clear, prioritized remediation guidance, then we verify the fixes.",
+    description:
+      "Clear, prioritized remediation guidance delivered fast, then we verify the fixes.",
   },
 ];

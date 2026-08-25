@@ -20,7 +20,7 @@ export function Hero() {
         className="pointer-events-none absolute left-1/2 top-1/3 -z-10 h-[40rem] w-[60rem] -translate-x-1/2 -translate-y-1/2 bg-accent-glow blur-3xl"
       />
 
-      <Container className="flex min-h-[85vh] flex-col justify-center py-24 md:py-32">
+      <Container className="flex min-h-[80vh] flex-col justify-center pt-24 pb-16 md:pt-32 md:pb-20">
         <div className="max-w-3xl">
           <p className="eyebrow animate-fade-up text-accent" style={stagger(0)}>
             {hero.eyebrow}
