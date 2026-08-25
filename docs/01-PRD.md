@@ -17,7 +17,7 @@ confident, "proof over promises".
 ## 2. Business context
 
 - **Company**: Starfish Security · `starfishsec.com` · `info@starfishsec.com`
-- **Team**: 3 offensive-security researchers (see `docs/02` §8):
+- **Team**: 3 founding offensive-security researchers shown on the site (see `docs/02` §8) plus a wider bench of senior experts (owner, 2026-08-26 — headcount not published; say "many experts", never "3"):
   - Phuoc Pham — Founder — **OSWE**
   - An Ngo (`ancorn_`) — Co-Founder — **OSWE**, **Synack Red Team (SRT Hero)**
   - Dau Hoang Tai (`taidh`) — Co-Founder — **CPTS** (Hack The Box), **Synack Red Team (SRT Hero)**

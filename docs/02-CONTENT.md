@@ -59,10 +59,10 @@ Section order (top → bottom), adapted for a services team:
 | Value | Label |
 |-------|-------|
 | `200+` | CVEs published |
-| `3` | Expert researchers behind the platform |
+| `Many` | senior experts validating every finding |
 | `Millions` | of websites affected by our disclosures |
 
-> Owner decisions (2026-08-25): the former `2×` OSWE card was **removed**; card 3 was reworded from "plugin installs" to **websites affected** (impact framing). All three values confirmed.
+> Owner decisions: 2026-08-25 — `2×` OSWE card removed; card 3 reworded to **websites affected**. 2026-08-26 — card 2 changed from `3` researchers to **"Many" senior experts** (owner: do not state a headcount of 3; the validating bench is larger than the three founders). Exact number `TODO(owner)` if they ever want a figure.
 
 ## 5. How we work (4 steps)
 
@@ -110,7 +110,7 @@ Confirmed core + the three services the owner named:
 
 ## 8. Team
 
-**Heading:** `The experts behind the platform` — **Sub:** `Three researchers who find bugs for a living. One standard: prove it.`
+**Heading:** `The experts behind the platform` — **Sub:** `Meet the founding researchers. Behind them, a wider bench of senior experts validates every finding. One standard: prove it.`
 
 Data in `content/team.ts`:
 
@@ -123,35 +123,38 @@ Data in `content/team.ts`:
 - Roles + LinkedIn confirmed by owner 2026-08-25 (Tai is a **Co-Founder**).
 - Cert glossary (show as tooltip/footnote): **OSWE** = OffSec Web Expert · **CPTS** = Certified Penetration Testing Specialist (Hack The Box) · **SRT Hero** = Synack Red Team, Hero tier.
 
-### Bios (DRAFT 2026-08-25 — owner to review)
+### Bios (verified 2026-08-26 via the owner's browser — LinkedIn + public records)
 
-LinkedIn is auth-walled (HTTP 999), so bios were drafted **only** from public records: cert list, Wordfence / Patchstack / Synack Acropolis pages, the researcher's own site, and indexed public posts.
+Read directly from each member's LinkedIn (logged in through the owner's Chrome) plus Wordfence / Patchstack / Synack Acropolis / NVD / the VNPT Cyber Immunity blog.
 
-- **Phuoc Pham** (`p3tl0v3r`) — Founder. OSWE-certified web-application security researcher with published WordPress CVEs to his name, who leads Starfish's offensive methodology and the expert review behind every engagement.
-- **An Ngo** — Co-Founder. OSWE-certified penetration tester and one of the most prolific WordPress-ecosystem researchers on record — 246 CVEs credited on Wordfence, including critical unauthenticated privilege-escalation and object-injection findings. Synack Acropolis inductee and Apple Hall of Fame honoree.
-- **Dau Hoang Tai** (`taidh`) — Co-Founder. Penetration tester, red-team operator and CTF player who hunts on live enterprise targets through the Synack Red Team, with a research focus on browsers and enterprise software. CPTS-certified Synack Red Team Hero.
+- **Phuoc Pham** (`p3tl0v3r`, full name Phuoc Pham Van Long) — Founder. OSWE-certified web-application researcher; Security Researcher at **Synack Red Team** (Dec 2024–present) and Penetration Tester at **VNPT Cyber Immunity** (Jan 2023–Mar 2026). Author of the "Sitecore CVE-2025-53690 Detailed Analysis & Weaponized POC" write-up (VNPT blog) and a CloudFront-WAF-bypass note for the React2Shell/Next.js vuln; 4 CVEs credited on Wordfence. Acknowledged by Domino's; CTF placements (NightWolf top-5 solo, Security Bootcamp 2023 #6). *Note: Google links this identity to a "Phuoc Pham Van Long" PhD student in cryptography at Brown University; the LinkedIn profile shows FPT University + VNPT, so the academic角 is **not** claimed on the site — `TODO(owner)`: confirm if same person.*
+- **An Ngo** (`ancorn_`) — Co-Founder. OSWE-certified; now Security Engineer at GRADION (ex-VNPT Cyber Immunity). 246 CVEs on Wordfence (rank #34), Patchstack top-8-all-time era, **Synack Red Team Hero two years running (2025 & 2026)**, **Apple Hall of Fame (Aug 2024)**, VNPT "white-hat, world top-14" recognition (240+ of VNPT's 300+ CVEs).
+- **Dau Hoang Tai** (`taidh`, `DauHoangTai`, Đậu Hoàng Tài) — Co-Founder. Penetration Tester at **VNPT Cyber Immunity** (Apr 2022–present); Duy Tan University; CPTS. Reporter of **CVE-2022-29317 (SQLi, CVSS 9.8 Critical)** — his HackMD advisory is the NVD reference. Author of the AI-assisted Mitel MiCollab CVE analysis (Claude MCP + JADX + IDA Pro) and the MOVEit Transfer CVE-2023-34362/35036 deep-dive on the VNPT blog; SharePoint pre-auth RCE-chain PoC; active CTFer (Root-Me, HackMD, GitHub).
 
 ### Highlights (public, sourced — shown on the cards)
 
 | Person | Highlight | Source |
 |--------|-----------|--------|
-| An Ngo | 246 CVEs on Wordfence Intelligence — all-time rank #34 | wordfence.com/…/researchers/ngo-thien-an-ancorn |
-| An Ngo | Synack Acropolis inductee (Class of 2025) — Hero 2025 & 2026 | acropolis.synack.com/inductees/ancorn_ |
-| An Ngo | Patchstack Alliance verified researcher — 154 reports, top-40 all-time | patchstack.com/database/researcher/090515a6-… |
+| Phuoc Pham | Author: Sitecore CVE-2025-53690 (CVSS 9.0) weaponized PoC & MemShell analysis | sec.vnpt.vn/2025/11/Sitecore-CVE-2025-53690-… |
+| Phuoc Pham | 4 CVEs credited on Wordfence Intelligence (WordPress plugins) | wordfence.com/…/researchers/phuoc-pham-p3tl0v3r |
+| Phuoc Pham | OSWE · Synack Red Team member | LinkedIn / owner |
+| An Ngo | 246 CVEs on Wordfence — all-time rank #34 | wordfence.com/…/researchers/ngo-thien-an-ancorn |
+| An Ngo | Synack Red Team Hero — 2025 & 2026 | acropolis.synack.com/inductees/ancorn_ |
+| An Ngo | Patchstack verified — 154 reports, top-40 all-time | patchstack.com/database/researcher/090515a6-… |
 | An Ngo | 3 critical CVEs (CVSS 9.1–9.8) | `/research?severity=critical` |
-| An Ngo | Apple Hall of Fame honoree | ngothienan.github.io/about (self-reported) |
-| Dau Hoang Tai | Synack Red Team — Hero tier | owner |
-| Dau Hoang Tai | Hack The Box CPTS | owner |
-| Dau Hoang Tai | Bug bounty hunter — HackerOne / Internet Bug Bounty (1 resolved report, badges 2023) | hackerone.com/taidh |
+| An Ngo | Apple Hall of Fame honoree (2024) | LinkedIn (Aug 2024 post) |
+| Dau Hoang Tai | CVE-2022-29317 — SQL injection, CVSS 9.8 Critical | nvd.nist.gov/vuln/detail/CVE-2022-29317 |
+| Dau Hoang Tai | Author: AI-assisted Mitel MiCollab CVE analysis (Claude MCP + JADX + IDA Pro) | sec.vnpt.vn/tin-tuc/blog/AI-Assisted-Mitel-CVE-Analysis-… |
+| Dau Hoang Tai | MOVEit Transfer CVE-2023-34362 / CVE-2023-35036 analysis | sec.vnpt.vn/tin-tuc/blog/analysis-cve-2023-34362-… |
+| Dau Hoang Tai | Hack The Box CPTS · Synack Red Team member | owner / LinkedIn |
 
-**Withheld from the card until verified (`TODO(owner)`):**
-- "28 Firefox security bugs in two months, 4 CVEs (2 solo, 2 with Khanh Nguyen)" — appears only in indexed LinkedIn/HackMD snippets. MFSA 2026-25/46/68/74 credit **Khanh Nguyen** (CVE-2026-16365/16366/74960/74965) but not Tai. Need Bugzilla IDs or MFSA entries naming Tai.
-- "ManageEngine PAM360 SQLi → privilege escalation, CVE-2026-12371" — ID **not found in NVD** (reserved?). Need the vendor advisory / CVE record.
-- Tai's own site (`dauhoangtai.github.io` → `blog.taidh.xyz`) no longer resolves; HackMD/X unreachable from this network; LinkedIn auth-walled.
-| Phuoc Pham | 4 CVEs credited on Wordfence Intelligence (stored XSS, WordPress plugins) | wordfence.com/…/researchers/phuoc-pham-p3tl0v3r |
-| Phuoc Pham | OSWE certified | owner |
+**Dropped as unverifiable (do not re-add without a primary source):**
+- "28 Firefox security bugs / 4 CVEs" for Tai — Mozilla MFSA bulletins do not credit Đậu Hoàng Tài (the 2026 Firefox CVEs found were credited to a different researcher). LinkedIn shows no such entry.
+- "ManageEngine PAM360 SQLi, CVE-2026-12371" — ID not in NVD.
 
-- Avatar: initials/monogram placeholder (no fake photos). Real headshots `TODO(owner)` → drop files in `public/team/` and set `photo` in `content/team.ts`.
+- Cert glossary: **OSWE** = OffSec Web Expert · **CPTS** = Certified Penetration Testing Specialist (Hack The Box) · **SRT Hero** = Synack Red Team, Hero tier · **SRT** = Synack Red Team member.
+- Owner note: earlier draft listed Tai as "SRT Hero"; his own LinkedIn says "SRT Member", so the card says **member**. Upgrade to Hero if he appears on the Acropolis Hero list.
+- Avatar: initials/monogram (no fake photos). Headshots `TODO(owner)` → drop files in `public/team/` and set `photo` in `content/team.ts`.
 - Company-level social (X, GitHub) still `TODO(owner)`.
 
 ## 9. Why us (differentiator)

@@ -144,6 +144,12 @@ Mostly resolved as of 2026-08-25. Remaining `TODO(owner)` — surface them, don'
 - USPs stressed everywhere: **AI-powered · expert-validated · fast delivery · convenient pricing** — hero eyebrow/sub/supporting line, new `UspStrip` section under the hero (`content/hero.ts` → `usps`), Why-Us rewritten around the four, services/process/CTA/SEO touched. No SLA numbers, no prices (owner: "no specifics").
 - Team facts verified from public records: Phuoc Pham = `p3tl0v3r` (Wordfence: 4 CVEs, VNPT Cyber Immunity); his JSON added to `data/wordfence/` → dataset now 247 unique CVEs. Tai: HackerOne profile exists (1 IBB report) but his personal site (`blog.taidh.xyz`) no longer resolves and HackMD/X are unreachable from this network; Firefox/PAM360 highlights remain flagged `TODO(owner): confirm`. LinkedIn is auth-walled and Chrome's cookie DB is locked while Chrome runs.
 
+### Team-verification round (2026-08-26, via Claude-in-Chrome on the owner's browser)
+
+- Read all three LinkedIn profiles logged-in, plus Wordfence/Patchstack/Synack/NVD/VNPT blog. Rewrote bios and highlights with sourced facts (docs/02 §8). Notables now shown: Phuoc's Sitecore weaponized-PoC write-up; Tai's **CVE-2022-29317 (9.8 Critical)** and his AI-assisted Mitel MiCollab analysis; An's Apple Hall of Fame + two-time SRT Hero.
+- Corrections: Tai is **SRT member** (his LinkedIn), not Hero; Firefox/PAM360 claims stayed dropped (unverifiable). Phuoc↔Brown-PhD identity left off the card pending owner confirmation.
+- Stat card 2 is now **"Many" senior experts** (not "3").
+
 ### Remaining `TODO(owner)` (all visible in the UI)
 
 Team bios & headshots · company social (X, GitHub) · CVEs credited to Phuoc / taidh and non-WordPress advisories · announcement link target · logo SVG · disclosure window / PGP · privacy legal review · founding year / location.
