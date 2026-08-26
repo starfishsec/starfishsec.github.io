@@ -9,7 +9,7 @@ import { TodoNote } from "@/components/ui/TodoNote";
 export const metadata: Metadata = {
   title: "Research & Advisories",
   description:
-    "Published CVEs and security advisories by the Starfish Security research team — WordPress plugins, Apache, and other widely deployed software.",
+    "Published CVEs and security advisories by the Starfish Security research team: WordPress plugins, Apache, and other widely deployed software.",
   alternates: { canonical: "/research" },
 };
 
@@ -23,7 +23,6 @@ export default function ResearchPage() {
         <SectionHeading
           as="h1"
           id="research-page-title"
-          eyebrow={researchHeading.eyebrow}
           title={researchHeading.title}
           subtitle={researchHeading.subtitle}
         />
@@ -41,7 +40,7 @@ export default function ResearchPage() {
               ))}
           </ul>
           <p className="font-mono text-small text-fg-muted">
-            {cves.length} CVEs · public record · credited to{" "}
+            {cves.length} CVEs on public record, credited to{" "}
             {researchers.map((r) => `@${r}`).join(", ")}
           </p>
         </div>

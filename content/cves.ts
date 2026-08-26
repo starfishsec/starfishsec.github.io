@@ -30,9 +30,8 @@ export interface Cve {
 }
 
 export const researchHeading = {
-  eyebrow: "Research",
   title: "Proof, published.",
-  subtitle: "We don't just claim skill — it's in the public record. 200+ CVEs and counting.",
+  subtitle: "We don't just claim skill. It's in the public record: 200+ CVEs and counting.",
 } as const;
 
 export const cveTotalClaim = "200+";

@@ -42,7 +42,7 @@ function Field({
     <div className="flex flex-col gap-1.5">
       <label htmlFor={id} className="flex items-baseline justify-between text-small text-fg">
         <span>{label}</span>
-        {optional ? <span className="font-mono text-[0.7rem] text-fg-muted">optional</span> : null}
+        {optional ? <span className="font-mono text-[0.75rem] text-fg-muted">optional</span> : null}
       </label>
       {children}
       {error ? (
@@ -170,8 +170,10 @@ export function ContactForm() {
       </div>
 
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <SubmitButton />
-        <p className="text-small text-fg-muted">
+        <div className="shrink-0">
+          <SubmitButton />
+        </div>
+        <p className="text-small text-fg-muted sm:text-right">
           We reply from{" "}
           <span className="font-mono text-fg">info@starfishsec.com</span>. No newsletters.
         </p>

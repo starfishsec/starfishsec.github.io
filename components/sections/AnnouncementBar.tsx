@@ -33,9 +33,10 @@ export function AnnouncementBar() {
   return (
     <div className="border-b border-accent/20 bg-accent-dim">
       <Container className="flex items-center justify-between gap-4 py-2">
+        {/* Below lg the summary would truncate the link away, so only prefix + link render there. */}
         <p className="min-w-0 truncate font-mono text-[0.75rem] text-fg">
           <span className="text-accent">{announcement.prefix}</span>{" "}
-          <span className="text-fg-muted">{announcement.text}</span>{" "}
+          <span className="hidden text-fg-muted lg:inline">{announcement.text} </span>
           <Link
             href={announcement.href}
             className="inline-flex items-center gap-1 text-fg underline-offset-4 hover:text-accent hover:underline"

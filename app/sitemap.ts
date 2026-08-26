@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/content/site";
 
+// `/blog` and its posts are intentionally absent (owner, 2026-08-26): the blog is hidden until
+// complete. Re-add `/blog` here plus `blogPosts.map(...)` entries when it ships.
 const routes: Array<{ path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly" }> = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
   { path: "/research", priority: 0.9, changeFrequency: "weekly" },

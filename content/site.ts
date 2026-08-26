@@ -41,8 +41,8 @@ export const footerColumns: FooterColumn[] = [
   {
     title: "Research",
     links: [
-      { label: "Advisories", href: "/research" },
-      { label: "CVEs", href: "/research" },
+      // Blog link hidden with the nav tab (owner, 2026-08-26) until the blog is complete.
+      { label: "CVE advisories", href: "/research" },
       { label: "Disclosure policy", href: "/disclosure" },
     ],
   },
@@ -53,9 +53,9 @@ export const site = {
   wordmark: "STARFISH SEC",
   url: "https://starfishsec.com",
   email: "info@starfishsec.com",
-  title: "Starfish Security — AI-Powered Penetration Testing",
+  title: "Starfish Security | AI-Powered Penetration Testing",
   description:
-    "AI-powered penetration testing, validated by researchers behind 200+ published CVEs. Working proof delivered fast, at a price that makes sense — not theoretical risk.",
+    "AI-powered penetration testing, validated by researchers behind 200+ published CVEs. Working proof delivered fast, at a price that makes sense. Not theoretical risk.",
   ogImage: "/og.png",
   status: "Available for engagements",
   legal: "© 2026 Starfish Security. All rights reserved.",

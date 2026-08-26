@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import type { ReactNode } from "react";
 import { site } from "@/content/site";
 import { AnnouncementBar } from "@/components/sections/AnnouncementBar";
@@ -7,15 +7,15 @@ import { Footer } from "@/components/sections/Footer";
 import { Navbar } from "@/components/sections/Navbar";
 import "./globals.css";
 
-const inter = Inter({
+const geist = Geist({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-geist",
   display: "swap",
 });
 
-const jetbrains = JetBrains_Mono({
+const geistMono = Geist_Mono({
   subsets: ["latin"],
-  variable: "--font-jetbrains",
+  variable: "--font-geist-mono",
   display: "swap",
 });
 
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
     default: site.title,
-    template: `%s — ${site.name}`,
+    template: `%s | ${site.name}`,
   },
   description: site.description,
   applicationName: site.name,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: site.title,
     description: site.description,
     url: site.url,
-    images: [{ url: site.ogImage, width: 1200, height: 630, alt: `${site.name} — ${site.wordmark}` }],
+    images: [{ url: site.ogImage, width: 1200, height: 630, alt: `${site.name} (${site.wordmark})` }],
   },
   twitter: {
     card: "summary_large_image",
@@ -52,7 +52,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrains.variable}`}>
+    <html lang="en" className={`${geist.variable} ${geistMono.variable}`}>
       <head>
         {/* Progressive enhancement: with JS disabled, scroll-reveal wrappers render fully visible. */}
         <noscript>

@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-26T05:00:00.000Z",
+  "title": "Design System: Starfish Security",
+  "extensions": {
+    "colorMeta": {
+      "signal-green": {
+        "role": "primary",
+        "displayName": "Signal Green",
+        "canonical": "#39ff88",
+        "tonalRamp": [
+          "oklch(15% 0.06 152)",
+          "oklch(26% 0.10 152)",
+          "oklch(38% 0.14 152)",
+          "oklch(49% 0.17 152)",
+          "oklch(61% 0.20 152)",
+          "oklch(72% 0.22 152)",
+          "oklch(88% 0.22 152)",
+          "oklch(95% 0.08 152)"
+        ]
+      },
+      "signal-green-hover": {
+        "role": "primary",
+        "displayName": "Signal Green Hover",
+        "canonical": "#2be077",
+        "tonalRamp": [
+          "oklch(15% 0.06 152)",
+          "oklch(26% 0.10 152)",
+          "oklch(38% 0.14 152)",
+          "oklch(49% 0.17 152)",
+          "oklch(61% 0.20 152)",
+          "oklch(72% 0.22 152)",
+          "oklch(80% 0.21 152)",
+          "oklch(95% 0.08 152)"
+        ]
+      },
+      "signal-green-dim": {
+        "role": "primary",
+        "displayName": "Signal Green Dim (12% tint)",
+        "canonical": "rgba(57, 255, 136, 0.12)",
+        "tonalRamp": [
+          "rgba(57, 255, 136, 0.04)",
+          "rgba(57, 255, 136, 0.06)",
+          "rgba(57, 255, 136, 0.08)",
+          "rgba(57, 255, 136, 0.12)",
+          "rgba(57, 255, 136, 0.18)",
+          "rgba(57, 255, 136, 0.30)",
+          "rgba(57, 255, 136, 0.55)",
+          "rgba(57, 255, 136, 0.70)"
+        ]
+      },
+      "vault-black": {
+        "role": "neutral",
+        "displayName": "Vault Black",
+        "canonical": "#0a0b0d",
+        "tonalRamp": [
+          "oklch(13% 0.006 260)",
+          "oklch(18% 0.007 260)",
+          "oklch(24% 0.008 260)",
+          "oklch(35% 0.008 260)",
+          "oklch(50% 0.008 260)",
+          "oklch(68% 0.007 260)",
+          "oklch(83% 0.006 260)",
+          "oklch(94% 0.004 260)"
+        ]
+      },
+      "slate-elev": {
+        "role": "neutral",
+        "displayName": "Slate Elev",
+        "canonical": "#111317",
+        "tonalRamp": [
+          "oklch(13% 0.006 260)",
+          "oklch(18% 0.008 260)",
+          "oklch(24% 0.009 260)",
+          "oklch(35% 0.009 260)",
+          "oklch(50% 0.009 260)",
+          "oklch(68% 0.008 260)",
+          "oklch(83% 0.006 260)",
+          "oklch(94% 0.004 260)"
+        ]
+      },
+      "slate-elev-2": {
+        "role": "neutral",
+        "displayName": "Slate Elev 2",
+        "canonical": "#181b21",
+        "tonalRamp": [
+          "oklch(15% 0.008 260)",
+          "oklch(22% 0.010 260)",
+          "oklch(28% 0.011 260)",
+          "oklch(38% 0.011 260)",
+          "oklch(52% 0.010 260)",
+          "oklch(69% 0.009 260)",
+          "oklch(84% 0.007 260)",
+          "oklch(95% 0.004 260)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#23262d",
+        "tonalRamp": [
+          "oklch(15% 0.008 260)",
+          "oklch(22% 0.010 260)",
+          "oklch(28% 0.011 260)",
+          "oklch(38% 0.011 260)",
+          "oklch(52% 0.010 260)",
+          "oklch(69% 0.009 260)",
+          "oklch(84% 0.007 260)",
+          "oklch(95% 0.004 260)"
+        ]
+      },
+      "chalk": {
+        "role": "neutral",
+        "displayName": "Chalk",
+        "canonical": "#e6e8eb",
+        "tonalRamp": [
+          "oklch(15% 0.004 240)",
+          "oklch(26% 0.005 240)",
+          "oklch(38% 0.005 240)",
+          "oklch(50% 0.005 240)",
+          "oklch(62% 0.005 240)",
+          "oklch(74% 0.005 240)",
+          "oklch(86% 0.004 240)",
+          "oklch(95% 0.003 240)"
+        ]
+      },
+      "chalk-muted": {
+        "role": "neutral",
+        "displayName": "Chalk Muted",
+        "canonical": "#9aa0a6",
+        "tonalRamp": [
+          "oklch(15% 0.004 240)",
+          "oklch(26% 0.005 240)",
+          "oklch(38% 0.005 240)",
+          "oklch(50% 0.005 240)",
+          "oklch(62% 0.005 240)",
+          "oklch(74% 0.005 240)",
+          "oklch(86% 0.004 240)",
+          "oklch(95% 0.003 240)"
+        ]
+      },
+      "chalk-subtle": {
+        "role": "neutral",
+        "displayName": "Chalk Subtle",
+        "canonical": "#5c626b",
+        "tonalRamp": [
+          "oklch(15% 0.005 240)",
+          "oklch(26% 0.007 240)",
+          "oklch(38% 0.008 240)",
+          "oklch(50% 0.008 240)",
+          "oklch(62% 0.008 240)",
+          "oklch(74% 0.007 240)",
+          "oklch(86% 0.005 240)",
+          "oklch(95% 0.003 240)"
+        ]
+      },
+      "critical-red": {
+        "role": "tertiary",
+        "displayName": "Critical Red",
+        "canonical": "#ff4d5e",
+        "tonalRamp": [
+          "oklch(15% 0.06 18)",
+          "oklch(26% 0.10 18)",
+          "oklch(38% 0.14 18)",
+          "oklch(49% 0.18 18)",
+          "oklch(61% 0.21 18)",
+          "oklch(68% 0.21 18)",
+          "oklch(80% 0.14 18)",
+          "oklch(95% 0.04 18)"
+        ]
+      },
+      "high-orange": {
+        "role": "tertiary",
+        "displayName": "High Orange",
+        "canonical": "#ff7a45",
+        "tonalRamp": [
+          "oklch(15% 0.05 40)",
+          "oklch(26% 0.09 40)",
+          "oklch(38% 0.13 40)",
+          "oklch(49% 0.16 40)",
+          "oklch(61% 0.19 40)",
+          "oklch(72% 0.19 40)",
+          "oklch(84% 0.12 40)",
+          "oklch(95% 0.04 40)"
+        ]
+      },
+      "warn-amber": {
+        "role": "tertiary",
+        "displayName": "Warn Amber",
+        "canonical": "#ffb020",
+        "tonalRamp": [
+          "oklch(15% 0.04 75)",
+          "oklch(26% 0.07 75)",
+          "oklch(38% 0.10 75)",
+          "oklch(49% 0.13 75)",
+          "oklch(61% 0.16 75)",
+          "oklch(72% 0.18 75)",
+          "oklch(84% 0.17 75)",
+          "oklch(95% 0.06 75)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero h1 only; final word is solid accent; text-balance always on." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings via SectionHeading (no eyebrow above on the landing page), Final CTA title, standalone page h1s." },
+      "subheadline": { "displayName": "Subheadline", "purpose": "USP section heading and the featured (bento) service title." },
+      "stat": { "displayName": "Stat Numeral", "purpose": "StatCard values: solid mono, tabular, tight." },
+      "title": { "displayName": "Title", "purpose": "Card titles (services, process steps, team names) and mobile nav links." },
+      "body": { "displayName": "Body", "purpose": "Paragraphs; muted under headings; measure ≤ 42rem." },
+      "small": { "displayName": "Small", "purpose": "Nav links, card descriptions, form labels, helper text, table cells, secondary button text." },
+      "label": { "displayName": "Label (data)", "purpose": "Mono uppercase data label: table headers, filter labels, footer column titles, the proof-panel title. Never above a section headline." },
+      "mono-caption": { "displayName": "Mono Caption", "purpose": "Badges, status dot text, link chips, optional markers, cert glossary, result counts." }
+    },
+    "shadows": [
+      { "name": "button-glow", "value": "0 0 0 1px rgba(57,255,136,0.4), 0 8px 30px -8px rgba(57,255,136,0.45)", "purpose": "Primary button hover only, paired with a 1px rise." },
+      { "name": "card-glow", "value": "0 12px 40px -20px rgba(57,255,136,0.35)", "purpose": "Generic Card hover, with a 2px rise and 60% green border." },
+      { "name": "exhibit-shadow", "value": "0 30px 80px -40px rgba(0,0,0,0.9)", "purpose": "The single neutral shadow: under the hero terminal so it lifts off the glow." },
+      { "name": "numeral-halo", "value": "0 0 0 5px var(--color-bg)", "purpose": "Vault Black ring around process numerals so they cut the connector line." },
+      { "name": "status-pulse", "value": "0 0 0 0 rgba(57,255,136,0.55) → 0 0 0 6px rgba(57,255,136,0)", "purpose": "2s pulsing ring on the status dot; stopped under reduced motion." }
+    ],
+    "motion": [
+      { "name": "ease-out-soft", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "The only easing: reveals, hero entrance, status pulse, float." },
+      { "name": "reveal", "value": "opacity 0→1, translateY 16px→0, 0.5s ease-out-soft, once, stagger 80ms", "purpose": "Scroll reveal via IntersectionObserver + [data-reveal]; final state forced under reduced motion and without JS." },
+      { "name": "fade-up", "value": "0.6s ease-out-soft both, delay index×80ms", "purpose": "CSS-only hero entrance; no hydration dependency." },
+      { "name": "state-transition", "value": "200ms (color/border/shadow/transform), 300ms (header chrome)", "purpose": "Hover and focus responses; 1px rises gated behind motion-safe. No hover glows." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "container", "value": "1152px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one green action per viewport: Signal Green fill, Vault Black text, glow + 1px rise on hover.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Request a Pentest <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 24px; border-radius: var(--radius-btn, 8px); background: var(--color-accent, #39ff88); color: var(--color-bg, #0a0b0d); font-family: Geist, ui-sans-serif, system-ui, sans-serif; font-size: 1rem; line-height: 1.6; font-weight: 500; text-decoration: none; user-select: none; transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s; } .ds-btn-primary:hover { background: var(--color-accent-hover, #2be077); transform: translateY(-1px); box-shadow: 0 0 0 1px rgba(57,255,136,0.4), 0 8px 30px -8px rgba(57,255,136,0.45); } .ds-btn-primary:active { transform: translateY(1px); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-accent, #39ff88); outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-btn-primary, .ds-btn-primary:hover, .ds-btn-primary:active { transform: none; transition: none; } }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Hairline-bordered ghost for the second CTA; border turns green and fill lifts to Slate Elev 2 on hover.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">See our research</a>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 20px; border-radius: var(--radius-btn, 8px); border: 1px solid var(--color-border, #23262d); background: transparent; color: var(--color-fg, #e6e8eb); font-family: Geist, ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; line-height: 1.5; font-weight: 500; text-decoration: none; user-select: none; transition: border-color 0.2s, background-color 0.2s, transform 0.2s; } .ds-btn-secondary:hover { border-color: var(--color-accent, #39ff88); background: var(--color-bg-elev-2, #181b21); transform: translateY(-1px); } .ds-btn-secondary:active { transform: translateY(1px); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--color-accent, #39ff88); outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-btn-secondary, .ds-btn-secondary:hover { transform: none; transition: none; } }"
+    },
+    {
+      "name": "Data Label",
+      "kind": "custom",
+      "refersTo": "eyebrow",
+      "description": "Mono uppercase data label (0.1em tracking, Chalk Muted) for table headers, footer columns, and the proof-panel title. Never placed above a headline.",
+      "html": "<p class=\"ds-eyebrow\">Public CVE record</p>",
+      "css": ".ds-eyebrow { margin: 0; font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8125rem; line-height: 1.4; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent, #39ff88); }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Slate Elev panel with a hairline; hover moves the border toward green with a 2px rise and a green glow.",
+      "html": "<article class=\"ds-card\"><span class=\"ds-card-icon\" aria-hidden=\"true\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"/><path d=\"m9 12 2 2 4-4\"/></svg></span><h3 class=\"ds-card-title\">Expert-validated</h3><p class=\"ds-card-body\">Researchers behind 200+ published CVEs confirm every finding and ship a working proof.</p></article>",
+      "css": ".ds-card { position: relative; display: flex; flex-direction: column; gap: 20px; padding: 24px; border-radius: var(--radius-card, 12px); border: 1px solid var(--color-border, #23262d); background: var(--color-bg-elev, #111317); color: var(--color-fg, #e6e8eb); font-family: Geist, ui-sans-serif, system-ui, sans-serif; overflow: hidden; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; } .ds-card:hover { border-color: rgba(57,255,136,0.6); transform: translateY(-2px); box-shadow: 0 12px 40px -20px rgba(57,255,136,0.35); } .ds-card-icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: var(--radius-btn, 8px); border: 1px solid var(--color-border, #23262d); background: var(--color-bg, #0a0b0d); color: var(--color-fg-muted, #9aa0a6); transition: border-color 0.2s, color 0.2s; } .ds-card:hover .ds-card-icon { border-color: rgba(57,255,136,0.4); color: var(--color-accent, #39ff88); } .ds-card-title { margin: 0; font-size: 1.25rem; line-height: 1.3; font-weight: 600; } .ds-card-body { margin: 0; font-size: 1rem; line-height: 1.6; color: var(--color-fg-muted, #9aa0a6); } @media (prefers-reduced-motion: reduce) { .ds-card, .ds-card:hover { transform: none; transition: none; } }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Slate Elev field with a hairline; hover → Chalk Subtle border, focus → green border + 2px outline, invalid → Critical Red.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-label\" for=\"ds-email\"><span>Work email</span><span class=\"ds-label-opt\">optional</span></label><input class=\"ds-input\" id=\"ds-email\" type=\"email\" placeholder=\"you@company.com\"></div>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 6px; font-family: Geist, ui-sans-serif, system-ui, sans-serif; } .ds-label { display: flex; align-items: baseline; justify-content: space-between; font-size: 0.875rem; line-height: 1.5; color: var(--color-fg, #e6e8eb); } .ds-label-opt { font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.7rem; color: var(--color-fg-muted, #9aa0a6); } .ds-input { width: 100%; padding: 10px 14px; border-radius: var(--radius-btn, 8px); border: 1px solid var(--color-border, #23262d); background: var(--color-bg-elev, #111317); color: var(--color-fg, #e6e8eb); font: inherit; font-size: 1rem; line-height: 1.6; transition: border-color 0.2s; } .ds-input::placeholder { color: var(--color-fg-muted, #9aa0a6); } .ds-input:hover { border-color: var(--color-fg-subtle, #5c626b); } .ds-input:focus-visible { border-color: var(--color-accent, #39ff88); outline: 2px solid var(--color-accent, #39ff88); outline-offset: 2px; } .ds-input[aria-invalid=\"true\"] { border-color: var(--color-danger, #ff4d5e); }"
+    },
+    {
+      "name": "Severity Badges",
+      "kind": "chip",
+      "refersTo": "badge-accent",
+      "description": "Mono pills: green for certifications/Core, red/orange/amber for labelled severity, neutral for low.",
+      "html": "<div class=\"ds-badges\"><span class=\"ds-badge ds-badge-accent\">OSWE</span><span class=\"ds-badge ds-badge-critical\">Critical 9.8</span><span class=\"ds-badge ds-badge-high\">High 7.5</span><span class=\"ds-badge ds-badge-medium\">Medium 6.1</span><span class=\"ds-badge ds-badge-neutral\">Low 3.1</span></div>",
+      "css": ".ds-badges { display: flex; flex-wrap: wrap; gap: 8px; } .ds-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; border-radius: 9999px; border: 1px solid; font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.75rem; line-height: 20px; white-space: nowrap; } .ds-badge-accent { border-color: rgba(57,255,136,0.4); background: var(--color-accent-dim, rgba(57,255,136,0.12)); color: var(--color-accent, #39ff88); } .ds-badge-critical { border-color: rgba(255,77,94,0.4); background: rgba(255,77,94,0.1); color: var(--color-danger, #ff4d5e); } .ds-badge-high { border-color: rgba(255,122,69,0.4); background: rgba(255,122,69,0.1); color: var(--color-high, #ff7a45); } .ds-badge-medium { border-color: rgba(255,176,32,0.4); background: rgba(255,176,32,0.1); color: var(--color-warn, #ffb020); } .ds-badge-neutral { border-color: var(--color-border, #23262d); background: var(--color-bg-elev-2, #181b21); color: var(--color-fg-muted, #9aa0a6); }"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "64px sticky bar: typeset wordmark, muted Small links that brighten on hover, status dot, one primary CTA.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-nav-logo\" href=\"#\">Starfish<span>Sec</span></a><nav class=\"ds-nav-links\"><a href=\"#\">Services</a><a href=\"#\">Process</a><a href=\"#\">Research</a><a href=\"#\">Team</a></nav><div class=\"ds-nav-right\"><span class=\"ds-status\"><span class=\"ds-status-dot\" aria-hidden=\"true\"></span>Available for engagements</span><a class=\"ds-nav-cta\" href=\"#\">Request a Pentest</a></div></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 64px; padding: 0 32px; border-bottom: 1px solid var(--color-border, #23262d); background: rgba(10,11,13,0.85); backdrop-filter: blur(12px); font-family: Geist, ui-sans-serif, system-ui, sans-serif; color: var(--color-fg, #e6e8eb); } .ds-nav-logo { font-size: 1.02rem; font-weight: 600; letter-spacing: -0.025em; color: var(--color-fg, #e6e8eb); text-decoration: none; } .ds-nav-logo span { color: var(--color-accent, #39ff88); } .ds-nav-links { display: flex; gap: 32px; } .ds-nav-links a { padding: 8px 0; font-size: 0.875rem; line-height: 1.5; color: var(--color-fg-muted, #9aa0a6); text-decoration: none; transition: color 0.2s; } .ds-nav-links a:hover, .ds-nav-links a:focus-visible { color: var(--color-fg, #e6e8eb); } .ds-nav-links a:focus-visible { outline: 2px solid var(--color-accent, #39ff88); outline-offset: 2px; } .ds-nav-right { display: flex; align-items: center; gap: 20px; } .ds-status { display: inline-flex; align-items: center; gap: 8px; font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.75rem; color: var(--color-fg-muted, #9aa0a6); } .ds-status-dot { display: inline-block; width: 8px; height: 8px; border-radius: 9999px; background: var(--color-accent, #39ff88); animation: ds-pulse 2s cubic-bezier(0.22, 1, 0.36, 1) infinite; } @keyframes ds-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(57,255,136,0.55); } 70% { box-shadow: 0 0 0 6px rgba(57,255,136,0); } } .ds-nav-cta { display: inline-flex; align-items: center; padding: 10px 20px; border-radius: var(--radius-btn, 8px); background: var(--color-accent, #39ff88); color: var(--color-bg, #0a0b0d); font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s; } .ds-nav-cta:hover { background: var(--color-accent-hover, #2be077); transform: translateY(-1px); box-shadow: 0 0 0 1px rgba(57,255,136,0.4), 0 8px 30px -8px rgba(57,255,136,0.45); } .ds-nav-cta:focus-visible { outline: 2px solid var(--color-accent, #39ff88); outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-status-dot { animation: none; } .ds-nav-cta:hover { transform: none; } }"
+    },
+    {
+      "name": "Stat Card",
+      "kind": "custom",
+      "refersTo": "card",
+      "description": "Borderless strip cell: green edge tick that grows on hover, gradient-washed mono numeral, muted label.",
+      "html": "<div class=\"ds-stat\"><span class=\"ds-stat-tick\" aria-hidden=\"true\"></span><p class=\"ds-stat-value\">200+</p><p class=\"ds-stat-label\">CVEs researched and published</p></div>",
+      "css": ".ds-stat { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 32px; font-family: Geist, ui-sans-serif, system-ui, sans-serif; background: rgba(17,19,23,0.4); border-top: 1px solid var(--color-border, #23262d); border-bottom: 1px solid var(--color-border, #23262d); } .ds-stat-tick { position: absolute; top: 32px; left: 0; width: 1px; height: 32px; background: rgba(57,255,136,0.4); transition: height 0.3s, background-color 0.3s; } .ds-stat:hover .ds-stat-tick { height: 40px; background: var(--color-accent, #39ff88); } .ds-stat-value { margin: 0; font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 3rem; font-weight: 500; letter-spacing: -0.025em; line-height: 1; background-image: linear-gradient(120deg, var(--color-accent, #39ff88) 0%, #9dffc6 50%, var(--color-fg, #e6e8eb) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; } .ds-stat-label { margin: 0; max-width: 16rem; font-size: 0.875rem; line-height: 1.5; color: var(--color-fg-muted, #9aa0a6); }"
+    },
+    {
+      "name": "Terminal Exhibit",
+      "kind": "custom",
+      "refersTo": "card",
+      "description": "Exhibit A — hero only. Slate panel with gradient ring, window chrome, mono transcript, green prompt, blinking caret.",
+      "html": "<div class=\"ds-term\"><span class=\"ds-term-ring\" aria-hidden=\"true\"></span><div class=\"ds-term-bar\"><span class=\"ds-term-dots\" aria-hidden=\"true\"><i class=\"ds-d1\"></i><i class=\"ds-d2\"></i><i class=\"ds-d3\"></i></span><span class=\"ds-term-title\">starfish — engagement</span></div><pre class=\"ds-term-pre\"><span><b>$ </b>starfish --scope app.example.com</span><span>→ enumerating attack surface ……… ok</span><span>→ expert review: validating findings</span><span class=\"ds-ok\">✓ working proof delivered<i class=\"ds-caret\" aria-hidden=\"true\"></i></span></pre></div>",
+      "css": ".ds-term { position: relative; isolation: isolate; max-width: 28rem; overflow: hidden; border-radius: var(--radius-card, 12px); border: 1px solid var(--color-border, #23262d); background: rgba(17,19,23,0.8); box-shadow: 0 30px 80px -40px rgba(0,0,0,0.9); font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; } .ds-term-ring { position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: linear-gradient(140deg, rgba(57,255,136,0.55), rgba(57,255,136,0) 42%); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; } .ds-term-bar { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--color-border, #23262d); } .ds-term-dots { display: flex; gap: 6px; } .ds-term-dots i { width: 10px; height: 10px; border-radius: 9999px; } .ds-d1 { background: rgba(255,77,94,0.7); } .ds-d2 { background: rgba(255,176,32,0.7); } .ds-d3 { background: rgba(57,255,136,0.7); } .ds-term-title { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-fg-subtle, #5c626b); } .ds-term-pre { margin: 0; padding: 16px; font-size: 0.8rem; line-height: 1.625; white-space: pre-wrap; color: var(--color-fg-muted, #9aa0a6); } .ds-term-pre span { display: block; } .ds-term-pre b { font-weight: 400; color: var(--color-accent, #39ff88); } .ds-ok { color: var(--color-accent, #39ff88); } .ds-caret { display: inline-block; width: 0.55em; height: 1em; margin-left: 4px; transform: translateY(2px); background: var(--color-accent, #39ff88); animation: ds-blink 1.1s steps(1) infinite; } @keyframes ds-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } } @media (prefers-reduced-motion: reduce) { .ds-caret { animation: none; } }"
+    },
+    {
+      "name": "Todo Note",
+      "kind": "chip",
+      "refersTo": "badge-neutral",
+      "description": "Visible placeholder for owner-pending data: dashed amber border, mono 0.7rem. Never styled to blend in.",
+      "html": "<span class=\"ds-todo\">TODO(owner): real headshots</span>",
+      "css": ".ds-todo { display: inline-flex; align-items: center; padding: 2px 6px; border-radius: 4px; border: 1px dashed rgba(255,176,32,0.4); font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.7rem; line-height: 16px; color: rgba(255,176,32,0.9); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Evidence Room",
+    "overview": "Starfish sells proof, and the interface behaves like the room where proof is kept: dark, quiet, and exact. Every element is a labelled exhibit. The page is a near-black vault; content sits on graphite slate panels separated by 1px hairlines; a single Signal Green marks what is live, confirmed, or actionable. Nothing glows for decoration — when something lights up, it is because it is the finding, the status, or the next step. The mood is forensic, composed, exacting.\n\nThe system inherits a hacker/terminal lineage (monospace labels, a pulsing status dot, a hero transcript with a blinking caret) but disciplines it into enterprise credibility. The terminal is Exhibit A — it appears once in the hero and once as the footer mantra, and it is not a general-purpose motif. Layout is generous and grid-true: a 1152px container, long section rhythm, cards in dense 16px grids, and fluid type that stays tight at every viewport. Density is low-to-moderate; whitespace does the persuading, mono type does the labelling, and the one accent does the pointing.\n\nConfirmed rejections carried from the owner's brief and the shipped code: no light theme in v1; no glitch effects, matrix rain, or neon saturation beyond the single accent; no serif type anywhere (the wordmark is now typeset in the site's sans); no stock imagery or fake photography — avatars are monograms until real headshots exist.",
+    "keyCharacteristics": [
+      "Dark-only: one near-black vault (vault-black) with two graphite lifts and hairline borders.",
+      "One chromatic voice — Signal Green — reserved for status, proof, and the primary action.",
+      "Inter for everything readable; JetBrains Mono strictly for labels, IDs, numerals, and transcript.",
+      "Depth by tone and hairline, never by neutral drop shadow; green glows respond to state.",
+      "Fluid clamp() type with −0.02em tracking on every headline size.",
+      "Motion is a 16px rise over 0.5s, staggered 80ms, once; all of it collapses under prefers-reduced-motion.",
+      "Missing data is shown as a dashed amber TodoNote, never hidden or faked."
+    ],
+    "rules": [
+      { "name": "The One Signal Rule", "body": "Signal Green is the only accent on any screen and appears on a small fraction of it: one primary button per viewport, labels, the status dot, and hover states. If a screen has two green fills competing, one of them is wrong.", "section": "colors" },
+      { "name": "The Labelled Severity Rule", "body": "Red, orange, and amber never appear outside a badge or an error message, and never without a text label beside them. Color alone is not evidence.", "section": "colors" },
+      { "name": "The Text-on-Green Rule", "body": "Anything set on a Signal Green fill uses Vault Black text (text-bg). White on green fails contrast and is not used.", "section": "colors" },
+      { "name": "The Mono Is Evidence Rule", "body": "Monospace marks things that are data: labels, IDs, numerals, dates, handles, email addresses, the transcript, and the mantra. It is never used for sentences a buyer reads — no mono paragraphs, no mono headings.", "section": "typography" },
+      { "name": "The Last Word Rule", "body": "The gradient wash lands on exactly one word of the hero headline (the last), and on stat numerals. No other running text is gradient-filled.", "section": "typography" },
+      { "name": "The No-Serif Rule", "body": "No serif face appears anywhere, including the wordmark, which is typeset \"Starfish\" in Chalk + \"Sec\" in Signal Green using Inter 600 at 1.02rem.", "section": "typography" },
+      { "name": "The Glow-On-State Rule", "body": "Surfaces are flat at rest. A green glow appears only as a response — hover on a card or button, the hero exhibit, the featured service, the Final CTA. Never stack a resting glow on a non-featured card.", "section": "elevation" },
+      { "name": "The Masked Motif Rule", "body": "Grid and dot backgrounds are always masked to a radial falloff and sit at ≤ 9% opacity. A full-bleed, unmasked grid is not this system.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do build every color, radius, and type size from the @theme tokens in app/globals.css (bg-bg, text-accent, rounded-card, text-h1…). There is no tailwind.config.ts; the token block is the single source of truth.",
+      "Do reserve Signal Green for one primary action per viewport plus labels, status, and hover states (The One Signal Rule), and always set Vault Black text on a green fill.",
+      "Do open sections with SectionHeading — a // eyebrow, a −0.02em headline, an optional muted subtitle — and keep 80/112/128px section padding with a hairline top border.",
+      "Do convey depth with tone and 1px hairlines; let green glows appear only on hover, on the hero exhibit, on the featured service, and on the Final CTA panel.",
+      "Do use JetBrains Mono for data only: labels, CVE IDs, numerals, dates, handles, email, transcript, mantra.",
+      "Do keep motion to the shipped grammar — Reveal (16px rise, 0.5s, ease-out-soft, once, 80ms stagger), 200ms color transitions, 1–2px hover rises under motion-safe: — and make sure prefers-reduced-motion yields the final state with no animation.",
+      "Do mask every grid/dot background to a radial falloff at ≤ 9% Chalk and clip decorative glows inside their card (overflow-hidden).",
+      "Do show pending owner data as a TodoNote; use monogram avatars (signal-green-dim fill, mono initials, gradient-ring) until real headshots exist.",
+      "Do pair every severity hue with its text label, in a badge or an error message."
+    ],
+    "donts": [
+      "Don't introduce a light theme, neutral drop shadows on resting cards, or a second accent hue.",
+      "Don't add terminal chrome, blinking carets, or scanlines outside the hero exhibit and footer mantra — the terminal is Exhibit A, not a theme.",
+      "Don't use glitch effects, matrix rain, neon outlines, or saturate the accent beyond signal-green / its 12% dim.",
+      "Don't set body copy, headings, or buttons in monospace, and don't introduce any serif face — including for the wordmark.",
+      "Don't gradient-fill running text; the wash belongs to the hero's last word and stat numerals only.",
+      "Don't hardcode hex values, rounded-xl/rounded-lg, or arbitrary font sizes in components when a token utility exists; the one-off sizes inside the terminal, badges, and TodoNote are the sanctioned exceptions.",
+      "Don't lock the hero to viewport height or let any wide element (tables, the mantra) widen the page — wide content scrolls inside its own rounded, hairline-bordered shell.",
+      "Don't ship animation that depends on hydration for above-the-fold content; hero entrances are CSS-only (animate-fade-up), and [data-reveal] content must render visible without JS."
+    ]
+  }
+}

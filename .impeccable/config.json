@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "app/globals.css"
+        ],
+        "createdAt": "2026-08-26T03:59:30.413Z",
+        "reason": "docs/03-design-system.md 'Visual motifs' pins a faint grid/dot background behind the hero (owner brief, pwn.ai reference); shipped in the owner's 2026-08-26 rebuild"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#000",
+        "createdAt": "2026-08-26T04:38:17.209Z",
+        "reason": "false positive: #000 is the alpha layer of the gradient-ring mask-image (mask trick), never painted; predates the redesign"
+      }
+    ]
+  }
+}

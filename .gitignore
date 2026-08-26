@@ -42,3 +42,9 @@ next-env.d.ts
 
 # keep the env template
 !.env.example
+
+# claude / impeccable local state
+.claude/settings.local.json
+.impeccable/config.local.json
+.impeccable/hook.cache.json
+.impeccable/live/sessions/

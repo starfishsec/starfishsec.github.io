@@ -9,7 +9,7 @@ Aesthetic / structural reference: [pwn.ai](https://pwn.ai) — dark, technical, 
 - **Next.js 15** (App Router, RSC)
 - **TypeScript** (strict)
 - **Tailwind CSS v4**
-- **Framer Motion** (animations)
+- Scroll reveals via IntersectionObserver + CSS transitions (`components/motion/Reveal.tsx`; no animation library)
 - Contact: server action → email (Resend), with `mailto:` fallback
 - Deploy target: **Vercel**
 
@@ -33,6 +33,7 @@ The files in `docs/` are the single source of truth. Any model/agent writing cod
 
 - `/` — landing page (all sections)
 - `/research` — full CVE list (data-driven, filterable)
+- `/blog` — team research & writing (on-site articles, data in `content/blog.ts`). **Hidden** since 2026-08-26 (owner: not finished) — no nav/footer/sitemap links, `noindex`; the route still builds. Re-enable in `content/nav.ts`, `content/site.ts`, `app/sitemap.ts`, `components/sections/{Research,Team}.tsx`, and drop `robots` in `app/blog/**`.
 - `/contact` + `/thanks`
 - `/disclosure` — responsible disclosure policy
 - `/privacy` — minimal privacy notice
@@ -58,15 +59,15 @@ Without `RESEND_API_KEY` the contact form still works: it hands the visitor a pr
 - `docs/` — specs (see table above); `docs/06` has the build status and implementation decisions
 - `public/` — generated white logo assets, icons, `og.png`; `logo/` — original owner assets
 
-## QA snapshot (2026-08-25, production build, Lighthouse mobile)
+## QA snapshot (2026-08-26, production build after the redesign + polish pass, Lighthouse mobile)
 
 | Route | Perf | A11y | Best Practices | SEO |
 |-------|------|------|----------------|-----|
 | `/` | 96 | 100 | 100 | 100 |
-| `/research` | 96 | 100 | 100 | 100 |
-| `/contact` | 97 | 100 | 100 | 100 |
+| `/research` | 97 | 100 | 100 | 100 |
+| `/contact` | 98 | 100 | 100 | 100 |
 
-Responsive checked at 375 / 768 / 1440, `prefers-reduced-motion` verified, no console errors, no horizontal overflow.
+Responsive checked at 375 / 768 / 1024 / 1280 / 1440, `prefers-reduced-motion` verified, no console errors, no horizontal overflow. `/impeccable critique` (dual-agent) on `/`: 23/32 with 0 P0; the code-owned P1/P2 findings were fixed in the same pass (snapshot in `.impeccable/critique/`). Open owner items: the "Many" stat wording, social handles, headshots.
 
 ## Status
 
@@ -75,4 +76,8 @@ Responsive checked at 375 / 768 / 1440, `prefers-reduced-motion` verified, no co
 - [x] Components
 - [x] Content wiring
 - [x] Polish (Lighthouse ≥ 95 all categories, a11y contrast fixed)
+- [x] UI/UX rebuild pass (2026-08-26): layered hero + proof terminal, bento services, timeline process, richer stat/team/why cards, extended motif layer in `globals.css` — tokens & copy unchanged; `typecheck`/`lint`/`build` all clean
+- [x] Team blog `/blog` (curated research index; links to the founders' real published posts)
+- [x] Polish pass (2026-08-26, `/impeccable polish`): hero fold, announcement link on small screens, focus-ring color, target sizes, label-in-name, stat overflow at 768, framer-motion replaced by IntersectionObserver `Reveal` (route JS 39.8 kB → 0.9 kB); Lighthouse re-run — table above
+- [x] Redesign pass (2026-08-26, `design-taste-frontend` + `redesign-existing-projects`): Geist / Geist Mono replace Inter / JetBrains Mono; mock hero terminal replaced by a real-data proof panel (top-3 CVEs, linked); gradient text, hover glow blobs and section eyebrows removed; USP + Process + Team rebuilt as hairline columns / sticky split list (no cards); FinalCTA as a full-width band; `WhyUs` folded into `UspStrip` (`#why` kept); Navbar sticky state via IntersectionObserver; em-dashes removed from copy; `DESIGN.md` + `docs/03` + `docs/05` updated
 - [ ] Deploy to Vercel + set env vars (pending)

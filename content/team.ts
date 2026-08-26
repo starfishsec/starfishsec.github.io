@@ -28,11 +28,12 @@ export interface TeamMember {
   photo?: string;
 }
 
+// Owner (2026-08-26): this section presents the *founding team*, not "the experts behind" —
+// the wider validating bench is described elsewhere (UspStrip / stats), not here.
 export const teamHeading = {
-  eyebrow: "Team",
-  title: "The experts behind the platform",
+  title: "The founders behind the platform",
   subtitle:
-    "Meet the founding researchers. Behind them, a wider bench of senior experts validates every finding. One standard: prove it.",
+    "Three offensive-security researchers who built Starfish and still run every engagement. One standard: prove it.",
 } as const;
 
 const OSWE: Certification = { short: "OSWE", long: "OffSec Web Expert" };
@@ -54,7 +55,7 @@ export const team: TeamMember[] = [
     role: "Founder",
     certs: [OSWE, SRT],
     linkedin: "https://www.linkedin.com/in/phamphuoc/",
-    bio: "Founder. OSWE-certified web-application researcher and Synack Red Team member (ex-VNPT Cyber Immunity). Publishes weaponized analyses of critical enterprise vulnerabilities and reports plugin CVEs — he sets Starfish's offensive methodology and leads the expert review behind every engagement.",
+    bio: "Founder. OSWE-certified web-application researcher and Synack Red Team member (ex-VNPT Cyber Immunity). Publishes weaponized analyses of critical enterprise vulnerabilities and reports plugin CVEs. He sets Starfish's offensive methodology and leads the expert review behind every engagement.",
     achievements: [
       {
         text: "Author: Sitecore CVE-2025-53690 (CVSS 9.0) weaponized PoC & MemShell analysis",
@@ -73,22 +74,22 @@ export const team: TeamMember[] = [
     role: "Co-Founder",
     certs: [OSWE, SRT_HERO],
     linkedin: "https://www.linkedin.com/in/ngothienan/",
-    bio: "Co-Founder. OSWE-certified security engineer and one of the most prolific WordPress-ecosystem researchers on record — 246 CVEs credited on Wordfence, including critical unauthenticated privilege-escalation and object-injection findings. Two-time Synack Red Team Hero and Apple Hall of Fame honoree.",
+    bio: "Co-Founder. OSWE-certified security engineer and one of the most prolific WordPress-ecosystem researchers on record: 246 CVEs credited on Wordfence, including critical unauthenticated privilege-escalation and object-injection findings. Two-time Synack Red Team Hero and Apple Hall of Fame honoree.",
     achievements: [
       {
-        text: "246 CVEs credited on Wordfence Intelligence — all-time rank #34",
+        text: "246 CVEs credited on Wordfence Intelligence (all-time rank #34)",
         href: "https://www.wordfence.com/threat-intel/vulnerabilities/researchers/ngo-thien-an-ancorn",
       },
       {
-        text: "Synack Red Team Hero — two years running (Class of 2025 & 2026)",
+        text: "Synack Red Team Hero, two years running (Class of 2025 & 2026)",
         href: "https://acropolis.synack.com/inductees/ancorn_",
       },
       {
-        text: "Patchstack Alliance verified researcher — 154 reports, top-40 all-time",
+        text: "Patchstack Alliance verified researcher: 154 reports, top-40 all-time",
         href: "https://patchstack.com/database/researcher/090515a6-9651-41fa-9465-fd542e38e526",
       },
       {
-        text: "3 critical CVEs (CVSS 9.1–9.8): unauthenticated privilege escalation & PHP object injection",
+        text: "3 critical CVEs (CVSS 9.1-9.8): unauthenticated privilege escalation & PHP object injection",
         href: "/research?severity=critical",
       },
       { text: "Apple Hall of Fame honoree (2024)" },
@@ -100,10 +101,10 @@ export const team: TeamMember[] = [
     role: "Co-Founder",
     certs: [CPTS, SRT],
     linkedin: "https://www.linkedin.com/in/taidh/",
-    bio: "Co-Founder. Penetration tester at VNPT Cyber Immunity, red-team operator and CTF player specializing in enterprise-software vulnerability analysis — from MOVEit Transfer to Mitel MiCollab, increasingly with AI in the loop. CPTS-certified Synack Red Team member.",
+    bio: "Co-Founder. Penetration tester at VNPT Cyber Immunity, red-team operator and CTF player specializing in enterprise-software vulnerability analysis, from MOVEit Transfer to Mitel MiCollab, increasingly with AI in the loop. CPTS-certified Synack Red Team member.",
     achievements: [
       {
-        text: "CVE-2022-29317 — SQL injection, CVSS 9.8 Critical",
+        text: "CVE-2022-29317: SQL injection, CVSS 9.8 Critical",
         href: "https://nvd.nist.gov/vuln/detail/CVE-2022-29317",
       },
       {

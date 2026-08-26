@@ -12,22 +12,22 @@ Build order top→bottom. Each spec: purpose, layout, data source, interactivity
 - Renders `<a>` when `href`, else `<button>`. Styles per design system. Visible focus ring.
 
 ### `SectionHeading`
-- Props: `eyebrow?`, `title`, `subtitle?`, `align?: 'left' | 'center'`.
-- Eyebrow = mono uppercase accent label; title = `h1` scale; subtitle = `--fg-muted`.
+- Props: `title`, `subtitle?`, `align?: 'left' | 'center'`, `as?: 'h1' | 'h2'`, `id?`.
+- Title = `h1` scale; subtitle = `--fg-muted`. No eyebrow/kicker prop (removed 2026-08-26: headlines stand alone on every page).
 
-### `Card`
-- `bg-[--bg-elev] border border-[--border] rounded-xl p-6`. Hover: lift + accent border.
+### Cards
+- No generic `Card` primitive. Cards exist only where elevation means something (services bento, hero proof panel, CVE table shell, contact form shell) and are composed inline from tokens: `bg-bg-elev border border-border rounded-card p-6`. Hover changes the border only.
 
 ### `Badge`
 - Props: `tone: 'critical'|'high'|'medium'|'low'|'neutral'`. Mono, rounded-full, small. Text label always present (not color-only).
 
 ### `StatCard`
-- Big mono value (accent) + muted label below.
+- Big mono value (`text-stat`, solid `--fg`, tabular) + muted label below. Borderless; the strip's hairlines frame it.
 
 ## Motion
 
 ### `Reveal`
-- Client wrapper using Framer Motion. Fades/slides children in on scroll (`whileInView`, `once`). If `prefers-reduced-motion`, renders static. Optional `delay` prop for stagger.
+- Client wrapper using IntersectionObserver + a CSS transition (`[data-reveal]` in `globals.css`). Fades/slides children in on scroll, once. If `prefers-reduced-motion`, renders static. Optional `delay` prop for stagger.
 
 ---
 
@@ -37,48 +37,46 @@ Build order top→bottom. Each spec: purpose, layout, data source, interactivity
 - Thin full-width bar, `bg-[--accent-dim]`, mono text, small link. Dismiss button (×) → hide + `localStorage` flag. If no advisory data, render nothing.
 
 ### 2. `Navbar` (client)
-- Sticky top, transparent → gains `--bg`/blur + bottom border on scroll.
-- Left: Starfish mark + "STARFISH SEC" wordmark from `/logo` (white version on dark, see `docs/03`). Center/right: nav links (`content/nav.ts`). Right: primary `Button` "Request a Pentest".
+- Sticky top, transparent → gains `--bg`/blur + bottom border the moment it sticks (1px sentinel + IntersectionObserver; no scroll listener).
+- Left: Starfish mark + typeset wordmark (see `docs/03`). Center/right: nav links (`content/nav.ts`). Right: `Button` "Request a Pentest", secondary while the header rests at the top (the hero's primary is the one green fill), primary once stuck.
 - Mobile: hamburger → full-screen or slide-down menu. Trap focus, close on Esc/link click.
 - Include a small mono `● Available` status dot (optional).
 
 ### 3. `Hero`
-- Full-viewport-ish (`min-h-[85vh]`), centered or left-aligned content.
-- Background: faint dot/grid + accent radial glow behind headline.
-- Eyebrow (mono) → H1 (display scale) → subheadline (`--fg-muted`, max-w-2xl) → CTA row (primary + secondary) → supporting line.
-- Optional decorative mono terminal line: `$ starfish scope --target you`.
-- Single `<h1>` on the page lives here.
+- Sized by padding (max `pt-24` desktop), never a viewport lock; headline, subhead and both CTAs above a ~900px fold.
+- Split from `lg`: copy `1.15fr` / proof panel `0.85fr`. Background: radially masked line grid + one low-opacity accent wash offset toward the panel.
+- Copy stack (max 4 elements): H1 (display scale, last word accent) → subheadline (`--fg-muted`, ≤ 25 words, max-w-xl) → CTA row (primary "Request a Pentest" + secondary "View our research"). No eyebrow, no tagline under the CTAs.
+- **Proof panel** (`aside`): header "Public CVE record" + live count; three most severe rows from `content/cves.ts` (mono ID, type, platform, severity `Badge` + CVSS), each an external link to its public advisory. Real data only; replaces the former decorative terminal.
+- Single `<h1>` on the page lives here. Entrance is CSS-only (`animate-fade-up`).
 
 ### 4. `StatsBar`
-- 2×2 on mobile, 4-col on desktop. Maps `content/stats.ts` → `StatCard`. On a subtle elevated band or hairline-separated row. Stagger reveal.
+- Directly under the hero. Stacked on mobile, 3-col hairline-divided strip from `sm`. Maps `content/stats.ts` → `StatCard`. Stagger reveal.
 
-### 5. `Process`
-- `SectionHeading` + 4 numbered steps (`content/process.ts`).
-- Layout: horizontal 4-col on desktop (connected by a thin line/arrows), vertical stack on mobile. Each step: mono number, title, description.
+### 5. `UspStrip` (`#why`)
+- Visible `h2` "Why teams choose Starfish" (`h2` scale) + four hairline-topped columns (1 / 2 / 4): accent Lucide glyph, medium title, one Small sentence. No card chrome. Maps `content/hero.ts#usps` via `iconMap`.
+- Folds in the former `WhyUs` section (same four points); keeps the `#why` anchor used by the footer.
 
-### 6. `Services`
-- `SectionHeading` "What we do" + responsive card grid (1 / 2 / 3 cols). Maps `content/services.ts` → `Card` with Lucide icon, title, description. `TODO` cards visibly flagged in data, not hardcoded.
+### 6. `Process`
+- Split from `lg`: `SectionHeading` sticky in a 5fr column; 4 steps (`content/process.ts`) as a hairline-divided `<ol>` in a 7fr column. Each step: green mono numeral (aria-hidden) in the gutter, title, description (≤ 52ch). Single column on mobile.
 
-### 7. `Research`
-- `SectionHeading` "Proof, published." + CVE grid/table from `content/cves.ts`.
-- Each row: mono `CVE-ID`, platform, short title, severity `Badge`.
-- 3–6 placeholder rows marked `TODO`. Bottom link `See all advisories →`.
-- Consider a large mono `200+` accent number as a visual anchor.
+### 7. `Services`
+- `SectionHeading` "What we do" + bento (1 / 2 / 3 cols). Five services in six cells: the core AI-Powered Pentest spans two columns with the masked grid + wash as its background; the research cell is tinted `--bg-elev-2`; the rest are flat `--bg-elev`. Lucide icon well, title, description. Hover: border → accent 40%, nothing else.
 
-### 8. `Team`
-- `SectionHeading` "The team" + 3-card grid (`content/team.ts`).
-- Each card: avatar placeholder (initials/monogram, no fake photos), name `TODO`, role, certification `Badge`s, one-line bio, social icon links.
+### 8. `Research`
+- `SectionHeading` "Proof, published." + CVE table from `content/cves.ts` (6 most severe). The severity-count `Badge` row ("3 Critical · n High · …") was removed from the landing on 2026-08-26 (owner); it remains on `/research`.
+- Each row: mono `CVE-ID` (a link to the public record), platform, short title, severity `Badge` + CVSS. Below `sm` the rows render as a stacked list (ID + badge, type, platform) so severity is never scrolled off-screen.
+- Footer row: count sentence, "View our research →" (`/research`, same label as the hero secondary CTA). "Read the write-ups →" (`/blog`) is hidden while the blog is unfinished (owner, 2026-08-26).
 
-### 9. `WhyUs`
-- `SectionHeading` "Why Starfish" + 4 points (icon + title + text), 2×2 grid desktop.
+### 9. `Team`
+- `SectionHeading` "The founders behind the platform" + three hairline-topped columns (`content/team.ts`), no card chrome.
+- Each: 8px-radius monogram (no fake photos; `TODO(owner)` headshots) with a "LinkedIn ↗" link opposite, name, role + mono handle, Small bio, cert `Badge`s, a hairline, sourced highlights as plain rows (linked where a public source exists). Cert glossary `dl` below. ("Read their research (n)" → `/blog` hidden with the blog, 2026-08-26.)
 
 ### 10. `FinalCTA`
-- Centered band with accent glow. Heading, body, primary `Button`, secondary email link. Strong visual close before footer.
+- Full-width band (hairline top; masked grid + wash on the left). Headline + body left, primary `Button` + `mailto:` secondary stacked right from `lg`. Not a centered card.
 
 ### 11. `Footer`
-- Multi-column link grid (`content/site.ts`) + social icons + legal line.
+- Brand column (logo, mono email, status dot, social links once supplied; nothing rendered while `socials` is empty) + three link columns (`content/site.ts`) + legal line.
 - Full-width monospace mantra: `STARFISH SECURITY // PROOF OR IT DIDN'T HAPPEN` (low opacity, large, decorative).
-- `● Available for engagements` status.
 
 ---
 

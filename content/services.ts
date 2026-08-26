@@ -7,7 +7,6 @@ export interface Service {
 }
 
 export const servicesHeading = {
-  eyebrow: "Services",
   title: "What we do",
 } as const;
 
@@ -15,7 +14,7 @@ export const services: Service[] = [
   {
     title: "AI-Powered Penetration Testing",
     description:
-      "AI-driven, exploit-focused testing of web apps, APIs, and infrastructure — every finding validated by senior researchers, delivered fast, with a working exploit and clear, cost-effective scoping.",
+      "AI-driven, exploit-focused testing of web apps, APIs, and infrastructure. Every finding is validated by senior researchers and delivered fast, with a working exploit and clear, cost-effective scoping.",
     icon: "crosshair",
   },
   {

@@ -5,25 +5,28 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/motion/Reveal";
 
+/** Closing band: full-width, headline left, actions right. Same masked grid + wash as the hero. */
 export function FinalCTA() {
   return (
-    <section className="border-t border-border py-20 md:py-28 lg:py-32" aria-labelledby="cta-title">
-      <Container>
+    <section
+      className="relative isolate overflow-hidden border-t border-border"
+      aria-labelledby="cta-title"
+    >
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-grid-lines [mask-image:radial-gradient(ellipse_at_15%_50%,black_0%,transparent_65%)]" />
+        <div className="absolute top-1/2 left-[-5%] h-[24rem] w-[40rem] -translate-y-1/2 bg-accent-glow blur-3xl" />
+      </div>
+
+      <Container className="py-20 md:py-28">
         <Reveal>
-          <div className="relative isolate overflow-hidden rounded-card border border-border bg-bg-elev px-6 py-16 text-center md:px-16 md:py-24">
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[30rem] w-[50rem] -translate-x-1/2 -translate-y-1/2 bg-accent-glow blur-2xl"
-            />
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 -z-10 bg-dot-grid opacity-60 [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_70%)]"
-            />
-            <h2 id="cta-title" className="text-h1 text-balance">
-              {finalCta.title}
-            </h2>
-            <p className="mx-auto mt-4 max-w-xl text-fg-muted">{finalCta.body}</p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-16">
+            <div className="max-w-2xl">
+              <h2 id="cta-title" className="text-h1 text-balance">
+                {finalCta.title}
+              </h2>
+              <p className="mt-4 max-w-xl text-fg-muted">{finalCta.body}</p>
+            </div>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center lg:flex-col lg:items-stretch">
               <Button href={finalCta.primary.href} size="lg">
                 {finalCta.primary.label}
                 <ArrowRight className="size-4" aria-hidden="true" />

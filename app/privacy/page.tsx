@@ -22,12 +22,11 @@ export default function PrivacyPage() {
         <SectionHeading
           as="h1"
           id="privacy-title"
-          eyebrow="Legal"
           title="Privacy notice"
           subtitle="Short version: we collect what you type into the contact form, and nothing else."
         />
         <TodoNote className="self-start">
-          TODO(owner): legal review · controller entity · location · founding year
+          TODO(owner): legal review, controller entity, location, founding year
         </TodoNote>
 
         <div className="flex flex-col gap-8 text-fg-muted">

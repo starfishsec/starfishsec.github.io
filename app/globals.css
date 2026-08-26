@@ -25,21 +25,22 @@
   --color-high: #ff7a45;
   --color-warn: #ffb020;
 
-  /* Type scale (fluid) */
-  --text-display: clamp(2.5rem, 6vw, 5rem);
-  --text-display--line-height: 1.05;
-  --text-display--letter-spacing: -0.02em;
-  --text-display--font-weight: 700;
-  --text-h1: clamp(2rem, 4vw, 3rem);
+  /* Type scale (fluid). Display is sized for a 2-line hero headline beside a proof panel. */
+  --text-display: clamp(2.5rem, 4.6vw, 4rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.035em;
+  --text-display--font-weight: 600;
+  --text-h1: clamp(1.875rem, 3.4vw, 2.75rem);
   --text-h1--line-height: 1.1;
-  --text-h1--letter-spacing: -0.02em;
+  --text-h1--letter-spacing: -0.025em;
   --text-h1--font-weight: 600;
-  --text-h2: clamp(1.5rem, 3vw, 2rem);
+  --text-h2: clamp(1.5rem, 2.6vw, 1.875rem);
   --text-h2--line-height: 1.15;
   --text-h2--letter-spacing: -0.02em;
   --text-h2--font-weight: 600;
   --text-h3: 1.25rem;
   --text-h3--line-height: 1.3;
+  --text-h3--letter-spacing: -0.01em;
   --text-h3--font-weight: 600;
   --text-body: 1rem;
   --text-body--line-height: 1.6;
@@ -48,8 +49,13 @@
   --text-mono-label: 0.8125rem;
   --text-mono-label--line-height: 1.4;
   --text-mono-label--letter-spacing: 0.1em;
+  /* Stat numerals: mono, solid, tight. */
+  --text-stat: clamp(2.25rem, 4.2vw, 3.5rem);
+  --text-stat--line-height: 1;
+  --text-stat--letter-spacing: -0.03em;
+  --text-stat--font-weight: 500;
 
-  /* Radii */
+  /* Radii: containers 12px, controls 8px, badges pill (documented rule, applied everywhere). */
   --radius-card: 12px;
   --radius-btn: 8px;
 
@@ -58,8 +64,8 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 /* ---------------------------------------------------------------------------
@@ -78,6 +84,10 @@
     line-height: var(--text-body--line-height);
   }
 
+  p {
+    text-wrap: pretty;
+  }
+
   ::selection {
     background: var(--color-accent);
     color: var(--color-bg);
@@ -86,6 +96,12 @@
   :focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
+  }
+
+  /* `transition-colors` animates outline-color, so without a resting value the focus ring fades
+     in from currentColor (gray). Pre-set it on focusable elements: the ring snaps to accent. */
+  :where(a, button, input, select, textarea, summary, [tabindex]) {
+    outline-color: var(--color-accent);
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -109,8 +125,30 @@
 }
 
 /* ---------------------------------------------------------------------------
+   Scroll reveal (components/motion/Reveal.tsx) — docs/03: opacity 0→1, y 16→0, 0.5s, once.
+   Hidden until the observer flips `data-reveal` to "shown". The reduced-motion block above and
+   the layout's <noscript> style both force the final state, so content never depends on JS.
+--------------------------------------------------------------------------- */
+@layer components {
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(var(--reveal-y, 16px));
+    transition:
+      opacity 0.5s var(--ease-out-soft),
+      transform 0.5s var(--ease-out-soft);
+  }
+  [data-reveal="shown"] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
    Utilities / motifs
 --------------------------------------------------------------------------- */
+
+/* Mono data label: table headers, footer column titles, the proof-panel title.
+   Not a section eyebrow — landing sections open with the headline alone. */
 @utility eyebrow {
   font-family: var(--font-mono);
   font-size: var(--text-mono-label);
@@ -119,18 +157,39 @@
   text-transform: uppercase;
 }
 
-@utility bg-dot-grid {
-  background-image: radial-gradient(rgba(230, 232, 235, 0.09) 1px, transparent 1px);
-  background-size: 28px 28px;
+/* Fine engineering grid: crisp 1px lines. Always masked to a radial falloff by the caller. */
+@utility bg-grid-lines {
+  background-image:
+    linear-gradient(to right, rgba(230, 232, 235, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(230, 232, 235, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
 }
 
+/* Soft accent wash for ambient depth behind the hero and the closing CTA. Low opacity on purpose:
+   the accent points, it does not glow. */
 @utility bg-accent-glow {
   background-image: radial-gradient(
     ellipse at center,
-    rgba(57, 255, 136, 0.18) 0%,
-    rgba(57, 255, 136, 0.06) 35%,
+    rgba(57, 255, 136, 0.13) 0%,
+    rgba(57, 255, 136, 0.04) 40%,
     transparent 70%
   );
+}
+
+/* 1px gradient hairline (mask trick). Drop as a decorative <span> inside a
+   `relative` rounded container: it inherits the radius and paints only the border. */
+@utility gradient-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(140deg, rgba(57, 255, 136, 0.55), rgba(57, 255, 136, 0) 42%);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 /* CSS-only entrance for above-the-fold content (Hero): no JS/hydration dependency → fast LCP.
@@ -150,6 +209,7 @@
   animation: fade-up 0.6s var(--ease-out-soft) both;
 }
 
+/* Availability indicator (nav + footer). Real state, not decoration; pulse stops under reduced motion. */
 @keyframes pulse-dot {
   0%,
   100% {
@@ -167,4 +227,28 @@
   border-radius: 9999px;
   background: var(--color-accent);
   animation: pulse-dot 2s var(--ease-out-soft) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-dot {
+    animation: none !important;
+  }
+}
+
+/* Thin, on-brand scrollbar (WebKit + Firefox). */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 9999px;
+  border: 2px solid var(--color-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-fg-subtle);
 }

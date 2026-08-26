@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import type { ReactNode } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { cn } from "@/lib/cn";
 import { useReducedMotion } from "./useReducedMotion";
 
 interface RevealProps {
@@ -16,27 +16,48 @@ interface RevealProps {
 /**
  * Scroll-reveal wrapper (docs/03 motion: opacity 0→1, y 16→0, 0.5s ease-out, once).
  *
- * The markup is identical on server and client (always a `motion.div`) so hydration never
- * mismatches. Reduced motion is handled two ways:
- *  - CSS: `@media (prefers-reduced-motion: reduce) [data-reveal]` forces the final state
- *    (`globals.css`) — works even before JS runs.
- *  - JS: the transition duration collapses to 0 so Framer never schedules an animation.
+ * Implemented with IntersectionObserver + a CSS transition (`[data-reveal]` rules in
+ * `globals.css`) instead of an animation library: the landing page shipped ~120 KB of
+ * framer-motion for this one effect, which cost the Lighthouse performance budget.
+ *
+ * Reduced motion / no JS are handled in CSS so the content is never gated on hydration:
+ *  - `@media (prefers-reduced-motion: reduce) [data-reveal]` forces the final state;
+ *  - the root layout's `<noscript>` style does the same when scripts are disabled;
+ *  - the hook below additionally skips the observer, so nothing waits for a scroll.
  */
 export function Reveal({ children, className, delay = 0, y = 16 }: RevealProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [shown, setShown] = useState(false);
   const reduce = useReducedMotion();
 
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || shown) return;
+    if (reduce || typeof IntersectionObserver === "undefined") {
+      setShown(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setShown(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: "0px 0px -10% 0px" },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [reduce, shown]);
+
+  const style = {
+    transitionDelay: delay ? `${delay}s` : undefined,
+    "--reveal-y": `${y}px`,
+  } as CSSProperties;
+
   return (
-    <motion.div
-      data-reveal=""
-      className={className}
-      initial={{ opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "0px 0px -10% 0px" }}
-      transition={
-        reduce ? { duration: 0, delay: 0 } : { duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] }
-      }
-    >
+    <div ref={ref} data-reveal={shown ? "shown" : ""} className={cn(className)} style={style}>
       {children}
-    </motion.div>
+    </div>
   );
 }

@@ -5,7 +5,7 @@ Step-by-step roadmap for the coding model. Complete each phase before moving on;
 ## Phase 0 — Scaffold
 
 1. `npx create-next-app@latest` (Next.js 15) → TypeScript, App Router, Tailwind **v4**, ESLint, `@/*` alias, no `src/` dir (match `docs/04`).
-2. Add deps: `framer-motion lucide-react clsx tailwind-merge zod resend`.
+2. Add deps: `lucide-react clsx tailwind-merge zod resend`.
 3. Add `.prettierrc`, confirm ESLint. Set `tsconfig` strict.
 4. Verify `npm run dev` renders the default page.
    - **DoD:** clean build, no type errors.
@@ -14,7 +14,7 @@ Step-by-step roadmap for the coding model. Complete each phase before moving on;
 
 1. Import Tailwind v4 (`@import "tailwindcss";`) and declare all tokens from `docs/03` in an `@theme { ... }` block in `globals.css` (colors, `sans`/`mono` fonts, fluid type scale). Configure PostCSS with `@tailwindcss/postcss`.
 2. Add any remaining base styles (body bg/fg, container centering) in `globals.css`.
-3. Wire fonts via `next/font` (Inter + JetBrains Mono) in `app/layout.tsx`.
+3. Wire fonts via `next/font` (Geist + Geist Mono; was Inter + JetBrains Mono before the 2026-08-26 redesign) in `app/layout.tsx`.
 4. Base body styles: bg, fg, antialiased, mono/sans defaults, reduced-motion reset.
    - **DoD:** a test page shows correct colors + both fonts.
 
@@ -38,11 +38,11 @@ Build in order, each wrapped in `Reveal`, composed into `app/page.tsx`:
 1. `Navbar` + `AnnouncementBar`
 2. `Hero`
 3. `StatsBar`
-4. `Process`
-5. `Services`
-6. `Research`
-7. `Team`
-8. `WhyUs`
+4. `UspStrip` (absorbed the former `WhyUs` in the 2026-08-26 redesign; keeps `#why`)
+5. `Process`
+6. `Services`
+7. `Research`
+8. `Team`
 9. `FinalCTA`
 10. `Footer`
    - **DoD per section:** matches `docs/05`, responsive at 375/768/1440, copy matches `docs/02`.
@@ -107,23 +107,24 @@ Mostly resolved as of 2026-08-25. Remaining `TODO(owner)` — surface them, don'
 | Phase | Status | Notes |
 |-------|--------|-------|
 | 0 Scaffold | ✅ | Next 15.5, TS strict, Tailwind 4.3, ESLint flat config, Prettier |
-| 1 Tokens | ✅ | All `docs/03` tokens in `app/globals.css` `@theme`; Inter + JetBrains Mono via `next/font` |
+| 1 Tokens | ✅ | All `docs/03` tokens in `app/globals.css` `@theme`; Geist + Geist Mono via `next/font` (redesign 2026-08-26) |
 | 2 Primitives + motion | ✅ | + `Logo`, `StatusDot`, `TodoNote`, `icons` map |
 | 3 Content | ✅ | All copy from `docs/02`; unknowns render a visible `TODO(owner)` badge. CVE data = 246 public records imported via `scripts/import-wordfence.mjs` |
 | 4 Sections | ✅ | 11 sections, responsive 375/768/1440, reduced-motion verified |
 | 5 SEO | ✅ | metadata, OG/Twitter, `robots.ts`, `sitemap.ts`, favicon/apple-icon/`og.png` generated from `/logo` |
 | 6 Routes + contact | ✅ | `/research` (filters), `/contact` (+ server action, mailto fallback), `/thanks`, `/disclosure`, `/privacy`, 404 |
-| 7 QA | ✅ | Lighthouse mobile (prod build): Home 96/100/100/100 · Research 96/100/100/100 · Contact 97/100/100/100 |
+| 7 QA | ✅ | Lighthouse mobile (prod build, 2026-08-26 redesign): Home 96/100/100/100 · Research 97/100/100/100 · Contact 98/100/100/100 |
 | 8 Deploy | ⬜ | Push to GitHub done; Vercel project + env vars pending |
 
 ### Implementation decisions worth knowing
 
-- **Hero uses CSS-only animation** (`animate-fade-up`, `globals.css`), not Framer: the LCP element must paint before hydration. Everything below the fold uses `Reveal` (Framer `whileInView`).
+- **Hero uses CSS-only animation** (`animate-fade-up`, `globals.css`), not Framer: the LCP element must paint before hydration. Everything below the fold uses `Reveal` (IntersectionObserver + CSS transition; framer-motion was removed 2026-08-26 to recover the Lighthouse budget).
 - **`Reveal` always renders the same markup** on server and client; reduced motion is handled by a CSS rule on `[data-reveal]` plus a zero-duration transition. Branching on `useReducedMotion()` at render time caused a hydration mismatch that blanked the page.
 - **`lib/cn.ts` extends `tailwind-merge`** with the custom theme scales (see `docs/04`). Without it `text-bg` on the primary button was silently dropped (white text on green, 1.08:1 contrast).
 - **`body` is a flex column → children get `min-w-0`**; otherwise the footer's `nowrap` mantra widens the page on mobile.
 - **Contact fallback:** when `RESEND_API_KEY` is missing, the server action returns a prefilled `mailto:` link instead of failing. Honeypot field `website` silently redirects to `/thanks`.
-- **`/disclosure` and `/privacy` copy is not in `docs/02`.** It was written minimal and factual (matches the actual build: no tracking, form → email) and is flagged `TODO(owner): review` on-page.
+- **`/disclosure` and `/privacy` copy is not in `docs/02`.** `/privacy` is minimal and factual (matches the actual build: no tracking, form → email), flagged `TODO(owner): review` on-page. `/disclosure` was completed 2026-08-26 on the owner's request, modelled on pwn.ai's practice (private report first, published timeline + PoC + CVE, unresponsive vendors still get published) with the industry-standard 90-day window and a 7-day active-exploitation clause; the two numbers are constants at the top of `app/disclosure/page.tsx` for the owner to confirm. Only the PGP/Signal contact remains `TODO(owner)`.
+- **2026-08-26 owner changes:** Blog tab/footer link/sitemap entries hidden and `/blog/**` set `noindex` until the blog is complete (route still builds); severity-count chip row removed from the landing `Research` section (kept on `/research`); `Team` heading is now about the **founders** ("The founders behind the platform"), not "the experts behind", and its `/blog` deep links are hidden with the blog.
 - **Logo assets** were derived from the owner's PNGs by thresholding the black ink to white-on-transparent. A clean SVG export is still `TODO(owner)`.
 - **Env vars:** `RESEND_API_KEY`, `CONTACT_TO_EMAIL` (default `info@starfishsec.com`), `CONTACT_FROM_EMAIL` (must be on a Resend-verified domain). See `.env.example`.
 
@@ -149,6 +150,15 @@ Mostly resolved as of 2026-08-25. Remaining `TODO(owner)` — surface them, don'
 - Read all three LinkedIn profiles logged-in, plus Wordfence/Patchstack/Synack/NVD/VNPT blog. Rewrote bios and highlights with sourced facts (docs/02 §8). Notables now shown: Phuoc's Sitecore weaponized-PoC write-up; Tai's **CVE-2022-29317 (9.8 Critical)** and his AI-assisted Mitel MiCollab analysis; An's Apple Hall of Fame + two-time SRT Hero.
 - Corrections: Tai is **SRT member** (his LinkedIn), not Hero; Firefox/PAM360 claims stayed dropped (unverifiable). Phuoc↔Brown-PhD identity left off the card pending owner confirmation.
 - Stat card 2 is now **"Many" senior experts** (not "3").
+
+### Redesign round (2026-08-26, `design-taste-frontend` + `redesign-existing-projects`, then `/impeccable critique` → `polish`)
+
+- Type: **Geist + Geist Mono** via `next/font/google` (was Inter + JetBrains Mono); display `clamp(2.5rem, 4.6vw, 4rem)`, new `text-stat` token for numerals. No gradient text anywhere.
+- Hero: mock terminal retired; the right column is a **proof panel** rendering the three most severe records from `content/cves.ts`, each linked to its public advisory. Hero stack cut to headline + 25-word subhead + two CTAs.
+- Layout families per section: split hero → stat strip → hairline USP columns → sticky-split process `<ol>` → bento (featured cell carries the only wash) → CVE table (stacked list below `sm`) → hairline team columns → full-width CTA band. No hover glow blobs, no section eyebrows (also removed from every sub-page; `SectionHeading` lost the prop), no em-dashes in copy.
+- `WhyUs` folded into `UspStrip` (`#why` kept); unused `Card.tsx` deleted; `Navbar` sticky state via IntersectionObserver sentinel, nav CTA is a ghost until the header sticks (one green fill per viewport).
+- Critique (dual-agent) scored 23/32, 0 P0. Fixed in polish: footer `TodoNote` for socials (now renders nothing), mobile table hiding severity, truncated proof rows, inert table rows (IDs now link), 0.7rem type, kickers on sub-pages. **Left for the owner:** the "Many" stat wording (owner decision 2026-08-26), social handles, headshots, the `246`/`247` explanation (An's count vs. team total).
+- Lighthouse mobile (prod build): Home 96 / Research 97 / Contact 98, all others 100. `.impeccable/config.json` carries one ignore: `design-system-color #000` (the `gradient-ring` mask layer, never painted).
 
 ### Remaining `TODO(owner)` (all visible in the UI)
 

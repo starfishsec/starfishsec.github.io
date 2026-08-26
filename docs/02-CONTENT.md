@@ -110,7 +110,9 @@ Confirmed core + the three services the owner named:
 
 ## 8. Team
 
-**Heading:** `The experts behind the platform` — **Sub:** `Meet the founding researchers. Behind them, a wider bench of senior experts validates every finding. One standard: prove it.`
+**Heading:** `The founders behind the platform` — **Sub:** `Three offensive-security researchers who built Starfish and still run every engagement. One standard: prove it.`
+
+> Owner decision 2026-08-26: the section is about the **founding team**, not "the experts behind" the platform (previous heading `The experts behind the platform` / sub mentioning "a wider bench of senior experts" retired). The wider validating bench is still referenced in the USP strip and the "Many senior experts" stat.
 
 Data in `content/team.ts`:
 

@@ -21,7 +21,7 @@ type ButtonAsButton = BaseProps & { href?: undefined } & Omit<
 export type ButtonProps = ButtonAsLink | ButtonAsButton;
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-btn font-medium select-none " +
+  "inline-flex items-center justify-center gap-2 rounded-btn font-medium whitespace-nowrap select-none " +
   "transition-[background-color,border-color,box-shadow,transform,color] duration-200 " +
   "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent " +
   "disabled:cursor-not-allowed disabled:opacity-60 motion-safe:active:translate-y-px";
@@ -29,7 +29,7 @@ const base =
 const variants: Record<Variant, string> = {
   primary:
     "bg-accent text-bg hover:bg-accent-hover motion-safe:hover:-translate-y-px " +
-    "hover:shadow-[0_0_0_1px_rgba(57,255,136,0.4),0_8px_30px_-8px_rgba(57,255,136,0.45)]",
+    "hover:shadow-[0_8px_24px_-12px_rgba(57,255,136,0.4)]",
   secondary:
     "border border-border bg-transparent text-fg hover:border-accent hover:bg-bg-elev-2 motion-safe:hover:-translate-y-px",
 };

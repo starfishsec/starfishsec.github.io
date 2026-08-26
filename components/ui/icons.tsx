@@ -1,31 +1,27 @@
 import {
-  Award,
-  BookOpenCheck,
+  Cpu,
   Crosshair,
-  FileCheck2,
-  Fingerprint,
+  Gauge,
   Microscope,
+  Receipt,
   ShieldCheck,
   Swords,
   Terminal,
-  Zap,
-  Coins,
+  UserCheck,
   type LucideIcon,
 } from "lucide-react";
+import type { UspIcon } from "@/content/hero";
 import type { ServiceIcon } from "@/content/services";
-import type { WhyIcon } from "@/content/whyus";
 
 /** Content files store icon *keys* (serializable); this map resolves them to Lucide components. */
-export const iconMap: Record<ServiceIcon | WhyIcon, LucideIcon> = {
+export const iconMap: Record<ServiceIcon | UspIcon, LucideIcon> = {
   crosshair: Crosshair,
   microscope: Microscope,
   swords: Swords,
   "shield-check": ShieldCheck,
   terminal: Terminal,
-  fingerprint: Fingerprint,
-  "book-open-check": BookOpenCheck,
-  award: Award,
-  "file-check": FileCheck2,
-  zap: Zap,
-  coins: Coins,
+  cpu: Cpu,
+  "user-check": UserCheck,
+  gauge: Gauge,
+  receipt: Receipt,
 };

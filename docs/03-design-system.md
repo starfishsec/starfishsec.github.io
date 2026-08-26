@@ -34,23 +34,25 @@ Define these in the Tailwind v4 `@theme { ... }` block in `globals.css` (e.g. `-
 
 ## Typography
 
-- **Sans (UI + body):** `Inter` (via `next/font/google`). Fallback: system-ui.
-- **Mono (labels, stats, code, CVE IDs):** `JetBrains Mono` or `IBM Plex Mono`. Fallback: ui-monospace.
+- **Sans (UI + body):** `Geist` (via `next/font/google`, `--font-geist`). Fallback: system-ui. (Redesign 2026-08-26; was Inter.)
+- **Mono (labels, stats, CVE IDs, handles, mantra):** `Geist Mono` (`--font-geist-mono`). Fallback: ui-monospace.
 
 ### Type scale (clamp for fluid sizing)
 
 | Token | Size | Use |
 |-------|------|-----|
-| `display` | `clamp(2.5rem, 6vw, 5rem)` | Hero H1 |
-| `h1` | `clamp(2rem, 4vw, 3rem)` | Section headings |
-| `h2` | `clamp(1.5rem, 3vw, 2rem)` | Sub-headings |
-| `h3` | `1.25rem` | Card titles |
+| `display` | `clamp(2.5rem, 4.6vw, 4rem)` | Hero H1 (600, 1.02, -0.035em) |
+| `h1` | `clamp(1.875rem, 3.4vw, 2.75rem)` | Section headings (600, -0.025em) |
+| `h2` | `clamp(1.5rem, 2.6vw, 1.875rem)` | USP heading, featured service title |
+| `h3` | `1.25rem` | Card / step / member titles |
 | `body` | `1rem` (16px) | Paragraphs |
-| `small` | `0.875rem` | Captions |
-| `mono-label` | `0.8125rem`, `tracking-widest`, `uppercase` | Eyebrows/labels |
+| `small` | `0.875rem` | Captions, table cells, descriptions |
+| `mono-label` | `0.8125rem`, `tracking 0.1em`, `uppercase` | Data labels only (table headers, footer columns, proof-panel title). Not above section headlines. |
+| `stat` | `clamp(2.25rem, 4.2vw, 3.5rem)` mono 500 | Stat numerals (solid, tabular) |
 
-- Headlines: weight 600–700, tight tracking (`-0.02em`), line-height ~1.05.
-- Body: weight 400, line-height ~1.6, `--fg-muted` for secondary.
+- Headlines: weight 600, tight tracking, line-height 1.02-1.1. No gradient fills.
+- Body: weight 400, line-height ~1.6, `--fg-muted` for secondary, `text-wrap: pretty`.
+- Copy has no em-dashes or en-dashes; use a period, comma, colon, or hyphen.
 
 ## Spacing & layout
 
@@ -63,20 +65,21 @@ Define these in the Tailwind v4 `@theme { ... }` block in `globals.css` (e.g. `-
 
 ## Buttons
 
-- **Primary:** accent background, `--bg` text, `font-medium`, `rounded-lg`, `px-5 py-2.5`; hover → `--accent-hover` + subtle lift/glow.
+- **Primary:** accent background, `--bg` text, `font-medium`, `rounded-lg`, `px-5 py-2.5`; hover → `--accent-hover` + 1px lift + accent-tinted shadow (`0 8px 24px -12px rgba(57,255,136,0.4)`).
+- **One label per intent:** every link to `/contact` is "Request a Pentest"; every link to `/research` is "View our research".
 - **Secondary:** transparent, 1px `--border`, `--fg` text; hover → `--bg-elev-2` + accent border.
 - **Focus:** visible 2px accent ring (`focus-visible:ring-2 ring-[--accent]`).
 
 ## Visual motifs (use tastefully)
 
-- **Grid/dot background:** faint radial or dotted grid behind hero, very low opacity.
-- **Accent glow:** soft radial `--accent-dim` blur behind the hero headline / final CTA.
-- **Terminal chrome:** optional mono "prompt" line (`$ starfish --scope ...`) as a decorative element near the hero.
-- **Status dot:** small pulsing `● Available for engagements` in nav or footer (mono).
+- **Grid background:** faint 64px line grid (`bg-grid-lines`, 5%), always radially masked; behind the hero, inside the featured service cell, behind the final CTA.
+- **Accent wash:** one soft radial `bg-accent-glow` (13% → 0) in the same three places. No hover glows, no blurred accent blobs inside cards.
+- **Proof panel (hero):** the three most severe real CVEs from `content/cves.ts`, each linking to its public record. This replaced the decorative terminal (redesign 2026-08-26): the site renders no mock UI.
+- **Status dot:** small pulsing `● Available for engagements` in nav and footer (mono). Real state only.
 - **Monospace mantra** in footer: `PROOF OR IT DIDN'T HAPPEN`.
-- Avoid: heavy glitch effects, matrix rain, excessive neon. Keep it enterprise-credible.
+- Avoid: heavy glitch effects, matrix rain, neon, gradient text, fake terminals/screenshots, eyebrow labels above headlines. Keep it enterprise-credible.
 
-## Motion (Framer Motion)
+## Motion (CSS transitions + IntersectionObserver)
 
 - **On-scroll reveal:** opacity 0→1, y 16→0, duration 0.5s, ease-out, `viewport once`.
 - **Stagger** children by ~0.08s in lists/grids.
@@ -93,7 +96,7 @@ Both are **black on a light paper mockup**. This is a dark-first site, so:
 
 - **`TODO`: produce a white (and/or accent) monochrome version + a clean SVG** of both the mark and the wordmark, on transparent background. Crop out the paper texture. Use the white mark on dark surfaces (navbar, footer, favicon, OG image).
 - **Favicon / nav mark:** use the starfish **mark** (not a generic `*`/`✶`). `✶` may still appear as a tiny decorative sparkle, but the real mark is the brand.
-- **Wordmark is serif — and that's the ONLY place serif appears.** Do NOT introduce a serif typeface for headings or body. Render the wordmark from the logo asset (image/SVG), not by re-typesetting text. UI stays Inter (sans) + JetBrains Mono per the type scale above.
+- **No serif anywhere.** The original wordmark PNG is serif; per the owner (2026-08-26) the wordmark is typeset in the site sans ("Starfish" + accent "Sec") and only the mark image is used. UI stays Geist (sans) + Geist Mono per the type scale above.
 - Keep clear space around the mark ≥ the height of one star arm. Minimum mark size ~24px (favicon aside).
 
 ## Iconography

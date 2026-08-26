@@ -27,7 +27,7 @@ const selectClass =
   "transition-colors hover:border-fg-subtle focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
 function formatDate(iso: string | undefined): string {
-  if (!iso) return "—";
+  if (!iso) return "n/a";
   const d = new Date(`${iso}T00:00:00Z`);
   return Number.isNaN(d.getTime())
     ? iso

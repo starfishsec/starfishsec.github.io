@@ -6,20 +6,22 @@ import { Services } from "@/components/sections/Services";
 import { StatsBar } from "@/components/sections/StatsBar";
 import { Team } from "@/components/sections/Team";
 import { UspStrip } from "@/components/sections/UspStrip";
-import { WhyUs } from "@/components/sections/WhyUs";
 
-// Section order per docs/02-CONTENT.md (AnnouncementBar, Navbar, Footer live in the root layout).
+/**
+ * Section order (redesign 2026-08-26): proof strip directly under the hero, then the four USPs.
+ * The former `WhyUs` section repeated the USPs almost verbatim and was folded into `UspStrip`
+ * (which keeps the `#why` anchor). AnnouncementBar, Navbar, Footer live in the root layout.
+ */
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <UspStrip />
       <StatsBar />
+      <UspStrip />
       <Process />
       <Services />
       <Research />
       <Team />
-      <WhyUs />
       <FinalCTA />
     </>
   );

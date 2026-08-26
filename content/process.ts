@@ -4,9 +4,8 @@ export interface ProcessStep {
 }
 
 export const processHeading = {
-  eyebrow: "Process",
   title: "How we work",
-  subtitle: "From scope to working exploit — AI-driven testing, expert-verified.",
+  subtitle: "From scope to working exploit. AI-driven testing, expert-verified.",
 } as const;
 
 export const processSteps: ProcessStep[] = [

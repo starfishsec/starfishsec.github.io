@@ -1,7 +1,6 @@
 import { cn } from "@/lib/cn";
 
 interface SectionHeadingProps {
-  eyebrow?: string;
   title: string;
   subtitle?: string;
   align?: "left" | "center";
@@ -12,8 +11,8 @@ interface SectionHeadingProps {
   id?: string;
 }
 
+/** Headline + optional muted subtitle. No kicker above the headline anywhere (DESIGN.md, Headline-Alone Rule). */
 export function SectionHeading({
-  eyebrow,
   title,
   subtitle,
   align = "left",
@@ -30,12 +29,6 @@ export function SectionHeading({
         className,
       )}
     >
-      {eyebrow ? (
-        <p className="eyebrow text-accent">
-          <span aria-hidden="true">{"// "}</span>
-          {eyebrow}
-        </p>
-      ) : null}
       <Tag id={id} className="text-h1 text-balance">
         {title}
       </Tag>

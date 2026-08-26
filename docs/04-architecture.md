@@ -2,7 +2,7 @@
 
 ## Stack
 
-- **Next.js 15** (App Router, RSC), **TypeScript** strict, **Tailwind CSS v4**, **Framer Motion**, **Lucide React**.
+- **Next.js 15** (App Router, RSC), **TypeScript** strict, **Tailwind CSS v4**, **Lucide React**.
 - Package manager: npm (lockfile committed). Node: 20 LTS.
 - Every route statically generated; the contact form (server action) is the only dynamic piece.
 
@@ -41,25 +41,25 @@ starfish/
 ├── components/
 │   ├── sections/             # One file per landing section
 │   │   ├── AnnouncementBar.tsx   (client: dismiss + localStorage)
-│   │   ├── Navbar.tsx            (client: scroll state, mobile menu w/ focus trap)
-│   │   ├── Hero.tsx              (server; CSS-only entrance → fast LCP)
+│   │   ├── Navbar.tsx            (client: sticky state via IntersectionObserver sentinel, mobile menu w/ focus trap)
+│   │   ├── Hero.tsx              (server; CSS-only entrance → fast LCP; real-data proof panel)
 │   │   ├── StatsBar.tsx
+│   │   ├── UspStrip.tsx          (#why; four USPs as hairline columns)
 │   │   ├── Process.tsx
 │   │   ├── Services.tsx
 │   │   ├── Research.tsx
 │   │   ├── Team.tsx
-│   │   ├── WhyUs.tsx
 │   │   ├── FinalCTA.tsx
 │   │   └── Footer.tsx
-│   ├── ui/                   # Container, Button, Card, Badge, SectionHeading, StatCard,
+│   ├── ui/                   # Container, Button, Badge, SectionHeading, StatCard,
 │   │                         # Logo (mark + wordmark images), StatusDot, TodoNote, icons (key → Lucide map)
 │   ├── forms/ContactForm.tsx # client, useActionState, progressive enhancement
 │   ├── research/CveTable.tsx # client, vendor/year/severity filters
-│   └── motion/               # Reveal.tsx (Framer whileInView), useReducedMotion.ts
+│   └── motion/               # Reveal.tsx (IntersectionObserver + CSS transition), useReducedMotion.ts
 ├── content/                  # Typed content data (source of truth for repeated items)
 │   ├── site.ts               # name, domain, email, socials (TODO), footer columns, SEO metadata
-│   ├── nav.ts · hero.ts · announcement.ts · stats.ts · process.ts
-│   ├── services.ts · cves.ts · team.ts · whyus.ts · cta.ts
+│   ├── nav.ts · hero.ts (hero + USPs) · announcement.ts · stats.ts · process.ts
+│   ├── services.ts · cves.ts (+ cves.data.ts, generated) · team.ts · blog.ts · cta.ts
 ├── lib/
 │   └── cn.ts                 # clsx + tailwind-merge (extended with our theme scales)
 ├── public/                   # logo-mark-white.png, logo-wordmark-white.png, logo-lockup-white.png,
@@ -105,7 +105,6 @@ starfish/
 next react react-dom
 typescript @types/react @types/node
 tailwindcss @tailwindcss/postcss
-framer-motion
 lucide-react
 clsx tailwind-merge
 zod                # form validation (optional but recommended)
