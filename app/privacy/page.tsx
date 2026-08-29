@@ -3,7 +3,6 @@ import Link from "next/link";
 import { site } from "@/content/site";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TodoNote } from "@/components/ui/TodoNote";
 
 export const metadata: Metadata = {
   title: "Privacy Notice",
@@ -30,9 +29,20 @@ export const metadata: Metadata = {
  *  - the fields listed under "What we collect" are exactly the contact form's fields
  *  - there is no database (CLAUDE.md forbids one): a submission exists only as the email it becomes
  *
- * TODO(owner): legal review. The open facts are flagged inline — the controller entity and its
- * country (which also decides which law applies and which authority hears a complaint), the
- * hosting provider, and a concrete retention period.
+ * Controller, hosting and retention supplied by the owner 2026-08-29: operated by Phuoc Pham,
+ * registered in Đà Nẵng, Vietnam; everything is self-hosted (so no hosting company is a processor
+ * and the server logs stay on our own infrastructure); enquiries that go nowhere are deleted after
+ * 90 days.
+ *
+ * That Vietnamese establishment fixes the governing law. Verified 2026-08-29 against Tilleke &
+ * Gibbins and Vietnam Briefing, which agree: Law No. 91/2025/QH15 on Personal Data Protection,
+ * passed 26 June 2025 and in force since 1 January 2026, replacing Decree 13/2023/NĐ-CP; enforced
+ * by the Ministry of Public Security, whose Department of Cybersecurity and High-Tech Crime
+ * Prevention (A05) is the regulator a data subject complains to. GDPR is not claimed as the
+ * governing law, only acknowledged where a visitor's own law reaches us.
+ *
+ * TODO(owner): this has still not been read by a lawyer — worth one pass before launch, including
+ * whether the registration needs a street address or business-registration number stated here.
  */
 
 /** Verified against the build, not aspirational — see the note above before editing. */
@@ -82,13 +92,17 @@ export default function PrivacyPage() {
           <section className="flex flex-col gap-3">
             <h2 className="text-h2 text-fg">Who is responsible</h2>
             <p>
-              {site.name} decides why and how the data described here is processed, and is the
-              contact point for any question or request about it.
+              {site.name} is operated by Phuoc Pham, registered in Đà Nẵng, Vietnam. He decides why
+              and how the data described here is processed, and is the contact point for any
+              question or request about it.
             </p>
-            <TodoNote className="self-start">
-              TODO(owner): registered legal entity, address and country — this also determines the
-              applicable law and which supervisory authority hears a complaint
-            </TodoNote>
+            <p>
+              Because we are established in Vietnam, our handling of personal data is governed by
+              Vietnam&apos;s Law on Personal Data Protection (Law No. 91/2025/QH15), in force since
+              1 January 2026. Where your own country&apos;s law reaches us as well — the GDPR if you
+              are in the EU or UK, for instance — it applies to your data on top of that, not
+              instead of it.
+            </p>
           </section>
 
           <section className="flex flex-col gap-3">
@@ -110,13 +124,10 @@ export default function PrivacyPage() {
             <p>
               As with any website, the server that delivers these pages records ordinary technical
               request data such as IP address, timestamp and user agent, for security and to keep
-              the site running. We do not combine those logs with form submissions or use them to
-              identify visitors.
+              the site running. We host this site ourselves, so those logs stay on our own
+              infrastructure and no hosting company ever sees them. We do not combine them with form
+              submissions, and we do not use them to identify visitors.
             </p>
-            <TodoNote className="self-start">
-              TODO(owner): name the hosting provider and its server-log retention, so this paragraph
-              can be specific
-            </TodoNote>
           </section>
 
           <section className="flex flex-col gap-3">
@@ -156,8 +167,10 @@ export default function PrivacyPage() {
           <section className="flex flex-col gap-3">
             <h2 className="text-h2 text-fg">Who else handles it</h2>
             <p>
-              Your message becomes an email to our own inbox. Reaching that inbox involves two
-              suppliers and no one else: the provider that hosts this site, and{" "}
+              Almost nobody. We run this site on our own infrastructure rather than renting space
+              from a cloud provider, so no hosting company stands between you and us. Your message
+              becomes an email to our own inbox, and when automated delivery is switched on the one
+              supplier involved is{" "}
               <a
                 href="https://resend.com/legal/privacy-policy"
                 target="_blank"
@@ -166,8 +179,8 @@ export default function PrivacyPage() {
               >
                 Resend
               </a>
-              , the service that delivers it. Both act on our instructions only and may not use your
-              data for their own purposes.
+              , which sends that email on our instructions and may not use your data for its own
+              purposes.
             </p>
             <p>
               If email delivery is not configured, the site does not quietly swallow your message:
@@ -178,23 +191,25 @@ export default function PrivacyPage() {
             </p>
             <p>
               We keep no database. There is no copy of your enquiry on this website — only the email
-              it became. Beyond the two suppliers above, we disclose your data to no one, unless we
-              are legally compelled to.
+              it became. Beyond that, we disclose your data to no one, unless we are legally
+              compelled to.
             </p>
           </section>
 
           <section className="flex flex-col gap-3">
             <h2 className="text-h2 text-fg">How long we keep it</h2>
             <p>
-              Correspondence is kept while we are answering you and for the life of any engagement
-              that follows, because we need the trail of what was agreed. If your enquiry does not
-              lead anywhere, the thread is deleted once it is clear there is nothing to follow up.
-              You can ask us to delete it sooner at any point.
+              An enquiry that does not turn into work is deleted{" "}
+              <span className="text-fg">90 days</span> after the conversation ends. That is the
+              whole retention period: we are not keeping your message on the chance it becomes
+              useful later.
             </p>
-            <TodoNote className="self-start">
-              TODO(owner): a concrete retention period for enquiries that go nowhere, and for
-              closed-engagement correspondence
-            </TodoNote>
+            <p>
+              If the enquiry does become an engagement, the correspondence is kept for the life of
+              that engagement, because we need the record of what was agreed and what was
+              authorised, and is then deleted on the schedule set out in the engagement agreement.
+              Either way, you can ask us to delete it sooner at any point.
+            </p>
           </section>
 
           <section className="flex flex-col gap-3">
@@ -212,20 +227,21 @@ export default function PrivacyPage() {
               and we will answer within 30 days. There is no charge and no form to fill in.
             </p>
             <p>
-              Depending on where you live, data-protection law may give you further rights, and the
-              right to complain to your national data-protection authority if you think we have
-              handled your data badly. We would rather you told us first so we can fix it, but that
-              route is yours either way.
+              If you think we have handled your data badly, tell us first — we would much rather fix
+              it than have you chase us. But the complaint route is yours either way: in Vietnam
+              that is the Department of Cybersecurity and High-Tech Crime Prevention (A05) at the
+              Ministry of Public Security, and if your own country&apos;s data-protection law covers
+              you, your national authority under that law.
             </p>
           </section>
 
           <section className="flex flex-col gap-3">
             <h2 className="text-h2 text-fg">Keeping this site safe</h2>
             <p>
-              We would be poor advertisements for our own work if this site were sloppy. It is
-              served over HTTPS, it stores nothing in your browser, and it has no login, no database
-              and no third-party code — which is the shortest way to say that there is very little
-              here to attack.
+              We would be poor advertisements for our own work if this site were sloppy. We run it
+              on our own infrastructure, it is served over HTTPS, it stores nothing in your browser,
+              and it has no login, no database and no third-party code — which is the shortest way
+              to say that there is very little here to attack.
             </p>
             <p>
               Found a flaw in it anyway? Tell us. Good-faith research on this site is welcome under
