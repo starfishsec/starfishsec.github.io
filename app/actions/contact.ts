@@ -2,7 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { z } from "zod";
-import { services } from "@/content/services";
+import { engagementTypes } from "@/content/services";
 import { site } from "@/content/site";
 
 export type ContactField = "name" | "email" | "company" | "engagement" | "message";
@@ -21,8 +21,6 @@ export type ContactState =
       mailto: string;
     };
 
-const engagementOptions = services.map((s) => s.title);
-
 const schema = z.object({
   name: z.string().trim().min(2, "Please enter your name.").max(120, "Name is too long."),
   email: z.email("Please enter a valid email address.").max(200, "Email is too long."),
@@ -30,7 +28,7 @@ const schema = z.object({
   engagement: z
     .string()
     .trim()
-    .refine((v) => v === "" || engagementOptions.includes(v), "Please pick a valid option."),
+    .refine((v) => v === "" || engagementTypes.includes(v), "Please pick a valid option."),
   message: z
     .string()
     .trim()

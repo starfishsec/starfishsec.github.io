@@ -4,7 +4,7 @@ import { ArrowRight, Mail } from "lucide-react";
 import { useActionState, useId } from "react";
 import { useFormStatus } from "react-dom";
 import { submitContact, type ContactField, type ContactState } from "@/app/actions/contact";
-import { services } from "@/content/services";
+import { engagementTypes } from "@/content/services";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/cn";
 
@@ -139,9 +139,9 @@ export function ContactForm() {
             className={cn(inputClass, "appearance-none")}
           >
             <option value="">Not sure yet</option>
-            {services.map((s) => (
-              <option key={s.title} value={s.title}>
-                {s.title}
+            {engagementTypes.map((t) => (
+              <option key={t} value={t}>
+                {t}
               </option>
             ))}
           </select>
@@ -174,8 +174,8 @@ export function ContactForm() {
           <SubmitButton />
         </div>
         <p className="text-small text-fg-muted sm:text-right">
-          We reply from{" "}
-          <span className="font-mono text-fg">info@starfishsec.com</span>. No newsletters.
+          We reply from <span className="font-mono text-fg">info@starfishsec.com</span>. No
+          newsletters.
         </p>
       </div>
     </form>

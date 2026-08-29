@@ -41,3 +41,21 @@ export const services: Service[] = [
     icon: "terminal",
   },
 ];
+
+/**
+ * Scope options for the "Engagement type" field on the contact form. Kept separate from `services`
+ * (which is the marketing section on the homepage) so the form can ask for a concrete scope without
+ * changing the service positioning. Owner-supplied list (2026-08-29).
+ */
+export const engagementTypes: string[] = [
+  "Web application pentest",
+  "API pentest",
+  "Mobile application pentest (iOS / Android)",
+  "External network / infrastructure pentest",
+  "Internal network pentest",
+  "Cloud pentest (AWS / Azure / GCP)",
+  "Red team / adversary simulation",
+  "Source code review",
+  "Vulnerability research / zero-day",
+  "Security consulting",
+];
