@@ -3,7 +3,6 @@ import Link from "next/link";
 import { site } from "@/content/site";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TodoNote } from "@/components/ui/TodoNote";
 
 export const metadata: Metadata = {
   title: "Vulnerability Disclosure Policy",
@@ -81,19 +80,22 @@ export default function DisclosurePage() {
           <section className="flex flex-col gap-3">
             <h2 className="text-h2 text-fg">Scope</h2>
             <p>
-              This policy governs vulnerabilities that Starfish Security researchers, or the Starfish
-              platform under their supervision, discover independently in third-party software: open
-              source projects, WordPress plugins and themes, commercial products, and internet-facing
-              services. It is the basis for the{" "}
-              <Link href="/research" className="text-fg underline-offset-4 hover:text-accent hover:underline">
+              This policy governs vulnerabilities that Starfish Security researchers, or the
+              Starfish platform under their supervision, discover independently in third-party
+              software: open source projects, WordPress plugins and themes, commercial products, and
+              internet-facing services. It is the basis for the{" "}
+              <Link
+                href="/research"
+                className="text-fg underline-offset-4 hover:text-accent hover:underline"
+              >
                 CVEs on our research page
               </Link>
               .
             </p>
             <p>
               It does not cover client engagements. Anything we find under contract belongs to the
-              client, is governed by that engagement&apos;s rules, and is never published without the
-              client&apos;s written consent.
+              client, is governed by that engagement&apos;s rules, and is never published without
+              the client&apos;s written consent.
             </p>
           </section>
 
@@ -104,7 +106,10 @@ export default function DisclosurePage() {
                 const [lead, ...rest] = c.split(". ");
                 return (
                   <li key={c} className="flex gap-3">
-                    <span aria-hidden="true" className="mt-[0.6em] size-1.5 shrink-0 rounded-full bg-accent" />
+                    <span
+                      aria-hidden="true"
+                      className="mt-[0.6em] size-1.5 shrink-0 rounded-full bg-accent"
+                    />
                     <p>
                       <span className="text-fg">{lead}.</span> {rest.join(". ")}
                     </p>
@@ -125,7 +130,10 @@ export default function DisclosurePage() {
             </div>
             <ol className="flex flex-col divide-y divide-border rounded-card border border-border bg-bg-elev">
               {timeline.map((step) => (
-                <li key={step.when} className="grid gap-2 px-5 py-4 sm:grid-cols-[7.5rem_1fr] sm:gap-6">
+                <li
+                  key={step.when}
+                  className="grid gap-2 px-5 py-4 sm:grid-cols-[7.5rem_1fr] sm:gap-6"
+                >
                   <span className="font-mono text-small text-accent">{step.when}</span>
                   <div className="flex flex-col gap-1">
                     <h3 className="text-fg">{step.title}</h3>
@@ -151,8 +159,8 @@ export default function DisclosurePage() {
               </li>
               <li>
                 <span className="text-fg">Silent fixes.</span> If a vendor patches without an
-                advisory or a CVE, we publish once we confirm the fix has shipped, so users know they
-                need to update.
+                advisory or a CVE, we publish once we confirm the fix has shipped, so users know
+                they need to update.
               </li>
               <li>
                 <span className="text-fg">Abandoned software.</span> For projects with no maintainer
@@ -171,9 +179,9 @@ export default function DisclosurePage() {
               a fix exists, the PoC is published only after users have had time to apply it.
             </p>
             <p>
-              We request CVE identifiers through the vendor&apos;s own CNA or a coordinating CNA (for
-              example Wordfence or Patchstack for the WordPress ecosystem) so each issue is tracked
-              in the public record independently of us.
+              We request CVE identifiers through the vendor&apos;s own CNA or a coordinating CNA
+              (for example Wordfence or Patchstack for the WordPress ecosystem) so each issue is
+              tracked in the public record independently of us.
             </p>
           </section>
 
@@ -189,8 +197,7 @@ export default function DisclosurePage() {
               </a>{" "}
               with the report reference. We will confirm the researcher&apos;s identity, walk you
               through reproduction, retest your fix, and agree the publication date. Everything
-              stays confidential until then.{" "}
-              <TodoNote>TODO(owner): PGP fingerprint / Signal for encrypted follow-up</TodoNote>
+              stays confidential until then.
             </p>
           </section>
 

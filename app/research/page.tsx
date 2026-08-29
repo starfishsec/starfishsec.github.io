@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { cves, researchHeading, severityCounts, severityLabel, severityOrder } from "@/content/cves";
+import {
+  cves,
+  researchHeading,
+  severityCounts,
+  severityLabel,
+  severityOrder,
+} from "@/content/cves";
 import { CveTable } from "@/components/research/CveTable";
 import { Badge } from "@/components/ui/Badge";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TodoNote } from "@/components/ui/TodoNote";
 
 export const metadata: Metadata = {
   title: "Research & Advisories",
@@ -15,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function ResearchPage() {
   const counts = severityCounts(cves);
-  const researchers = Array.from(new Set(cves.map((c) => c.researcher).filter(Boolean)));
+  const researchers = Array.from(new Set(cves.flatMap((c) => c.researchers ?? [])));
 
   return (
     <section className="py-20 md:py-28" aria-labelledby="research-page-title">
@@ -46,11 +51,6 @@ export default function ResearchPage() {
         </div>
 
         <CveTable cves={cves} />
-
-        <p className="text-small text-fg-muted">
-          Source: Wordfence Intelligence researcher records (public). Each row links to its advisory.{" "}
-          <TodoNote>TODO(owner): add CVEs credited to Phuoc Pham / taidh and non-WordPress advisories</TodoNote>
-        </p>
       </Container>
     </section>
   );

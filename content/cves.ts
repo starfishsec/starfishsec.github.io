@@ -5,11 +5,14 @@
  * credited to the team — see `scripts/import-wordfence.mjs`). Nothing is invented: platform, type,
  * CVSS and publish date are parsed verbatim from the public record.
  *
- * TODO(owner): CVEs published outside Wordfence (Apache, other databases) and CVEs credited to
- * Phuoc Pham / Dau Hoang Tai are not in this export yet — add another JSON under `data/wordfence/`
- * (or another importer) to include them.
+ * Advisories outside the Wordfence export (other databases, non-WordPress targets) live in
+ * `cves.manual.ts` and are merged in below.
+ *
+ * TODO(owner): more of Dau Hoang Tai's non-WordPress advisories — only CVE-2022-29317 is on public
+ * record so far. Send the CVE IDs and they get added to `cves.manual.ts`.
  */
 import { cveData } from "./cves.data";
+import { cveManual } from "./cves.manual";
 
 export type Severity = "critical" | "high" | "medium" | "low";
 
@@ -25,8 +28,8 @@ export interface Cve {
   publishedAt?: string;
   /** Public record URL (advisory page). */
   source?: string;
-  /** Team handle credited on the record. */
-  researcher?: string;
+  /** Team handles credited on the record. A joint finding credits more than one. */
+  researchers?: string[];
 }
 
 export const researchHeading = {
@@ -36,8 +39,14 @@ export const researchHeading = {
 
 export const cveTotalClaim = "200+";
 
-/** All CVEs, highest severity first (then newest). */
-export const cves: Cve[] = cveData;
+/**
+ * All CVEs: the generated Wordfence export plus the hand-maintained non-Wordfence advisories,
+ * highest severity first, then newest.
+ */
+export const cves: Cve[] = [...cveData, ...cveManual].sort(
+  (a, b) =>
+    (b.cvss ?? 0) - (a.cvss ?? 0) || (b.publishedAt ?? "").localeCompare(a.publishedAt ?? ""),
+);
 
 export const severityLabel: Record<Severity, string> = {
   critical: "Critical",

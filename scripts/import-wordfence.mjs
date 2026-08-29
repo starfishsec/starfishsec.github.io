@@ -22,8 +22,18 @@ const RESEARCHERS = {
 };
 
 const MONTHS = {
-  January: "01", February: "02", March: "03", April: "04", May: "05", June: "06",
-  July: "07", August: "08", September: "09", October: "10", November: "11", December: "12",
+  January: "01",
+  February: "02",
+  March: "03",
+  April: "04",
+  May: "05",
+  June: "06",
+  July: "07",
+  August: "08",
+  September: "09",
+  October: "10",
+  November: "11",
+  December: "12",
 };
 
 function toIsoDate(s) {
@@ -66,18 +76,31 @@ for (const file of readdirSync(DATA_DIR).filter((f) => f.endsWith(".json"))) {
       cvss: Number.isFinite(cvss) ? cvss : undefined,
       publishedAt: toIsoDate(r.date),
       source: r.href || undefined,
-      researcher,
+      researchers: [researcher],
     });
   }
 }
 
 // Highest severity first, then newest.
 rows.sort(
-  (a, b) => (b.cvss ?? 0) - (a.cvss ?? 0) || (b.publishedAt ?? "").localeCompare(a.publishedAt ?? ""),
+  (a, b) =>
+    (b.cvss ?? 0) - (a.cvss ?? 0) || (b.publishedAt ?? "").localeCompare(a.publishedAt ?? ""),
 );
 
-const seen = new Set();
-const unique = rows.filter((r) => (seen.has(r.id) ? false : (seen.add(r.id), true)));
+// A CVE can be credited to more than one of our researchers (joint findings appear on each
+// researcher's page). Merge the credits instead of dropping the duplicate row.
+const byId = new Map();
+for (const r of rows) {
+  const prev = byId.get(r.id);
+  if (!prev) {
+    byId.set(r.id, r);
+    continue;
+  }
+  for (const who of r.researchers) {
+    if (!prev.researchers.includes(who)) prev.researchers.push(who);
+  }
+}
+const unique = [...byId.values()];
 
 const lines = unique.map((r) => {
   const parts = [
@@ -88,7 +111,7 @@ const lines = unique.map((r) => {
     r.cvss !== undefined ? `cvss: ${r.cvss}` : null,
     r.publishedAt ? `publishedAt: ${q(r.publishedAt)}` : null,
     r.source ? `source: ${q(r.source)}` : null,
-    `researcher: ${q(r.researcher)}`,
+    `researchers: [${r.researchers.map(q).join(", ")}]`,
   ].filter(Boolean);
   return `  { ${parts.join(", ")} },`;
 });

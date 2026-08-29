@@ -62,8 +62,27 @@ export const team: TeamMember[] = [
         href: "https://sec.vnpt.vn/2025/11/Sitecore-CVE-2025-53690-Detailed-Analysis-andamp-Weaponized-POC-Why-you-shouldnt-blindly-trust-the-documentation",
       },
       {
+        // Verified 2026-08-29 on Mitel's advisory: MTLVULN-1672, NuPoint Unified Messaging (NPM)
+        // component of MiCollab, Critical / CVSS 9.8, credited to "Phuoc Pham and Dung Pham".
+        // No CVE assigned yet ("CVE identifiers have been requested but are not yet assigned"),
+        // so this is not in the /research table.
+        text: "MTLVULN-1672: unauthenticated command injection in Mitel MiCollab (NuPoint UM), CVSS 9.8 Critical — with Dung Pham",
+        href: "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0005",
+      },
+      {
         text: "4 CVEs credited on Wordfence Intelligence (stored XSS in widely used WordPress plugins)",
         href: "https://www.wordfence.com/threat-intel/vulnerabilities/researchers/phuoc-pham-p3tl0v3r",
+      },
+      {
+        text: "CVE-2025-39518: SQL injection in BMA Lite, CVSS 7.6 High (Patchstack)",
+        href: "https://patchstack.com/database/Wordpress/Plugin/bma-lite-appointment-booking-and-scheduling/vulnerability/wordpress-bma-lite-1-4-2-sql-injection-vulnerability",
+      },
+      // TODO(owner): the two claims below are owner-attested (2026-08-29) — no public source
+      // found. Synack Acropolis has no /inductees/p3tl0v3r page, and no public acknowledgement
+      // page was found for the Oracle / Domino's / Swisscom credits. Supply a link, or drop them.
+      { text: "2× winner of the Synack “15 For 15” competition" },
+      {
+        text: "Responsible disclosure on VDP programs including Oracle, Sitecore, Mitel MiCollab, Domino’s Pizza and Swisscom, plus bug-bounty work on Synack",
       },
       { text: "OffSec Web Expert (OSWE) · Synack Red Team member" },
     ],
