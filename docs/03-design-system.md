@@ -41,14 +41,14 @@ Define these in the Tailwind v4 `@theme { ... }` block in `globals.css` (e.g. `-
 
 | Token | Size | Use |
 |-------|------|-----|
-| `display` | `clamp(2.5rem, 4.6vw, 4rem)` | Hero H1 (600, 1.02, -0.035em) |
+| `display` | `clamp(2.75rem, 5vw, 4.5rem)` | Hero H1 (600, 1.0, -0.04em) |
 | `h1` | `clamp(1.875rem, 3.4vw, 2.75rem)` | Section headings (600, -0.025em) |
 | `h2` | `clamp(1.5rem, 2.6vw, 1.875rem)` | USP heading, featured service title |
 | `h3` | `1.25rem` | Card / step / member titles |
 | `body` | `1rem` (16px) | Paragraphs |
 | `small` | `0.875rem` | Captions, table cells, descriptions |
 | `mono-label` | `0.8125rem`, `tracking 0.1em`, `uppercase` | Data labels only (table headers, footer columns, proof-panel title). Not above section headlines. |
-| `stat` | `clamp(2.25rem, 4.2vw, 3.5rem)` mono 500 | Stat numerals (solid, tabular) |
+| `stat` | `clamp(2.5rem, 4.4vw, 4rem)` mono 500 | Stat numerals (solid, tabular) |
 
 - Headlines: weight 600, tight tracking, line-height 1.02-1.1. No gradient fills.
 - Body: weight 400, line-height ~1.6, `--fg-muted` for secondary, `text-wrap: pretty`.

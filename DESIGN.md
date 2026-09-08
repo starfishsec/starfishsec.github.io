@@ -18,7 +18,7 @@ colors:
 typography:
   display:
     fontFamily: "Geist, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "clamp(2.5rem, 4.6vw, 4rem)"
+    fontSize: "clamp(2.75rem, 5vw, 4.5rem)"
     fontWeight: 600
     lineHeight: 1.02
     letterSpacing: "-0.035em"
@@ -63,7 +63,7 @@ typography:
     lineHeight: 1.25
   stat:
     fontFamily: "Geist Mono, ui-monospace, SFMono-Regular, Menlo, monospace"
-    fontSize: "clamp(2.25rem, 4.2vw, 3.5rem)"
+    fontSize: "clamp(2.5rem, 4.4vw, 4rem)"
     fontWeight: 500
     lineHeight: 1
     letterSpacing: "-0.03em"
@@ -208,7 +208,7 @@ A near-black graphite vault lit by a single electric green; three severity hues 
 **Character:** A sharp grotesque carrying the argument, with its own monospace stamping data labels on it. Headlines are tightened (−0.025em to −0.035em) so large type reads as a single carved object rather than a line of words; mono is letter-spaced wide (0.1em) and uppercased only where it labels data (table headers, footer columns, the proof-panel title).
 
 ### Hierarchy
-- **Display** (600, `clamp(2.5rem, 4.6vw, 4rem)`, 1.02, −0.035em): the hero `h1` only. Its final word is solid Signal Green. `text-balance` is always on; the headline holds to three lines at 1024px and two-to-three at 1440px beside the proof panel.
+- **Display** (600, `clamp(2.75rem, 5vw, 4.5rem)`, 1.0, −0.04em): the hero `h1` only. Its final word is solid Signal Green and carries a one-time drawn underline (70% accent, ~0.045em thick). `text-balance` is always on; the headline holds to three lines at 1024px and two-to-three at 1440px beside the proof panel.
 - **Headline** (600, `clamp(1.875rem, 3.4vw, 2.75rem)`, 1.1, −0.025em): every section heading via `SectionHeading`, the Final CTA title, and page `h1`s on standalone routes. No eyebrow above it on the landing page.
 - **Subheadline** (600, `clamp(1.5rem, 2.6vw, 1.875rem)`, 1.15, −0.02em): the USP section heading and the featured (bento) service title.
 - **Title** (600, 1.25rem, 1.3, −0.01em): service titles, process steps, team names; mobile nav links.
@@ -216,7 +216,7 @@ A near-black graphite vault lit by a single electric green; three severity hues 
 - **Small** (400, 0.875rem, 1.5): nav links, card descriptions, form labels, helper text, table cells, proof-panel rows, secondary button text.
 - **Label** (400 mono, 0.8125rem, 1.4, 0.1em, UPPERCASE): the `eyebrow` utility, used only for data labels: table headers, filter labels, footer column titles, the proof-panel title. It is not placed above section headlines.
 - **Mono Caption** (400 mono, 0.75rem, ~1.25): badges, the availability line, LinkedIn links, "optional" markers, cert glossary, result counts, "Read their research" links, `TodoNote`. Nothing on the site is set below 0.75rem (12px).
-- **Stat Numeral** (500 mono, `clamp(2.25rem, 4.2vw, 3.5rem)`, 1, −0.03em, tabular): `StatCard` values, solid Chalk.
+- **Stat Numeral** (500 mono, `clamp(2.5rem, 4.4vw, 4rem)`, 1, −0.03em, tabular): `StatCard` values, solid Chalk.
 
 ### Named Rules
 **The Mono Is Evidence Rule.** Monospace marks things that are data: labels, IDs, numerals, dates, handles, email addresses, and the mantra. It is never used for sentences a buyer reads: no mono paragraphs, no mono headings.
@@ -307,7 +307,7 @@ The `eyebrow` utility (mono 0.8125rem, 0.1em tracking, uppercase, Chalk Muted) t
 A borderless cell in a hairline-divided strip: a solid Chalk mono numeral (`text-stat`, tabular) over a Small muted label capped at 16rem. Pending values show a `TodoNote` beneath.
 
 ### Proof Panel (signature, hero only)
-A 12px Slate Elev 90% panel with backdrop blur, a Hairline border and the exhibit shadow, capped at `max-w-md`. Header row: the data label "Public CVE record" left, the live record count in mono right. Body: a `divide-y` list of the three most severe CVEs from `content/cves.ts`, each row an external link to its public advisory (Slate Elev 2 on hover) showing the mono CVE ID, the vulnerability type, the platform (muted, truncated) and a severity badge with CVSS. Every value is real; nothing in the panel is mocked. It is Exhibit A and does not recur elsewhere.
+A 12px Slate Elev 90% panel with backdrop blur, a Hairline border and the exhibit shadow, capped at `max-w-md`. Header row: the data label "Public CVE record" left, the live record count in mono right. Body: a `divide-y` list of the three most severe CVEs from `content/cves.ts`, each row an external link to its public advisory (Slate Elev 2 on hover) showing the mono CVE ID, the vulnerability type, the platform (muted, truncated) and a severity badge with CVSS. Every value is real; nothing in the panel is mocked. Below the list, a severity ledger row: real totals per severity across the whole record, mono 0.75rem, each count coloured by its hue and always carrying its label. The panel is framed by four 12px corner registration ticks (60% accent, 1px, just outside the corners) and receives a one-time verification sweep on entrance (a soft accent band, 1.3s, ending transparent; nothing under reduced motion). It is Exhibit A and does not recur elsewhere; the ticks and sweep appear nowhere else.
 
 ### Availability Dot
 An 8px Signal Green circle with a 2s pulsing ring, followed by mono 0.75rem muted text ("Available for engagements"). Real state, so it is allowed: nav (`lg`+), the mobile panel, and the footer. Nowhere else.

@@ -25,10 +25,11 @@
   --color-high: #ff7a45;
   --color-warn: #ffb020;
 
-  /* Type scale (fluid). Display is sized for a 2-line hero headline beside a proof panel. */
-  --text-display: clamp(2.5rem, 4.6vw, 4rem);
-  --text-display--line-height: 1.02;
-  --text-display--letter-spacing: -0.035em;
+  /* Type scale (fluid). Display is sized for a 3-line hero headline beside a proof panel:
+     large enough to read as one carved object, capped so both CTAs stay above a ~900px fold. */
+  --text-display: clamp(2.75rem, 5vw, 4.5rem);
+  --text-display--line-height: 1;
+  --text-display--letter-spacing: -0.04em;
   --text-display--font-weight: 600;
   --text-h1: clamp(1.875rem, 3.4vw, 2.75rem);
   --text-h1--line-height: 1.1;
@@ -50,7 +51,7 @@
   --text-mono-label--line-height: 1.4;
   --text-mono-label--letter-spacing: 0.1em;
   /* Stat numerals: mono, solid, tight. */
-  --text-stat: clamp(2.25rem, 4.2vw, 3.5rem);
+  --text-stat: clamp(2.5rem, 4.4vw, 4rem);
   --text-stat--line-height: 1;
   --text-stat--letter-spacing: -0.03em;
   --text-stat--font-weight: 500;
@@ -207,6 +208,44 @@
 
 @utility animate-fade-up {
   animation: fade-up 0.6s var(--ease-out-soft) both;
+}
+
+/* One-time underline draw for the hero's accent word: part of the single authored entrance
+   sequence (fade-up → draw → scan). `both` keeps the drawn state, so reduced motion (which
+   collapses the duration) still ends with the underline present. */
+@keyframes draw-x {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@utility animate-draw-x {
+  transform-origin: left;
+  animation: draw-x 0.5s var(--ease-out-soft) 0.65s both;
+}
+
+/* One-time verification sweep over the hero proof panel: a soft accent band passes down the
+   exhibit once after it enters, then disappears (end state is opacity 0, so the collapsed
+   reduced-motion run shows nothing). Decoration is allowed exactly here: it marks Exhibit A. */
+@keyframes scan-sweep {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(520%);
+    opacity: 0;
+  }
+}
+
+@utility animate-scan-sweep {
+  animation: scan-sweep 1.3s var(--ease-out-soft) 1s both;
 }
 
 /* Availability indicator (nav + footer). Real state, not decoration; pulse stops under reduced motion. */
