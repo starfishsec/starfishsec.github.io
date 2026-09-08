@@ -34,22 +34,22 @@ Section order (top → bottom), adapted for a services team:
 
 ## 3. Hero
 
-- **Eyebrow (mono):** `AI-POWERED · EXPERT-VALIDATED · 200+ PUBLISHED CVEs`
+- **Eyebrow (mono):** `EXPERT-LED · 200+ PUBLISHED CVEs`
 - **Headline (H1):** **"We break what others assume is safe."**
 - **Subheadline:**
-  > Starfish Security is an AI-powered penetration-testing service built by researchers behind 200+ published CVEs. Our platform attacks your systems the way a real adversary would; our experts validate every finding and hand you working proof — in a fraction of the time, at a fraction of the cost of a traditional pentest.
+  > Expert-led penetration testing from the researchers behind 200+ published CVEs. Our experts run every engagement and verify every finding with working proof.
 - **Primary CTA:** `Request a Pentest`
 - **Secondary CTA:** `View our Research`
-- **Supporting line:** `AI speed. Expert judgment. Working proof. Pricing that makes sense.`
+- **Supporting line:** `Expert judgment. Working proof. Pricing that makes sense.`
 - Optional decorative mono line: `$ starfish scope --target you`
 
 ### 3b. USP strip (directly under the hero — owner, 2026-08-25)
 
 | USP | Copy |
 |-----|------|
-| **AI-powered** | Our platform runs the attack continuously, covering more ground than any manual team could. |
-| **Expert-validated** | Researchers behind 200+ CVEs confirm every finding. No false positives, no scanner noise. |
-| **Fast delivery** | AI does the heavy lifting, so validated findings reach you fast — not after weeks of waiting. |
+| **Expert-led** | Researchers behind 200+ CVEs run every engagement and verify every finding themselves. No false positives, no scanner noise. |
+| **Working proof** | Every finding ships with a working exploit or proof-of-concept and a clear fix. No theoretical risk, no severity-score hand-waving. |
+| **Fast delivery** | Expert-verified findings and working exploits reach you as the work happens, not after weeks of waiting for a final report. |
 | **Convenient pricing** | Senior-researcher quality without the boutique-consultancy invoice. Clear, scoped, no surprises. |
 
 > Owner asked to stress speed and price **without** concrete numbers (no SLA days, no prices). Keep it that way until confirmed. Data in `content/hero.ts` (`usps`), component `UspStrip`.
@@ -59,17 +59,17 @@ Section order (top → bottom), adapted for a services team:
 | Value | Label |
 |-------|-------|
 | `200+` | CVEs published |
-| `Many` | senior experts validating every finding |
+| `10+` | senior experts running and verifying every engagement |
 | `Millions` | of websites affected by our disclosures |
 
-> Owner decisions: 2026-08-25 — `2×` OSWE card removed; card 3 reworded to **websites affected**. 2026-08-26 — card 2 changed from `3` researchers to **"Many" senior experts** (owner: do not state a headcount of 3; the validating bench is larger than the three founders). Exact number `TODO(owner)` if they ever want a figure.
+> Owner decisions: 2026-08-25 — `2×` OSWE card removed; card 3 reworded to **websites affected**. 2026-08-26 — card 2 changed from `3` researchers to **"Many" senior experts** (owner: do not state a headcount of 3; the validating bench is larger than the three founders). 2026-09-08 — card 2 changed from `Many` to a concrete **`10+`** (owner-confirmed team size).
 
 ## 5. How we work (4 steps)
 
-**Heading:** `How we work` — **Sub:** `From scope to working exploit — AI-driven testing, expert-verified.`
+**Heading:** `How we work` — **Sub:** `From scope to working exploit. Run by our experts at every step.`
 
 1. **Scope** — We map your attack surface and agree on rules of engagement.
-2. **Attack** — Our AI-powered platform tests your systems continuously, chaining real vulnerabilities the way an attacker would.
+2. **Attack** — Our experts attack your systems the way a real adversary would, chaining real vulnerabilities into working attack paths.
 3. **Prove** — Our researchers validate every finding and ship a working proof-of-concept. No noise, no theoretical risk.
 4. **Report & retest** — Clear, prioritized remediation guidance delivered fast, then we verify the fixes.
 
@@ -79,7 +79,7 @@ Section order (top → bottom), adapted for a services team:
 
 Confirmed core + the three services the owner named:
 
-- **AI-Powered Penetration Testing** — AI-driven, exploit-focused testing of web apps, APIs, and infrastructure — every finding validated by senior researchers, delivered fast, with a working exploit and clear, cost-effective scoping.
+- **Penetration Testing** — Expert-led, exploit-focused testing of web apps, APIs, and infrastructure — every finding run and verified by senior researchers, delivered fast, with a working exploit and clear, cost-effective scoping.
 - **Vulnerability Research** — Zero-day research and responsible disclosure on the platforms you depend on. 200+ CVEs and counting.
 - **Red Team / Adversary Simulation** — Objective-based, stealth engagements that emulate a real attacker's full kill chain.
 - **Security Consulting** — Secure-design review, threat modeling, and on-call expertise for your team.
@@ -112,7 +112,7 @@ Confirmed core + the three services the owner named:
 
 **Heading:** `The founders behind the platform` — **Sub:** `Three offensive-security researchers who built Starfish and still run every engagement. One standard: prove it.`
 
-> Owner decision 2026-08-26: the section is about the **founding team**, not "the experts behind" the platform (previous heading `The experts behind the platform` / sub mentioning "a wider bench of senior experts" retired). The wider validating bench is still referenced in the USP strip and the "Many senior experts" stat.
+> Owner decision 2026-08-26: the section is about the **founding team**, not "the experts behind" the platform (previous heading `The experts behind the platform` / sub mentioning "a wider bench of senior experts" retired). The wider validating bench is still referenced in the USP strip and the "10+ senior experts" stat.
 
 Data in `content/team.ts`:
 
@@ -131,7 +131,7 @@ Read directly from each member's LinkedIn (logged in through the owner's Chrome)
 
 - **Phuoc Pham** (`p3tl0v3r`, full name Phuoc Pham Van Long) — Founder. OSWE-certified web-application researcher; Security Researcher at **Synack Red Team** (Dec 2024–present) and Penetration Tester at **VNPT Cyber Immunity** (Jan 2023–Mar 2026). Author of the "Sitecore CVE-2025-53690 Detailed Analysis & Weaponized POC" write-up (VNPT blog) and a CloudFront-WAF-bypass note for the React2Shell/Next.js vuln; 4 CVEs credited on Wordfence. Acknowledged by Domino's; CTF placements (NightWolf top-5 solo, Security Bootcamp 2023 #6). *Note: Google links this identity to a "Phuoc Pham Van Long" PhD student in cryptography at Brown University; the LinkedIn profile shows FPT University + VNPT, so the academic角 is **not** claimed on the site — `TODO(owner)`: confirm if same person.*
 - **An Ngo** (`ancorn_`) — Co-Founder. OSWE-certified; now Security Engineer at GRADION (ex-VNPT Cyber Immunity). 246 CVEs on Wordfence (rank #34), Patchstack top-8-all-time era, **Synack Red Team Hero two years running (2025 & 2026)**, **Apple Hall of Fame (Aug 2024)**, VNPT "white-hat, world top-14" recognition (240+ of VNPT's 300+ CVEs).
-- **Dau Hoang Tai** (`taidh`, `DauHoangTai`, Đậu Hoàng Tài) — Co-Founder. Penetration Tester at **VNPT Cyber Immunity** (Apr 2022–present); Duy Tan University; CPTS. Reporter of **CVE-2022-29317 (SQLi, CVSS 9.8 Critical)** — his HackMD advisory is the NVD reference. Author of the AI-assisted Mitel MiCollab CVE analysis (Claude MCP + JADX + IDA Pro) and the MOVEit Transfer CVE-2023-34362/35036 deep-dive on the VNPT blog; SharePoint pre-auth RCE-chain PoC; active CTFer (Root-Me, HackMD, GitHub).
+- **Dau Hoang Tai** (`taidh`, `DauHoangTai`, Đậu Hoàng Tài) — Co-Founder. Penetration Tester at **VNPT Cyber Immunity** (Apr 2022–present); Duy Tan University; CPTS. Reporter of **CVE-2022-29317 (SQLi, CVSS 9.8 Critical)** — his HackMD advisory is the NVD reference. Author of the Mitel MiCollab CVE analysis (cite descriptively; the article title itself contains "AI-Assisted") and the MOVEit Transfer CVE-2023-34362/35036 deep-dive on the VNPT blog; SharePoint pre-auth RCE-chain PoC; active CTFer (Root-Me, HackMD, GitHub).
 
 ### Highlights (public, sourced — shown on the cards)
 
@@ -146,7 +146,7 @@ Read directly from each member's LinkedIn (logged in through the owner's Chrome)
 | An Ngo | 3 critical CVEs (CVSS 9.1–9.8) | `/research?severity=critical` |
 | An Ngo | Apple Hall of Fame honoree (2024) | LinkedIn (Aug 2024 post) |
 | Dau Hoang Tai | CVE-2022-29317 — SQL injection, CVSS 9.8 Critical | nvd.nist.gov/vuln/detail/CVE-2022-29317 |
-| Dau Hoang Tai | Author: AI-assisted Mitel MiCollab CVE analysis (Claude MCP + JADX + IDA Pro) | sec.vnpt.vn/tin-tuc/blog/AI-Assisted-Mitel-CVE-Analysis-… |
+| Dau Hoang Tai | Author: Mitel MiCollab CVE analysis on the VNPT Cyber Immunity blog | sec.vnpt.vn/tin-tuc/blog/AI-Assisted-Mitel-CVE-Analysis-… |
 | Dau Hoang Tai | MOVEit Transfer CVE-2023-34362 / CVE-2023-35036 analysis | sec.vnpt.vn/tin-tuc/blog/analysis-cve-2023-34362-… |
 | Dau Hoang Tai | Hack The Box CPTS · Synack Red Team member | owner / LinkedIn |
 
@@ -162,9 +162,9 @@ Read directly from each member's LinkedIn (logged in through the owner's Chrome)
 ## 9. Why us (differentiator)
 
 **Heading:** `Why Starfish`
-- **AI-powered, expert-validated.** Our platform covers more ground, faster. Researchers behind 200+ CVEs decide what's real and what matters — every finding is human-confirmed.
-- **Fast turnaround.** AI does the heavy lifting, so validated findings and working exploits reach you fast — no waiting weeks for a final report.
-- **Pricing that makes sense.** AI efficiency means senior-researcher quality without the boutique-consultancy invoice. Clear, scoped pricing — no surprises.
+- **Expert-led.** Researchers behind 200+ CVEs run every engagement and decide what's real and what matters.
+- **Fast turnaround.** Expert-verified findings and working exploits reach you as the work happens — no waiting weeks for a final report.
+- **Pricing that makes sense.** Senior-researcher quality without the boutique-consultancy invoice. Clear, scoped pricing — no surprises.
 - **Proof over paperwork.** Every finding comes with a working exploit and clear remediation — not a scanner export. 200+ CVEs in the public record back it up.
 
 ## 10. Final CTA
@@ -192,6 +192,6 @@ Read directly from each member's LinkedIn (logged in through the owner's Chrome)
 
 - **Site name:** `Starfish Security`
 - **Domain:** `https://starfishsec.com`
-- **Title:** `Starfish Security — AI-Powered Penetration Testing`
-- **Meta description:** `AI-powered penetration testing, validated by researchers behind 200+ published CVEs. Working proof delivered fast, at a price that makes sense — not theoretical risk.`
+- **Title:** `Starfish Security — Expert-Led Penetration Testing`
+- **Meta description:** `Expert-led penetration testing, red teaming, and security consulting from the researchers behind 200+ published CVEs. Every finding is run and verified by our experts. Working proof, not theoretical risk.`
 - **OG image:** `TODO` (dark, starfish mark + tagline).

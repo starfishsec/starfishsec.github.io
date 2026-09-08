@@ -53,9 +53,9 @@ export const site = {
   wordmark: "STARFISH SEC",
   url: "https://starfishsec.com",
   email: "info@starfishsec.com",
-  title: "Starfish Security | AI-Powered Penetration Testing",
+  title: "Starfish Security | Expert-Led Penetration Testing",
   description:
-    "AI-powered penetration testing, validated by researchers behind 200+ published CVEs. Working proof delivered fast, at a price that makes sense. Not theoretical risk.",
+    "Expert-led penetration testing, red teaming, and security consulting from the researchers behind 200+ published CVEs. Every finding is run and verified by our experts. Working proof, not theoretical risk.",
   ogImage: "/og.png",
   status: "Available for engagements",
   legal: "© 2026 Starfish Security. All rights reserved.",

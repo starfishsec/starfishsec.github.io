@@ -6,7 +6,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { cn } from "@/lib/cn";
 
 /**
- * Bento: five services in exactly six cells (the core AI-Powered Pentest spans two columns; four
+ * Bento: five services in exactly six cells (the core Penetration Testing card spans two columns; four
  * singles fill the rest). Background variation: the featured cell carries the masked grid + accent
  * wash, the adjacent research cell is tinted one step lighter; the others stay flat.
  */

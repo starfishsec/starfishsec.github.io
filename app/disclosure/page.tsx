@@ -60,7 +60,7 @@ const commitments: string[] = [
   "Vendor first. We never publish, sell, or share vulnerability details before the vendor has had the chance to fix them, except as described in the timeline below.",
   "Complete reports. Every report contains affected versions, a working proof-of-concept, the root cause, and a suggested fix, so the vendor can reproduce and remediate immediately.",
   "Minimal footprint. We only go as far as needed to prove impact. We do not access, modify, or exfiltrate user data, pivot into internal systems, or degrade a live service.",
-  "Human-validated. Findings surfaced by our AI-powered platform are reproduced and confirmed by a Starfish researcher before any report leaves our hands. We do not send unverified scanner output to vendors.",
+  "Expert-verified. Every finding is reproduced and confirmed by a Starfish researcher before any report leaves our hands. We do not send unverified scanner output to vendors.",
   "No strings attached. We do not ask for payment, a bounty, or a contract as a condition of reporting or of staying quiet. Vendors that run bounty programs are welcome to reward the report under their own rules.",
   "Credit, not blame. Our advisories describe the flaw and the fix, and credit vendors that respond well. We name unresponsive vendors only because users deserve to know what is unpatched.",
 ];
@@ -80,10 +80,9 @@ export default function DisclosurePage() {
           <section className="flex flex-col gap-3">
             <h2 className="text-h2 text-fg">Scope</h2>
             <p>
-              This policy governs vulnerabilities that Starfish Security researchers, or the
-              Starfish platform under their supervision, discover independently in third-party
-              software: open source projects, WordPress plugins and themes, commercial products, and
-              internet-facing services. It is the basis for the{" "}
+              This policy governs vulnerabilities that Starfish Security researchers discover
+              independently in third-party software: open source projects, WordPress plugins and
+              themes, commercial products, and internet-facing services. It is the basis for the{" "}
               <Link
                 href="/research"
                 className="text-fg underline-offset-4 hover:text-accent hover:underline"

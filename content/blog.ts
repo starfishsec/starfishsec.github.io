@@ -61,15 +61,14 @@ export interface BlogPost {
 export const blogHeading = {
   title: "Research and writing from the people who find the bugs.",
   subtitle:
-    "Deep-dive vulnerability analyses, weaponized proofs-of-concept, and AI-assisted security research, written by the Starfish founders. Grounded in the public record; sources credited.",
+    "Deep-dive vulnerability analyses, weaponized proofs-of-concept, and security research, written by the Starfish founders. Grounded in the public record; sources credited.",
 } as const;
 
 export const blogPosts: BlogPost[] = [
   // ── Phuoc Pham (p3tl0v3r / Erik) ─────────────────────────────────────────
   {
     slug: "sitecore-cve-2025-53690",
-    title:
-      "Sitecore CVE-2025-53690: how a machine key from the docs became unauthenticated RCE",
+    title: "Sitecore CVE-2025-53690: how a machine key from the docs became unauthenticated RCE",
     authorHandle: "p3tl0v3r",
     date: "2025-10-30",
     topics: ["CVE Analysis", "Deserialization", "Reverse Engineering"],
@@ -184,7 +183,7 @@ export const blogPosts: BlogPost[] = [
         kind: "callout",
         tone: "info",
         title: "The economics change",
-        text: "High-quality discovery came in at pennies per audit. When deep whitebox review costs that little, the question shifts from \"can we afford to look?\" to \"why wouldn't we?\"",
+        text: 'High-quality discovery came in at pennies per audit. When deep whitebox review costs that little, the question shifts from "can we afford to look?" to "why wouldn\'t we?"',
       },
       { kind: "h2", text: "What it means" },
       {
@@ -239,7 +238,7 @@ export const blogPosts: BlogPost[] = [
       { kind: "h2", text: "The fix" },
       {
         kind: "p",
-        text: "Version 11.31.0 removed `unserialize()` entirely in favor of JSON parsing. That's the right call: you cannot safely \"sanitize\" input into `unserialize()`, so the only real fix is to stop feeding it untrusted data at all.",
+        text: 'Version 11.31.0 removed `unserialize()` entirely in favor of JSON parsing. That\'s the right call: you cannot safely "sanitize" input into `unserialize()`, so the only real fix is to stop feeding it untrusted data at all.',
       },
       { kind: "h2", text: "Takeaways" },
       {
@@ -270,7 +269,7 @@ export const blogPosts: BlogPost[] = [
     language: "en",
     readingTime: "4 min",
     summary:
-      "\"Just calling the local sendmail binary\" is still command execution. How an unsanitized recipient field turns into argument injection — and, chained with prototype pollution, into RCE.",
+      '"Just calling the local sendmail binary" is still command execution. How an unsanitized recipient field turns into argument injection — and, chained with prototype pollution, into RCE.',
     body: [
       {
         kind: "p",
@@ -292,7 +291,7 @@ export const blogPosts: BlogPost[] = [
         items: [
           "Passing user input as process arguments IS command execution — validate and escape, or better, don't.",
           "Prefer APIs that separate the command from its data instead of building argument lists from user input.",
-          "Treat every email field as untrusted; recipients are not \"safe\" strings.",
+          'Treat every email field as untrusted; recipients are not "safe" strings.',
         ],
       },
     ],
@@ -353,7 +352,7 @@ export const blogPosts: BlogPost[] = [
         items: [
           "AI-assisted RE removes the context-switching grind so the human focuses on the actual vulnerability, not tool plumbing.",
           "Multi-runtime architectures multiply trust boundaries — one missing check anywhere in the chain is enough.",
-          "Frameworks like DWR need explicit allow-lists; \"exposed by default\" is how methods leak.",
+          'Frameworks like DWR need explicit allow-lists; "exposed by default" is how methods leak.',
         ],
       },
     ],
@@ -475,7 +474,7 @@ export const blogPosts: BlogPost[] = [
     language: "vi",
     readingTime: "5 min",
     summary:
-      "Prototype pollution is rarely \"just\" a denial of service. In Parse Server, the primitive is chained — via a gadget in the request-handling path — all the way to unauthenticated remote code execution.",
+      'Prototype pollution is rarely "just" a denial of service. In Parse Server, the primitive is chained — via a gadget in the request-handling path — all the way to unauthenticated remote code execution.',
     body: [
       {
         kind: "p",
@@ -516,7 +515,7 @@ export const blogPosts: BlogPost[] = [
     body: [
       {
         kind: "p",
-        text: "**CVE-2022-29464** is an unauthenticated arbitrary file upload affecting multiple **WSO2** products (API Manager, Identity Server and others), rated CVSS 9.8. It's the shortest possible path from \"no access\" to \"full server control.\"",
+        text: '**CVE-2022-29464** is an unauthenticated arbitrary file upload affecting multiple **WSO2** products (API Manager, Identity Server and others), rated CVSS 9.8. It\'s the shortest possible path from "no access" to "full server control."',
       },
       { kind: "h2", text: "Upload a shell, get RCE" },
       {

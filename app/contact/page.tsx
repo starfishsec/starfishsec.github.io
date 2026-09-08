@@ -10,7 +10,7 @@ import { StatusDot } from "@/components/ui/StatusDot";
 export const metadata: Metadata = {
   title: "Request a Pentest",
   description:
-    "Book a scoping call with Starfish Security. AI-powered, expert-validated penetration testing, red teaming, and vulnerability research.",
+    "Book a scoping call with Starfish Security. Expert-led penetration testing, red teaming, and security consulting, run and verified by our researchers.",
   alternates: { canonical: "/contact" },
 };
 
@@ -36,9 +36,15 @@ export default function ContactPage() {
             <StatusDot />
           </div>
           <ul className="flex flex-col gap-3 border-l border-border pl-5 text-small text-fg-muted">
-            <li>Our platform runs the attack, our experts validate it, and you get working proof-of-concepts, not scanner output.</li>
+            <li>
+              Our experts run the attack themselves, and you get working proof-of-concepts, not
+              scanner output.
+            </li>
             <li>Every finding ships with clear, prioritized remediation guidance and a retest.</li>
-            <li>We&apos;ll tell you honestly where you stand, including when you don&apos;t need us yet.</li>
+            <li>
+              We&apos;ll tell you honestly where you stand, including when you don&apos;t need us
+              yet.
+            </li>
           </ul>
         </div>
 

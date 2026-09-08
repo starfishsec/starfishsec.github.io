@@ -12,9 +12,9 @@ export const servicesHeading = {
 
 export const services: Service[] = [
   {
-    title: "AI-Powered Penetration Testing",
+    title: "Penetration Testing",
     description:
-      "AI-driven, exploit-focused testing of web apps, APIs, and infrastructure. Every finding is validated by senior researchers and delivered fast, with a working exploit and clear, cost-effective scoping.",
+      "Expert-led, exploit-focused testing of web apps, APIs, and infrastructure. Every finding is run and verified by senior researchers and delivered fast, with a working exploit and clear, cost-effective scoping.",
     icon: "crosshair",
   },
   {

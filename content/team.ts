@@ -120,14 +120,16 @@ export const team: TeamMember[] = [
     role: "Co-Founder",
     certs: [CPTS, SRT],
     linkedin: "https://www.linkedin.com/in/taidh/",
-    bio: "Co-Founder. Penetration tester at VNPT Cyber Immunity, red-team operator and CTF player specializing in enterprise-software vulnerability analysis, from MOVEit Transfer to Mitel MiCollab, increasingly with AI in the loop. CPTS-certified Synack Red Team member.",
+    bio: "Co-Founder. Penetration tester at VNPT Cyber Immunity, red-team operator and CTF player specializing in enterprise-software vulnerability analysis, from MOVEit Transfer to Mitel MiCollab. CPTS-certified Synack Red Team member.",
     achievements: [
       {
         text: "CVE-2022-29317: SQL injection, CVSS 9.8 Critical",
         href: "https://nvd.nist.gov/vuln/detail/CVE-2022-29317",
       },
       {
-        text: "Author: AI-assisted Mitel MiCollab CVE analysis (Claude MCP + JADX + IDA Pro)",
+        // The linked article's own title contains "AI-Assisted"; cited descriptively here
+        // because site copy mentions no AI (positioning, owner 2026-09-08).
+        text: "Author: Mitel MiCollab CVE analysis on the VNPT Cyber Immunity blog",
         href: "https://sec.vnpt.vn/tin-tuc/blog/AI-Assisted-Mitel-CVE-Analysis-Claude-MCP-JADX-andamp-IDA-Pro",
       },
       {

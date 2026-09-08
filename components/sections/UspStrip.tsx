@@ -4,7 +4,7 @@ import { iconMap } from "@/components/ui/icons";
 import { Reveal } from "@/components/motion/Reveal";
 
 /**
- * The four USPs (AI-powered · expert-validated · fast · convenient pricing) as a hairline-topped
+ * The four USPs (expert-led · working proof · fast · convenient pricing) as a hairline-topped
  * four-column row: no card chrome, so it reads differently from the bento and the team columns.
  * Keeps the `#why` anchor that the footer "About" link targets (the former WhyUs section repeated
  * these points and was folded in here).

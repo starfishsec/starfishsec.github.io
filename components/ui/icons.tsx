@@ -1,5 +1,4 @@
 import {
-  Cpu,
   Crosshair,
   Gauge,
   Microscope,
@@ -20,7 +19,6 @@ export const iconMap: Record<ServiceIcon | UspIcon, LucideIcon> = {
   swords: Swords,
   "shield-check": ShieldCheck,
   terminal: Terminal,
-  cpu: Cpu,
   "user-check": UserCheck,
   gauge: Gauge,
   receipt: Receipt,

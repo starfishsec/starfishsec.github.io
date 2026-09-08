@@ -5,7 +5,7 @@ export interface ProcessStep {
 
 export const processHeading = {
   title: "How we work",
-  subtitle: "From scope to working exploit. AI-driven testing, expert-verified.",
+  subtitle: "From scope to working exploit. Run by our experts at every step.",
 } as const;
 
 export const processSteps: ProcessStep[] = [
@@ -13,7 +13,7 @@ export const processSteps: ProcessStep[] = [
   {
     title: "Attack",
     description:
-      "Our AI-powered platform tests your systems continuously, chaining real vulnerabilities the way an attacker would.",
+      "Our experts attack your systems the way a real adversary would, chaining real vulnerabilities into working attack paths.",
   },
   {
     title: "Prove",

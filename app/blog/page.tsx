@@ -8,7 +8,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 export const metadata: Metadata = {
   title: "Research & Writing",
   description:
-    "Deep-dive vulnerability analyses, weaponized proofs-of-concept, and AI-assisted security research published by the Starfish Security founders, with links to every original.",
+    "Deep-dive vulnerability analyses, weaponized proofs-of-concept, and security research published by the Starfish Security founders, with links to every original.",
   alternates: { canonical: "/blog" },
   // Hidden from nav, footer and sitemap until complete (owner, 2026-08-26); keep out of search too.
   robots: { index: false, follow: false },
@@ -31,7 +31,10 @@ export default function BlogPage() {
   return (
     <>
       {/* Header band with motif */}
-      <section className="relative isolate overflow-hidden border-b border-border" aria-labelledby="blog-title">
+      <section
+        className="relative isolate overflow-hidden border-b border-border"
+        aria-labelledby="blog-title"
+      >
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-grid-lines [mask-image:radial-gradient(ellipse_at_50%_0%,black_5%,transparent_60%)]" />
           <div className="absolute left-1/2 top-0 h-[24rem] w-[52rem] -translate-x-1/2 -translate-y-1/2 bg-accent-glow blur-3xl" />
