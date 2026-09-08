@@ -80,6 +80,7 @@ Section order (top → bottom), adapted for a services team:
 Confirmed core + the three services the owner named:
 
 - **Penetration Testing** — Expert-led, exploit-focused testing of web apps, APIs, and infrastructure — every finding run and verified by senior researchers, delivered fast, with a working exploit and clear, cost-effective scoping.
+  - Scope chips on the featured cell (owner, 2026-09-08): Web applications · APIs · Mobile (iOS / Android) · External network · Internal network · Cloud (AWS / Azure / GCP) · AI & LLM applications. ("AI" here is a tested target, allowed; AI as our method stays banned.)
 - **Vulnerability Research** — Zero-day research and responsible disclosure on the platforms you depend on. 200+ CVEs and counting.
 - **Red Team / Adversary Simulation** — Objective-based, stealth engagements that emulate a real attacker's full kill chain.
 - **Security Consulting** — Secure-design review, threat modeling, and on-call expertise for your team.

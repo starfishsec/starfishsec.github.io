@@ -10,6 +10,23 @@ export const servicesHeading = {
   title: "What we do",
 } as const;
 
+/**
+ * Concrete pentest scopes, listed on the featured Penetration Testing cell (owner, 2026-09-08:
+ * "liet ke ro cac pentest" - the homepage must name them, not just say "penetration testing").
+ * "AI & LLM applications" is a TARGET we test, which is fine under the no-AI-in-copy positioning
+ * rule; that rule bans AI as the method ("AI-assisted"), not as a tested system.
+ * Short display labels; the contact form's `engagementTypes` below carries the long forms.
+ */
+export const pentestScopes: string[] = [
+  "Web applications",
+  "APIs",
+  "Mobile (iOS / Android)",
+  "External network",
+  "Internal network",
+  "Cloud (AWS / Azure / GCP)",
+  "AI & LLM applications",
+];
+
 export const services: Service[] = [
   {
     title: "Penetration Testing",
@@ -54,6 +71,7 @@ export const engagementTypes: string[] = [
   "External network / infrastructure pentest",
   "Internal network pentest",
   "Cloud pentest (AWS / Azure / GCP)",
+  "AI / LLM application pentest",
   "Red team / adversary simulation",
   "Source code review",
   "Vulnerability research / zero-day",

@@ -1,4 +1,5 @@
-import { services, servicesHeading } from "@/content/services";
+import { pentestScopes, services, servicesHeading } from "@/content/services";
+import { Badge } from "@/components/ui/Badge";
 import { Container } from "@/components/ui/Container";
 import { iconMap } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -40,7 +41,10 @@ export function Services() {
                     )}
                   >
                     {featured ? (
-                      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+                      <div
+                        aria-hidden="true"
+                        className="pointer-events-none absolute inset-0 -z-10"
+                      >
                         <div className="absolute inset-0 bg-grid-lines [mask-image:radial-gradient(ellipse_at_100%_0%,black_0%,transparent_60%)]" />
                         <div className="absolute -top-24 -right-16 h-[18rem] w-[26rem] bg-accent-glow blur-2xl" />
                       </div>
@@ -68,6 +72,18 @@ export function Services() {
                         {service.description}
                       </p>
                     </div>
+
+                    {/* The featured cell names every pentest scope (owner, 2026-09-08) so a buyer
+                        can see their surface in the list without opening the contact form. */}
+                    {featured ? (
+                      <ul className="mt-auto flex flex-wrap gap-2" aria-label="Pentest scopes">
+                        {pentestScopes.map((scope) => (
+                          <li key={scope}>
+                            <Badge>{scope}</Badge>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
                   </article>
                 </Reveal>
               </li>
