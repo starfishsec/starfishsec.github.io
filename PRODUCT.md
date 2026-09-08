@@ -72,7 +72,7 @@ Positioning history: v1 docs described a purely manual services team; superseded
 
 - **Name:** Starfish Security. **Wordmark:** "STARFISH SEC". **Domain:** `starfishsec.com`. **Email:** `info@starfishsec.com`.
 - **Location (owner, 2026-08-26): Vietnam-based, serving international clients.** May be stated on the site.
-- **Logo assets:** `logo/logo.png` (mark), `logo/logo2.png` (mark + wordmark) are the owner originals; white variants generated in `public/` (`logo-mark-white.png`, `logo-wordmark-white.png`, `logo-lockup-white.png`). SVG and dark-mode versions still `TODO`.
+- **Logo assets (brand drop, owner 2026-09-08):** vector masters live in `starfishsec-social-variations/` (profile 1024×1024 and lockup 1600×560, SVG + PNG, in green/white/black on black/white/green; palette #0A0B0D / #39FF88 / #FFFFFF, matching the site tokens). The site renders the mark as inline SVG (`components/ui/StarfishMark.tsx`); favicons, apple icon and `public/og.png` are generated from the green-on-black masters. The old `logo/logo*.png` Celtic-knot originals are superseded.
 - **Voice (`docs/01-PRD.md` §8, binding):** confident, precise, slightly dry. Zero buzzwords ("cutting-edge", "next-gen", "holistic"). Proof over adjectives — numbers, CVE IDs, vendor names, methodology. Short sentences, active voice. Second person for the client ("your app"), first-person plural for us ("we"). A hacker-culture wink is allowed in small doses (footer mantra, monospace section labels), never cringe.
 - **Owner-pinned visual reference (recorded, not expanded here):** pwn.ai — dark, technical, "proof over promises". Dark theme is the default; no light theme in v1. Design tokens live in `docs/03-design-system.md` and `app/globals.css`.
 

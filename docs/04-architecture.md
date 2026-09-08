@@ -62,7 +62,7 @@ starfish/
 │   ├── services.ts · cves.ts (+ cves.data.ts, generated) · team.ts · blog.ts · cta.ts
 ├── lib/
 │   └── cn.ts                 # clsx + tailwind-merge (extended with our theme scales)
-├── public/                   # logo-mark-white.png, logo-wordmark-white.png, logo-lockup-white.png,
+├── public/                   # icon-192/512.png, og.png (generated from starfishsec-social-variations/),
 │                             # icon-192/512.png, og.png (generated from /logo; SVG export still TODO)
 ├── logo/                     # original brand assets from the owner (black on paper mockup)
 ├── tsconfig.json             # strict, "@/*" alias

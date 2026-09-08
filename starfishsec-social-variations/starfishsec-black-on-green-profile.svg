@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#39FF88"/><g transform="translate(162 190) scale(7)" color="#0A0B0D" stroke-width="3.2"><g fill="none" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="butt">
+  <circle cx="50" cy="50" r="8.5"/>
+  <path d="M46 42 L43 28 L48 12 M52 12 L57 28 L54 42"/>
+  <path d="M49 8 L50.8 3 L52 8"/>
+  <path id="arm" d="M46 42 L43 28 L50 4 L57 28 L54 42" transform="rotate(72 50 50)"/>
+  <path d="M46 42 L43 28 L50 4 L57 28 L54 42" transform="rotate(144 50 50)"/>
+  <path d="M46 42 L43 28 L50 4 L57 28 L54 42" transform="rotate(216 50 50)"/>
+  <path d="M46 42 L43 28 L50 4 L57 28 L54 42" transform="rotate(288 50 50)"/>
+</g></g></svg>

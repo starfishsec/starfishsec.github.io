@@ -223,7 +223,7 @@ A near-black graphite vault lit by a single electric green; three severity hues 
 
 **The Last Word Rule.** Exactly one word of the hero headline (the last) is set in Signal Green. Nothing else in running text is coloured, and nothing is gradient-filled.
 
-**The No-Serif Rule.** No serif face appears anywhere, including the wordmark, which is typeset "Starfish" in Chalk + "Sec" in Signal Green using Geist 600 at 1.02rem.
+**The No-Serif Rule.** No serif face appears anywhere, including the wordmark, which is typeset "Starfish" in Chalk + "Sec" in Signal Green using Geist 600 at 1.02rem. The mark beside it is the brand's line-art starfish (inline SVG, stroked, Signal Green).
 
 **The Headline-Alone Rule.** Landing sections open with the headline (and optional muted subtitle). No small uppercase label sits above it; the section's place on the page is its category.
 
@@ -295,7 +295,7 @@ A split from `lg`: the heading sticks at `top-24` in a 5fr column; the steps are
 - **Filter selects** (CVE table): 40px tall, mono Small, Hairline, max 16rem; labelled by an `eyebrow` in Chalk Muted.
 
 ### Navigation
-- **Style:** 64px sticky bar; logo lockup (32px white starfish mark PNG + typeset wordmark) left, links center-right, availability dot (`lg`+) and the "Request a Pentest" action right. Transparent while resting at the top of the page, with the action as a secondary (ghost) button so the hero's primary is the only green fill in view; the moment it sticks (a 1px sentinel observed with IntersectionObserver, no scroll listener) it gains a Hairline bottom border, blurred Vault Black, and the action turns primary.
+- **Style:** 64px sticky bar; logo lockup (32px inline-SVG starfish mark in Signal Green + typeset wordmark) left, links center-right, availability dot (`lg`+) and the "Request a Pentest" action right. Transparent while resting at the top of the page, with the action as a secondary (ghost) button so the hero's primary is the only green fill in view; the moment it sticks (a 1px sentinel observed with IntersectionObserver, no scroll listener) it gains a Hairline bottom border, blurred Vault Black, and the action turns primary.
 - **Typography:** Small, Chalk Muted → Chalk on hover/focus; links get 8px vertical padding for a ≥24px target.
 - **Mobile:** a 40px Hairline-bordered square toggle (Lucide `Menu`/`X`); the panel is a full-width Vault Black sheet under a hairline with Title-size links (12px padding, 8px radius, Slate Elev 2 hover), a full-width `lg` primary button, and a centered availability dot. Focus is trapped, Esc closes, body scroll locks.
 - **Footer:** Slate Elev 30% with a hairline top; brand column (logo, mono email, availability dot, social links when supplied) plus three data-label-titled link columns; below it the mantra strip (Chalk at 12%) and a legal row at 0.75rem.
