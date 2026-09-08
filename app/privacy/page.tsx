@@ -29,10 +29,11 @@ export const metadata: Metadata = {
  *  - the fields listed under "What we collect" are exactly the contact form's fields
  *  - there is no database (CLAUDE.md forbids one): a submission exists only as the email it becomes
  *
- * Controller, hosting and retention supplied by the owner 2026-08-29: operated by Phuoc Pham,
- * registered in Đà Nẵng, Vietnam; everything is self-hosted (so no hosting company is a processor
- * and the server logs stay on our own infrastructure); enquiries that go nowhere are deleted after
- * 90 days.
+ * Controller and retention supplied by the owner 2026-08-29: operated by Phuoc Pham, registered
+ * in Đà Nẵng, Vietnam; enquiries that go nowhere are deleted after 90 days. Hosting changed
+ * 2026-09-08 (supersedes "everything self-hosted"): the site is a static export served by GitHub
+ * Pages, and the contact form delivers via FormSubmit.co (no server of our own), so those two are
+ * the processors named below. Notice bumped to v1.1 for that change.
  *
  * That Vietnamese establishment fixes the governing law. Verified 2026-08-29 against Tilleke &
  * Gibbins and Vietnam Briefing, which agree: Law No. 91/2025/QH15 on Personal Data Protection,
@@ -124,9 +125,9 @@ export default function PrivacyPage() {
             <p>
               As with any website, the server that delivers these pages records ordinary technical
               request data such as IP address, timestamp and user agent, for security and to keep
-              the site running. We host this site ourselves, so those logs stay on our own
-              infrastructure and no hosting company ever sees them. We do not combine them with form
-              submissions, and we do not use them to identify visitors.
+              the site running. These pages are served by GitHub Pages, so that technical log data
+              is processed by GitHub as our hosting provider; we do not receive it, we do not
+              combine anything with form submissions, and we do not use logs to identify visitors.
             </p>
           </section>
 
@@ -167,25 +168,32 @@ export default function PrivacyPage() {
           <section className="flex flex-col gap-3">
             <h2 className="text-h2 text-fg">Who else handles it</h2>
             <p>
-              Almost nobody. We run this site on our own infrastructure rather than renting space
-              from a cloud provider, so no hosting company stands between you and us. Your message
-              becomes an email to our own inbox, and when automated delivery is switched on the one
-              supplier involved is{" "}
+              Two suppliers, and no one else. The pages themselves are served by{" "}
               <a
-                href="https://resend.com/legal/privacy-policy"
+                href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-fg underline-offset-4 hover:text-accent hover:underline"
               >
-                Resend
+                GitHub Pages
               </a>
-              , which sends that email on our instructions and may not use your data for its own
-              purposes.
+              , our hosting provider. When you submit the form, your message travels through{" "}
+              <a
+                href="https://formsubmit.co/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-fg underline-offset-4 hover:text-accent hover:underline"
+              >
+                FormSubmit
+              </a>
+              , a form-delivery service that turns it into an email to our inbox. Both process your
+              data to provide those services to us, not for purposes of their own.
             </p>
             <p>
-              If email delivery is not configured, the site does not quietly swallow your message:
-              it hands you a pre-filled <code className="font-mono text-fg">mailto:</code> link
-              instead, and the message travels from your own mail client straight to{" "}
+              If delivery fails (the service is down, or your network blocks it), the site does not
+              quietly swallow your message: it hands you a pre-filled{" "}
+              <code className="font-mono text-fg">mailto:</code> link instead, and the message
+              travels from your own mail client straight to{" "}
               <span className="font-mono text-fg">{site.email}</span>. In that case it never passes
               through this website at all.
             </p>
@@ -238,10 +246,10 @@ export default function PrivacyPage() {
           <section className="flex flex-col gap-3">
             <h2 className="text-h2 text-fg">Keeping this site safe</h2>
             <p>
-              We would be poor advertisements for our own work if this site were sloppy. We run it
-              on our own infrastructure, it is served over HTTPS, it stores nothing in your browser,
-              and it has no login, no database and no third-party code — which is the shortest way
-              to say that there is very little here to attack.
+              We would be poor advertisements for our own work if this site were sloppy. It is a
+              fully static site: served over HTTPS, it stores nothing in your browser, and it has no
+              login, no database and no server-side code of its own — which is the shortest way to
+              say that there is very little here to attack.
             </p>
             <p>
               Found a flaw in it anyway? Tell us. Good-faith research on this site is welcome under
@@ -273,7 +281,8 @@ export default function PrivacyPage() {
           </section>
 
           <p className="border-t border-border pt-6 font-mono text-[0.75rem]">
-            Notice version 1.0, effective 2026-08-29. Changes are published on this page.
+            Notice version 1.1, effective 2026-09-08 (hosting moved to GitHub Pages; form delivery
+            via FormSubmit). Changes are published on this page.
           </p>
         </div>
       </Container>

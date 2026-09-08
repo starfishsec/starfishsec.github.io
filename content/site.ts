@@ -61,3 +61,22 @@ export const site = {
   legal: "© 2026 Starfish Security. All rights reserved.",
   mantra: "STARFISH SECURITY // PROOF OR IT DIDN'T HAPPEN",
 } as const;
+
+/**
+ * Static-site form backend (GitHub Pages serves no server code, so the contact form posts to
+ * FormSubmit.co — verified live 2026-09-08, formsubmit.co + /ajax-documentation).
+ *
+ * How it goes live: the FIRST submission triggers a one-time activation email from FormSubmit to
+ * `site.email`; the owner clicks the confirmation link and every later submission is delivered.
+ * No account, no key, nothing to commit.
+ *
+ * TODO(owner): after activating, FormSubmit's confirmation page shows a random alias endpoint
+ * (formsubmit.co/<hash>) for this address. Swapping it in here hides the raw address from
+ * form-scraping bots; the address is already public elsewhere on the site, so this is optional.
+ */
+export const contactFormBackend = {
+  /** Native <form action>: works with JavaScript disabled; FormSubmit redirects to `_next`. */
+  action: "https://formsubmit.co/info@starfishsec.com",
+  /** Fetch endpoint for the enhanced path: JSON in, JSON out, no page navigation. */
+  ajax: "https://formsubmit.co/ajax/info@starfishsec.com",
+} as const;
