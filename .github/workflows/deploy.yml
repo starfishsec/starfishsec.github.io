@@ -21,6 +21,11 @@ concurrency:
 
 jobs:
   build:
+    # This repo's history is mirrored to starfishsec/landingpage (private source mirror), where
+    # Pages cannot be enabled (private repo on the free org plan) and configure-pages fails with
+    # "Resource not accessible by integration". Only the Pages repo may deploy; everywhere else
+    # both jobs skip and the run concludes green.
+    if: github.repository == 'starfishsec/starfishsec.github.io'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
