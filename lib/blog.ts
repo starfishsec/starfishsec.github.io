@@ -41,9 +41,23 @@ function tokensToBlocks(tokens: Token[], file: string): ContentBlock[] {
         else blocks.push({ kind: "h3", text });
         break;
       }
-      case "paragraph":
-        blocks.push({ kind: "p", text: t.text.trim() });
+      case "paragraph": {
+        // A paragraph that is exactly one image becomes a figure block; the image `title`
+        // (`![alt](src "caption")`) is used as the caption. Everything else is prose.
+        const only = (t as Tokens.Paragraph).tokens;
+        if (only?.length === 1 && only[0].type === "image") {
+          const img = only[0] as Tokens.Image;
+          blocks.push({
+            kind: "img",
+            src: img.href,
+            alt: img.text ?? "",
+            caption: img.title || undefined,
+          });
+        } else {
+          blocks.push({ kind: "p", text: t.text.trim() });
+        }
         break;
+      }
       case "list":
         blocks.push(
           (t as Tokens.List).ordered

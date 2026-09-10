@@ -17,6 +17,15 @@
         "value": "#000",
         "createdAt": "2026-08-26T04:38:17.209Z",
         "reason": "false positive: #000 is the alpha layer of the gradient-ring mask-image (mask trick), never painted; predates the redesign"
+      },
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "components/blog/ArticleBody.tsx"
+        ],
+        "createdAt": "2026-09-10T08:12:08.080Z",
+        "reason": "false positive: src is a runtime value (block.src) from post markdown, not an empty/placeholder literal"
       }
     ]
   }

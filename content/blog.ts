@@ -24,7 +24,8 @@ export type ContentBlock =
   | { kind: "ol"; items: string[] }
   | { kind: "code"; lang?: string; code: string }
   | { kind: "callout"; tone?: "info" | "warn"; title?: string; text: string }
-  | { kind: "quote"; text: string };
+  | { kind: "quote"; text: string }
+  | { kind: "img"; src: string; alt: string; caption?: string };
 
 export interface Reference {
   label: string;

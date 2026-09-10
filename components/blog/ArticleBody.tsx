@@ -154,6 +154,26 @@ export function ArticleBody({ blocks }: { blocks: ContentBlock[] }) {
               </aside>
             );
           }
+          case "img":
+            return (
+              <figure key={i} className="my-2 flex flex-col gap-2">
+                <span className="overflow-hidden rounded-card border border-border bg-bg-elev">
+                  {/* Content images have arbitrary intrinsic sizes and the site is a static export
+                      with unoptimized images, so a plain lazy <img> is the right primitive here. */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={block.src}
+                    alt={block.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="block h-auto w-full"
+                  />
+                </span>
+                {block.caption ? (
+                  <figcaption className="text-small text-fg-subtle">{block.caption}</figcaption>
+                ) : null}
+              </figure>
+            );
           default:
             return null;
         }
