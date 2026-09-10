@@ -6,8 +6,8 @@ export interface NavLink {
 export const navLinks: NavLink[] = [
   { label: "Services", href: "/#services" },
   { label: "Research", href: "/#research" },
-  // Blog tab hidden (owner, 2026-08-26) until the blog is complete. The `/blog` route still
-  // builds; re-add `{ label: "Blog", href: "/blog" }` here to surface it again.
+  // Blog re-enabled 2026-09-10: Markdown posts in content/posts/, managed via blog-manager.
+  { label: "Blog", href: "/blog" },
   { label: "Team", href: "/#team" },
   { label: "Contact", href: "/contact" },
 ];

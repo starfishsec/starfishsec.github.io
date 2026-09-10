@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { blogHeading, sortedPosts } from "@/content/blog";
+import { blogHeading } from "@/content/blog";
+import { sortedPosts } from "@/lib/blog";
 import { team } from "@/content/team";
 import { BlogExplorer } from "@/components/blog/BlogExplorer";
 import { Container } from "@/components/ui/Container";
@@ -10,8 +11,6 @@ export const metadata: Metadata = {
   description:
     "Deep-dive vulnerability analyses, weaponized proofs-of-concept, and security research published by the Starfish Security founders, with links to every original.",
   alternates: { canonical: "/blog" },
-  // Hidden from nav, footer and sitemap until complete (owner, 2026-08-26); keep out of search too.
-  robots: { index: false, follow: false },
 };
 
 export default function BlogPage() {

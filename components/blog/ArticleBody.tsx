@@ -2,10 +2,14 @@ import { AlertTriangle, Info } from "lucide-react";
 import type { ReactNode } from "react";
 import type { ContentBlock } from "@/content/blog";
 
-/** Minimal inline formatter: supports `code` and **bold** (no external markdown lib). */
+/**
+ * Minimal inline formatter for post bodies (no external markdown lib in the client bundle):
+ * `code`, **bold**, *italic* and [links](https://…). Block structure is parsed at build time
+ * in lib/blog.ts; this handles only what appears inside a text run.
+ */
 function inline(text: string): ReactNode[] {
   const out: ReactNode[] = [];
-  const re = /(`[^`]+`|\*\*[^*]+\*\*)/g;
+  const re = /(`[^`]+`|\*\*[^*]+\*\*|\*[^*\s][^*]*\*|\[[^\]]+\]\([^)\s]+\))/g;
   let last = 0;
   let m: RegExpExecArray | null;
   let i = 0;
@@ -21,12 +25,32 @@ function inline(text: string): ReactNode[] {
           {tok.slice(1, -1)}
         </code>,
       );
-    } else {
+    } else if (tok.startsWith("**")) {
       out.push(
         <strong key={i} className="font-semibold text-fg">
           {tok.slice(2, -2)}
         </strong>,
       );
+    } else if (tok.startsWith("[")) {
+      const link = /^\[([^\]]+)\]\(([^)\s]+)\)$/.exec(tok);
+      if (link) {
+        const external = /^https?:\/\//.test(link[2]);
+        out.push(
+          <a
+            key={i}
+            href={link[2]}
+            target={external ? "_blank" : undefined}
+            rel={external ? "noopener noreferrer" : undefined}
+            className="text-fg underline underline-offset-4 transition-colors hover:text-accent"
+          >
+            {inline(link[1])}
+          </a>,
+        );
+      } else {
+        out.push(tok);
+      }
+    } else {
+      out.push(<em key={i}>{tok.slice(1, -1)}</em>);
     }
     last = m.index + tok.length;
     i++;
@@ -63,7 +87,10 @@ export function ArticleBody({ blocks }: { blocks: ContentBlock[] }) {
               <ul key={i} className="flex flex-col gap-2.5">
                 {block.items.map((it, j) => (
                   <li key={j} className="flex gap-3 text-base leading-relaxed text-fg-muted">
-                    <span aria-hidden="true" className="mt-2.5 size-1.5 shrink-0 rounded-full bg-accent" />
+                    <span
+                      aria-hidden="true"
+                      className="mt-2.5 size-1.5 shrink-0 rounded-full bg-accent"
+                    />
                     <span>{inline(it)}</span>
                   </li>
                 ))}

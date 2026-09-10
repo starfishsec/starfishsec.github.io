@@ -1,13 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import {
-  allTopics,
-  authorName,
-  sortPosts,
-  type BlogPost,
-  type BlogTopic,
-} from "@/content/blog";
+import { allTopics, authorName, sortPosts, type BlogPost, type BlogTopic } from "@/content/blog";
 import { PostCard } from "@/components/blog/PostCard";
 import { cn } from "@/lib/cn";
 
@@ -33,10 +27,12 @@ export function BlogExplorer({ posts, authors }: BlogExplorerProps) {
     if (q && authors.includes(q)) setAuthor(q);
   }, [authors]);
 
-  const topics = useMemo(
-    () => allTopics.filter((t) => posts.some((p) => p.topics.includes(t))),
-    [posts],
-  );
+  const topics = useMemo(() => {
+    const present = new Set(posts.flatMap((p) => p.topics));
+    const known = allTopics.filter((t) => present.has(t));
+    const extra = [...present].filter((t) => !allTopics.includes(t)).sort();
+    return [...known, ...extra];
+  }, [posts]);
 
   const filtered = useMemo(() => {
     const list = posts.filter(
@@ -53,7 +49,11 @@ export function BlogExplorer({ posts, authors }: BlogExplorerProps) {
     <div className="flex flex-col gap-8">
       {/* Filters */}
       <div className="flex flex-col gap-4">
-        <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Filter by author">
+        <div
+          className="flex flex-wrap items-center gap-2"
+          role="group"
+          aria-label="Filter by author"
+        >
           <span className="mr-1 eyebrow text-fg-subtle">Author</span>
           <button
             type="button"
@@ -86,7 +86,11 @@ export function BlogExplorer({ posts, authors }: BlogExplorerProps) {
           ))}
         </div>
 
-        <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Filter by topic">
+        <div
+          className="flex flex-wrap items-center gap-2"
+          role="group"
+          aria-label="Filter by topic"
+        >
           <span className="mr-1 eyebrow text-fg-subtle">Topic</span>
           <button
             type="button"
@@ -132,9 +136,7 @@ export function BlogExplorer({ posts, authors }: BlogExplorerProps) {
         </p>
       ) : (
         <>
-          {featured ? (
-            <PostCard key={featured.slug} post={featured} featured />
-          ) : null}
+          {featured ? <PostCard key={featured.slug} post={featured} featured /> : null}
           {rest.length > 0 ? (
             <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {rest.map((post) => (

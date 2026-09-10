@@ -2,14 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
-import {
-  authorLink,
-  authorName,
-  authorRole,
-  blogPosts,
-  getPostBySlug,
-  postsByAuthor,
-} from "@/content/blog";
+import { authorLink, authorName, authorRole } from "@/content/blog";
+import { blogPosts, getPostBySlug, postsByAuthor } from "@/lib/blog";
 import { initials } from "@/content/team";
 import { ArticleBody } from "@/components/blog/ArticleBody";
 import { PostCard } from "@/components/blog/PostCard";
@@ -32,8 +26,6 @@ export async function generateMetadata({
     title: post.title,
     description: post.summary,
     alternates: { canonical: `/blog/${post.slug}` },
-    // Blog hidden until complete (owner, 2026-08-26) — see app/blog/page.tsx.
-    robots: { index: false, follow: false },
     openGraph: {
       type: "article",
       title: post.title,
@@ -49,7 +41,12 @@ function formatDate(iso?: string): string | null {
   const d = new Date(`${iso}T00:00:00Z`);
   return Number.isNaN(d.getTime())
     ? iso
-    : d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+    : d.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        timeZone: "UTC",
+      });
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {

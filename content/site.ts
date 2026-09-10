@@ -41,7 +41,8 @@ export const footerColumns: FooterColumn[] = [
   {
     title: "Research",
     links: [
-      // Blog link hidden with the nav tab (owner, 2026-08-26) until the blog is complete.
+      // Blog re-enabled 2026-09-10: posts are Markdown, managed via the blog-manager app.
+      { label: "Blog", href: "/blog" },
       { label: "CVE advisories", href: "/research" },
       { label: "Disclosure policy", href: "/disclosure" },
     ],
