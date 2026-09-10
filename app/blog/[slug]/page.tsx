@@ -135,8 +135,29 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           {post.summary}
         </p>
 
+        {post.sourceUrl ? (
+          <a
+            href={post.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 flex items-center justify-between gap-3 rounded-card border border-border bg-bg-elev px-4 py-3 text-small transition-colors hover:border-accent/40"
+          >
+            <span className="text-fg-muted">
+              Originally published by <span className="text-fg">{author}</span>
+              {post.sourceName ? (
+                <>
+                  {" "}
+                  on <span className="text-fg">{post.sourceName}</span>
+                </>
+              ) : null}
+              . Read the original.
+            </span>
+            <ArrowUpRight className="size-4 shrink-0 text-accent" aria-hidden="true" />
+          </a>
+        ) : null}
+
         <div className="mt-10">
-          <ArticleBody blocks={post.body} />
+          <ArticleBody html={post.html} />
         </div>
 
         {post.references && post.references.length > 0 ? (

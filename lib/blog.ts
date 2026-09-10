@@ -2,96 +2,37 @@ import "server-only";
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import matter from "gray-matter";
-import { marked, type Token, type Tokens } from "marked";
-import { sortPosts, type BlogPost, type ContentBlock, type Reference } from "@/content/blog";
+import { marked } from "marked";
+import { sortPosts, type BlogPost, type Reference } from "@/content/blog";
 import type { Severity } from "@/content/cves";
 
 /**
- * Build-time loader for the Markdown blog. Posts live in `content/posts/*.md` (frontmatter +
- * Markdown body, written via the blog-manager app); this module parses each body into the
- * site's typed `ContentBlock[]` so the existing ArticleBody renderer keeps doing the layout.
+ * Build-time loader for the mirrored blog. Each post in `content/posts/<slug>.md` carries our
+ * normalized frontmatter (title, author, date, source, …) followed by the author's ORIGINAL
+ * article body in Markdown. This module renders that body to HTML with `marked`, so the originals
+ * keep their full formatting — headings, images, code, tables, blockquotes and links.
  *
- * Supported Markdown subset (everything the old typed blocks could express):
- *   ## / ###  headings · paragraphs · - / 1. lists · fenced code · > quotes ·
- *   > [!INFO] / > [!WARN] callouts (first line may carry a title) ·
- *   inline **bold**, *italic*, `code`, [links](https://…) via ArticleBody.
- * Anything else (tables, images, raw HTML) is intentionally not rendered — extend the block
- * model and ArticleBody first if a post ever needs it.
- *
- * `draft: true` posts are excluded from the build entirely (no page, no index, no sitemap):
- * the manager can save work-in-progress and even publish it to git without shipping it.
+ * The stored Markdown already references images by their local path (`/blog/<slug>/…`); the assets
+ * live under `public/blog/<slug>/`. `draft: true` posts are excluded from the build entirely.
  */
 
 const POSTS_DIR = join(process.cwd(), "content", "posts");
-
 const SEVERITIES: readonly Severity[] = ["critical", "high", "medium", "low"];
-const CALLOUT_RE = /^\[!(INFO|WARN)\][ \t]*([^\n]*)\n?([\s\S]*)$/;
 
-function listItems(token: Tokens.List): string[] {
-  return token.items.map((it) => it.text.trim());
-}
+marked.setOptions({ gfm: true, breaks: false });
 
-function tokensToBlocks(tokens: Token[], file: string): ContentBlock[] {
-  const blocks: ContentBlock[] = [];
-  for (const t of tokens) {
-    switch (t.type) {
-      case "heading": {
-        const text = t.text.trim();
-        if (t.depth <= 2) blocks.push({ kind: "h2", text });
-        else blocks.push({ kind: "h3", text });
-        break;
-      }
-      case "paragraph": {
-        // A paragraph that is exactly one image becomes a figure block; the image `title`
-        // (`![alt](src "caption")`) is used as the caption. Everything else is prose.
-        const only = (t as Tokens.Paragraph).tokens;
-        if (only?.length === 1 && only[0].type === "image") {
-          const img = only[0] as Tokens.Image;
-          blocks.push({
-            kind: "img",
-            src: img.href,
-            alt: img.text ?? "",
-            caption: img.title || undefined,
-          });
-        } else {
-          blocks.push({ kind: "p", text: t.text.trim() });
-        }
-        break;
-      }
-      case "list":
-        blocks.push(
-          (t as Tokens.List).ordered
-            ? { kind: "ol", items: listItems(t as Tokens.List) }
-            : { kind: "ul", items: listItems(t as Tokens.List) },
-        );
-        break;
-      case "code":
-        blocks.push({ kind: "code", lang: t.lang || undefined, code: t.text });
-        break;
-      case "blockquote": {
-        const inner = t.text.trim();
-        const m = CALLOUT_RE.exec(inner);
-        if (m) {
-          blocks.push({
-            kind: "callout",
-            tone: m[1] === "WARN" ? "warn" : "info",
-            title: m[2].trim() || undefined,
-            text: m[3].trim(),
-          });
-        } else {
-          blocks.push({ kind: "quote", text: inner });
-        }
-        break;
-      }
-      case "space":
-      case "hr":
-        break;
-      default:
-        // Fail loud at build time rather than silently dropping content.
-        throw new Error(`content/posts/${file}: unsupported markdown construct "${t.type}"`);
-    }
-  }
-  return blocks;
+/**
+ * The bodies are our own founders' authored content, reviewed before it lands in the repo, and the
+ * build is static. Still, strip the few HTML constructs that could execute, so a rendered post can
+ * never run script — defense in depth, not a trust decision.
+ */
+function sanitize(html: string): string {
+  return html
+    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "")
+    .replace(/<iframe\b[^<]*(?:(?!<\/iframe>)<[^<]*)*<\/iframe>/gi, "")
+    .replace(/\son\w+\s*=\s*"[^"]*"/gi, "")
+    .replace(/\son\w+\s*=\s*'[^']*'/gi, "")
+    .replace(/javascript:/gi, "");
 }
 
 function str(v: unknown): string | undefined {
@@ -124,6 +65,8 @@ function parsePost(file: string): BlogPost | null {
         .filter((r): r is Reference => r !== null)
     : undefined;
 
+  const html = sanitize(marked.parse(content, { async: false }) as string);
+
   return {
     slug,
     title,
@@ -137,7 +80,9 @@ function parsePost(file: string): BlogPost | null {
     summary,
     readingTime: str(data.readingTime),
     featured: data.featured === true,
-    body: tokensToBlocks(marked.lexer(content), file),
+    sourceName: str(data.sourceName),
+    sourceUrl: str(data.sourceUrl),
+    html,
     references: references?.length ? references : undefined,
   };
 }

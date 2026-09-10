@@ -1,31 +1,17 @@
 /**
  * Blog types + pure helpers (client-safe: no fs, no data).
  *
- * The posts themselves live as Markdown files in `content/posts/*.md` (frontmatter + body),
- * written and published through the separate blog-manager app; `lib/blog.ts` loads and parses
- * them at build time into the `BlogPost`/`ContentBlock` shapes below. The typed-block article
- * renderer (`components/blog/ArticleBody.tsx`) is unchanged from the hand-written era.
- *
- * Bodies are original write-ups authored by / for the Starfish team, grounded in public,
- * verifiable facts; where a primary write-up exists it is credited under "References".
+ * The blog MIRRORS the founders' own published research. Each post is one of their original
+ * articles, moved onto the company site verbatim with attribution: the Markdown body in
+ * `content/posts/*.md` is the author's original text (only image paths are rewritten to the local
+ * copies under `public/blog/<slug>/`), and every post links back to where it was first published
+ * via `sourceName` / `sourceUrl`. `lib/blog.ts` renders the Markdown body to HTML at build time.
  */
 import { team } from "./team";
 import type { Severity } from "./cves";
 
-/** Topics are free-form (the manager can introduce new ones); `allTopics` orders the known set. */
+/** Topics are free-form (each mirrored post brings its own); `allTopics` orders the known set. */
 export type BlogTopic = string;
-
-/** A rendered article body is a list of typed blocks (parsed from Markdown at build time). */
-export type ContentBlock =
-  | { kind: "p"; text: string }
-  | { kind: "h2"; text: string }
-  | { kind: "h3"; text: string }
-  | { kind: "ul"; items: string[] }
-  | { kind: "ol"; items: string[] }
-  | { kind: "code"; lang?: string; code: string }
-  | { kind: "callout"; tone?: "info" | "warn"; title?: string; text: string }
-  | { kind: "quote"; text: string }
-  | { kind: "img"; src: string; alt: string; caption?: string };
 
 export interface Reference {
   label: string;
@@ -49,8 +35,11 @@ export interface BlogPost {
   summary: string;
   readingTime?: string;
   featured?: boolean;
-  /** The on-site article body. */
-  body: ContentBlock[];
+  /** Where this article was first published by its author (shown as an attribution banner). */
+  sourceName?: string;
+  sourceUrl?: string;
+  /** The original article body, rendered from Markdown to HTML at build time (see lib/blog.ts). */
+  html: string;
   /** Primary sources / further reading, shown at the end of the article. */
   references?: Reference[];
 }
@@ -58,7 +47,7 @@ export interface BlogPost {
 export const blogHeading = {
   title: "Research and writing from the people who find the bugs.",
   subtitle:
-    "Deep-dive vulnerability analyses, weaponized proofs-of-concept, and security research, written by the Starfish founders. Grounded in the public record; sources credited.",
+    "Deep-dive vulnerability analyses and weaponized proofs-of-concept, first published by the Starfish founders on their own blogs and collected here. Each post links back to the original.",
 } as const;
 
 export function authorName(handle: string): string {

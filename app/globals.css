@@ -291,3 +291,143 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-fg-subtle);
 }
+
+/* ---------------------------------------------------------------------------
+   Blog article prose (components/blog/ArticleBody.tsx). The mirrored posts are rendered from the
+   authors' original Markdown to HTML, so their full formatting is styled here from the tokens.
+--------------------------------------------------------------------------- */
+@layer components {
+  .prose-post {
+    color: var(--color-fg-muted);
+    font-size: var(--text-body);
+    line-height: 1.7;
+  }
+  .prose-post > * + * {
+    margin-top: 1.15em;
+  }
+  .prose-post h2 {
+    color: var(--color-fg);
+    font-size: var(--text-h2);
+    line-height: var(--text-h2--line-height);
+    letter-spacing: var(--text-h2--letter-spacing);
+    font-weight: 600;
+    margin-top: 2em;
+    text-wrap: balance;
+  }
+  .prose-post h3 {
+    color: var(--color-fg);
+    font-size: var(--text-h3);
+    line-height: var(--text-h3--line-height);
+    font-weight: 600;
+    margin-top: 1.6em;
+  }
+  .prose-post h1 {
+    color: var(--color-fg);
+    font-size: var(--text-h1);
+    font-weight: 600;
+    letter-spacing: var(--text-h1--letter-spacing);
+    margin-top: 1.2em;
+  }
+  .prose-post a {
+    color: var(--color-fg);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: color-mix(in srgb, var(--color-accent) 50%, transparent);
+    transition: color 0.15s;
+  }
+  .prose-post a:hover {
+    color: var(--color-accent);
+  }
+  .prose-post strong {
+    color: var(--color-fg);
+    font-weight: 600;
+  }
+  .prose-post ul,
+  .prose-post ol {
+    padding-left: 1.4em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .prose-post ul {
+    list-style: none;
+  }
+  .prose-post ul > li {
+    position: relative;
+  }
+  .prose-post ul > li::before {
+    content: "";
+    position: absolute;
+    left: -1.1em;
+    top: 0.72em;
+    width: 0.34em;
+    height: 0.34em;
+    border-radius: 9999px;
+    background: var(--color-accent);
+  }
+  .prose-post ol {
+    list-style: decimal;
+  }
+  .prose-post ol > li::marker {
+    color: var(--color-accent);
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+  }
+  .prose-post code {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    background: var(--color-bg-elev-2);
+    color: var(--color-accent);
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+  }
+  .prose-post pre {
+    overflow-x: auto;
+    background: var(--color-bg-elev);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    padding: 1rem 1.15rem;
+    line-height: 1.55;
+  }
+  .prose-post pre code {
+    background: none;
+    color: var(--color-fg);
+    padding: 0;
+    font-size: 0.8125rem;
+  }
+  .prose-post blockquote {
+    border-left: 2px solid color-mix(in srgb, var(--color-accent) 50%, transparent);
+    padding-left: 1rem;
+    color: var(--color-fg-muted);
+    font-style: italic;
+  }
+  .prose-post img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-card);
+    border: 1px solid var(--color-border);
+    background: var(--color-bg-elev);
+  }
+  .prose-post hr {
+    border: 0;
+    border-top: 1px solid var(--color-border);
+    margin: 2em 0;
+  }
+  .prose-post table {
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+    font-size: var(--text-small);
+  }
+  .prose-post th,
+  .prose-post td {
+    border: 1px solid var(--color-border);
+    padding: 0.5em 0.75em;
+    text-align: left;
+  }
+  .prose-post th {
+    color: var(--color-fg);
+    background: var(--color-bg-elev);
+  }
+}
