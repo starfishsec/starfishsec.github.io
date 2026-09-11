@@ -26,6 +26,12 @@
         ],
         "createdAt": "2026-09-10T08:12:08.080Z",
         "reason": "false positive: src is a runtime value (block.src) from post markdown, not an empty/placeholder literal"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "4px",
+        "createdAt": "2026-09-10T08:52:00.658Z",
+        "reason": "sanctioned: 4px is an existing documented radius in DESIGN.md (the dashed TodoNote); used here for inline-code chips in .prose-post where 8px reads too round"
       }
     ]
   }
